@@ -188,7 +188,11 @@
                 { "id": "chatgpt", "name": "ChatGPT" },
                 { "id": "gemini", "name": "Gemini" },
                 { "id": "copilot", "name": "Copilot" },
-                { "id": "meta_ai", "name": "Meta AI" }
+                { "id": "meta_ai", "name": "Meta AI" },
+                { "id": "grok", "name": "Grok" },
+                { "id": "perplexity", "name": "Perplexity" },
+                { "id": "deepseek", "name": "DeepSeek" },
+                { "id": "claude", "name": "Claude" }
             ],
             "private_alternatives": [
                 { "id": "ollama", "name": "Ollama" },
