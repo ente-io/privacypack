@@ -100,7 +100,8 @@
                 { "id": "notesnook", "name": "Notesnook" },
                 { "id": "obsidian", "name": "Obsidian" },
                 { "id": "logseq", "name": "Logseq" },
-                { "id": "anytype", "name": "Anytype" }
+                { "id": "anytype", "name": "Anytype" },
+                { "id": "online_notepad", "name": "Online Notepad" }
             ]
         },
         {
