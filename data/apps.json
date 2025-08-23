@@ -196,7 +196,7 @@
             ],
             "private_alternatives": [
                 { "id": "ollama", "name": "Ollama" },
-                { "id": "lumo", "name": "Lumo" },
+                { "id": "lumo", "name": "Lumo" }
             ]
         }
     ]
