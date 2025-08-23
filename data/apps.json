@@ -59,7 +59,7 @@
                 { "id": "tor", "name": "Tor" },
                 { "id": "vivaldi", "name": "Vivaldi" },
                 { "id": "librewolf", "name": "LibreWolf" },
-                { "id": "mullvad_browser", "name": "Mullvad Browser" }
+                { "id": "mullvad_browser", "name": "Mullvad Browser" },
                 { "id": "orion", "name": "Orion" }
             ]
         },
