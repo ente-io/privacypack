@@ -75,7 +75,8 @@
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
                 { "id": "simplex_chat", "name": "SimpleX Chat" },
-                { "id": "session", "name": "Session" }
+                { "id": "session", "name": "Session" },
+                { "id": "threema", "name": "Threema" }
             ]
         },
         {
@@ -90,7 +91,8 @@
             "private_alternatives": [
                 { "id": "standard_notes", "name": "Standard Notes" },
                 { "id": "notesnook", "name": "Notesnook" },
-                { "id": "obsidian", "name": "Obsidian" }
+                { "id": "obsidian", "name": "Obsidian" },
+                { "id": "logseq", "name": "Logseq" }
             ]
         },
         {
@@ -105,7 +107,8 @@
             "private_alternatives": [
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
-                { "id": "filen", "name": "Filen" }
+                { "id": "filen", "name": "Filen" },
+                { "id": "fileverse", "name": "Fileverse" }
             ]
         },
         {

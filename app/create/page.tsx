@@ -8,24 +8,17 @@ import {
     ChevronDown,
     Loader2,
 } from "lucide-react";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuShortcut,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import data from "../../data/apps.json";
 import PrivacyPackResult from "@/components/PrivacyPackResult";
 import { handleDownload, handleShare } from "@/lib/utils";
 import Image from "next/image";
-
-interface AppCount {
-    id: string;
-    name: string;
-    count: number;
-}
 
 export default function App() {
     const [pack, setPack] = useState(() => {

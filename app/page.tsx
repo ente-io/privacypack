@@ -36,7 +36,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="my-20 flex flex-col items-center gap-2">
-                <span className="text-xs text-[#aeaeae]">An initiative by</span>
+                <span className="text-xs text-[#aeaeae]">A toy by</span>
                 <div className="w-16">
                     <a href="https://ente.io" target="_blank">
                         <Image
