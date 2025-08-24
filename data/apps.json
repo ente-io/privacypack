@@ -12,7 +12,8 @@
             "private_alternatives": [
                 { "id": "proton_mail", "name": "Proton Mail" },
                 { "id": "tuta_mail", "name": "Tuta Mail" },
-                { "id": "posteo", "name": "Posteo" }
+                { "id": "posteo", "name": "Posteo" },
+                { "id": "fastmail", "name": "Fastmail" }
             ]
         },
         {
@@ -163,7 +164,8 @@
             "private_alternatives": [
                 { "id": "proton_calendar", "name": "Proton Calendar" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
-                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" }
+                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
+                { "id": "fastmail_calendar", "name": "Fastmail Calendar" }
             ]
         },
         {
