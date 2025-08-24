@@ -163,7 +163,8 @@
             "private_alternatives": [
                 { "id": "proton_calendar", "name": "Proton Calendar" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
-                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" }
+                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
+                { "id": "radicale", "name": "Radicale" }
             ]
         },
         {
