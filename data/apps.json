@@ -76,7 +76,8 @@
                 { "id": "whatsapp", "name": "WhatsApp" },
                 { "id": "messenger", "name": "Messenger" },
                 { "id": "telegram", "name": "Telegram" },
-                { "id": "imessage", "name": "iMessage" }
+                { "id": "imessage", "name": "iMessage" },
+                { "id": "discord", "name": "Discord" }
             ],
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
@@ -128,7 +129,9 @@
             "mainstream_apps": [
                 { "id": "google_passwords", "name": "Google Passwords" },
                 { "id": "icloud_keychain", "name": "iCloud Keychain" },
-                { "id": "lastpass", "name": "LastPass" }
+                { "id": "lastpass", "name": "LastPass" },
+                { "id": "nordpass", "name": "NordPass" },
+                { "id": "dashlane", "name": "Dashlane" }
             ],
             "private_alternatives": [
                 { "id": "bitwarden", "name": "Bitwarden" },
