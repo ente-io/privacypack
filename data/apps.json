@@ -196,6 +196,22 @@
                 { "id": "ivpn", "name": "IVPN" },
                 { "id": "windscribe", "name": "Windscribe VPN" }
             ]
+        },
+        {
+            "name": "Smart Home",
+            "order": 13,
+            "mainstream_apps": [
+                { "id": "google_home", "name": "Google Home" },
+                { "id": "apple_homekit", "name": "Apple HomeKit" },
+                { "id": "amazon_alexa", "name": "Amazon Alexa" },
+                { "id": "samsung_smartthings", "name": "Samsung SmartThings" }
+            ],
+            "private_alternatives": [
+                { "id": "home_assistant", "name": "Home Assistant" },
+                { "id": "openhab", "name": "OpenHAB" },
+                { "id": "domoticz", "name": "Domoticz" },
+                { "id": "iobroker", "name": "ioBroker" }
+            ]
         }
     ]
 }
