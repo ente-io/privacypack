@@ -173,7 +173,7 @@ export default function App() {
                                                         width={0}
                                                         height={0}
                                                         sizes="100vw"
-                                                        className="h-auto w-full rounded-xl md:rounded-2xl"
+                                                        className="h-full w-full rounded-xl object-cover md:rounded-2xl"
                                                     />
                                                 </div>
                                                 <div className="mt-5 max-w-18 text-center text-xs leading-tight font-medium tracking-tight lg:max-w-24 lg:text-base xl:max-w-28 2xl:max-w-40">
@@ -260,7 +260,7 @@ export default function App() {
                                                             width={0}
                                                             height={0}
                                                             sizes="100vw"
-                                                            className="h-auto w-full rounded-xl md:rounded-2xl"
+                                                            className="h-full w-full rounded-xl object-cover md:rounded-2xl"
                                                         />
                                                     )}
                                                 </div>

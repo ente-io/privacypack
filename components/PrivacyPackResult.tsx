@@ -101,7 +101,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                         width={0}
                                         height={0}
                                         sizes="100vw"
-                                        className="h-auto w-full rounded-2xl"
+                                        className="h-full w-full rounded-2xl object-cover"
                                     />
                                 </div>
                                 <div className="mt-3 max-w-[150px] text-center text-[28px] leading-tight tracking-tight text-[#aeaeae]">
@@ -122,7 +122,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                         width={0}
                                         height={0}
                                         sizes="100vw"
-                                        className="h-auto w-full rounded-2xl"
+                                        className="h-full w-full rounded-2xl object-cover"
                                     />
                                 </div>
                                 <div className="mt-3 max-w-[150px] text-center text-[28px] leading-tight tracking-tight text-[#aeaeae]">
