@@ -12,7 +12,8 @@
             "private_alternatives": [
                 { "id": "proton_mail", "name": "Proton Mail" },
                 { "id": "tuta_mail", "name": "Tuta Mail" },
-                { "id": "posteo", "name": "Posteo" }
+                { "id": "posteo", "name": "Posteo" },
+                { "id": "startmail", "name": "StartMail" }
             ]
         },
         {
@@ -76,7 +77,8 @@
                 { "id": "whatsapp", "name": "WhatsApp" },
                 { "id": "messenger", "name": "Messenger" },
                 { "id": "telegram", "name": "Telegram" },
-                { "id": "imessage", "name": "iMessage" }
+                { "id": "imessage", "name": "iMessage" },
+                { "id": "google_messages", "name": "Google Messages" }
             ],
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
