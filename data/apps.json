@@ -27,7 +27,8 @@
             "private_alternatives": [
                 { "id": "ente_photos", "name": "Ente Photos" },
                 { "id": "proton_drive", "name": "Proton Drive" },
-                { "id": "immich", "name": "Immich" }
+                { "id": "immich", "name": "Immich" },
+                { "id": "internxt", "name": "Internxt" }
             ]
         },
         {
@@ -119,7 +120,8 @@
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "filen", "name": "Filen" },
-                { "id": "fileverse", "name": "Fileverse" }
+                { "id": "fileverse", "name": "Fileverse" },
+                { "id": "internxt", "name": "Internxt" },
             ]
         },
         {
