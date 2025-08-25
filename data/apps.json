@@ -196,6 +196,16 @@
                 { "id": "ivpn", "name": "IVPN" },
                 { "id": "windscribe", "name": "Windscribe VPN" }
             ]
+        },
+         {
+            "name": "Navigation",
+            "order": 13,
+            "mainstream_apps": [
+                { "id": "google_maps", "name": "Google Maps" }
+            ],
+            "private_alternatives": [
+                { "id": "comaps", "name": "CoMaps" }
+          ]
         }
     ]
 }
