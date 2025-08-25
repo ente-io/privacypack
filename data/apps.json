@@ -42,6 +42,7 @@
                 { "id": "brave_search", "name": "Brave Search" },
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
                 { "id": "startpage", "name": "Startpage" },
+                { "id": "ecosia", "name": "Ecosia" },
                 { "id": "searxng", "name": "SearXNG" }
             ]
         },
