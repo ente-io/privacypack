@@ -66,7 +66,8 @@
                 { "id": "vivaldi", "name": "Vivaldi" },
                 { "id": "librewolf", "name": "LibreWolf" },
                 { "id": "mullvad_browser", "name": "Mullvad Browser" },
-                { "id": "orion", "name": "Orion" }
+                { "id": "orion", "name": "Orion" },
+                { "id": "ironfox", "name": "IronFox" }
             ]
         },
         {
@@ -84,7 +85,9 @@
                 { "id": "session", "name": "Session" },
                 { "id": "threema", "name": "Threema" },
                 { "id": "element", "name": "Element Classic" },
-                { "id": "briar", "name": "Briar" }
+                { "id": "briar", "name": "Briar" },
+                { "id": "dino", "name": "Dino" },
+                { "id": "molly", "name": "Molly" }
             ]
         },
         {
@@ -103,7 +106,8 @@
                 { "id": "obsidian", "name": "Obsidian" },
                 { "id": "logseq", "name": "Logseq" },
                 { "id": "anytype", "name": "Anytype" },
-                { "id": "nextcloud_notes", "name": "Nextcloud Notes" }
+                { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
+                { "id": "joplin", "name": "Joplin" }
             ]
         },
         {
