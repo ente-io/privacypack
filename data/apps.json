@@ -194,7 +194,8 @@
                 { "id": "proton_vpn", "name": "Proton VPN" },
                 { "id": "obscura_vpn", "name": "Obscura VPN" },
                 { "id": "ivpn", "name": "IVPN" },
-                { "id": "windscribe", "name": "Windscribe VPN" }
+                { "id": "windscribe", "name": "Windscribe VPN" },
+                { "id": "portmaster_spn", "name": "Portmaster SPN" }
             ]
         }
     ]
