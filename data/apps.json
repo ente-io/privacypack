@@ -83,8 +83,8 @@
                 { "id": "simplex_chat", "name": "SimpleX Chat" },
                 { "id": "session", "name": "Session" },
                 { "id": "threema", "name": "Threema" },
-                { "id": "element", "name": "Element Classic"},
-                { "id": "briar", "name": "Briar"}
+                { "id": "element", "name": "Element Classic" },
+                { "id": "briar", "name": "Briar" }
             ]
         },
         {

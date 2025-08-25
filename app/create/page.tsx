@@ -133,7 +133,7 @@ export default function App() {
                     </div>
                 </div>
 
-                <div className="mt-16 mb-10 grid grid-cols-1 gap-14 sm:mx-auto md:grid-cols-2 md:grid-rows-6 md:gap-20 lg:my-24 lg:gap-28 xl:my-24 xl:grid-cols-3 xl:grid-rows-4 xl:gap-20 2xl:my-32 2xl:gap-40">
+                <div className="mt-16 mb-10 grid grid-cols-1 gap-14 sm:mx-auto md:grid-cols-2 md:gap-20 lg:my-24 lg:gap-28 xl:my-24 xl:grid-cols-3 xl:gap-20 2xl:my-32 2xl:gap-40">
                     {pack.map((item) => {
                         const category = data.categories.find(
                             (c) => c.name === item.category,

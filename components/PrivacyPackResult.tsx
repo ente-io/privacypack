@@ -80,10 +80,10 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                     left: "48px",
                     right: "48px",
                     display: "grid",
-                    gridTemplateColumns: "repeat(3, 1fr)",
-                    gridAutoRows: "270px",
-                    columnGap: "110px",
-                    rowGap: "56px",
+                    gridTemplateColumns:
+                        pack.length <= 12 ? "repeat(3, 1fr)" : "repeat(4, 1fr)",
+                    columnGap: pack.length <= 12 ? "110px" : "72px",
+                    rowGap: pack.length <= 12 ? "56px" : "76px",
                     justifyItems: "center",
                 }}
             >
@@ -91,10 +91,12 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                     return (
                         <div
                             key={item.category}
-                            className="group relative flex h-[270px] w-[380px] flex-row items-center justify-between rounded-md pt-6 transition"
+                            className={`${pack.length <= 12 ? "h-[270px] w-[380px]" : "h-[190px] w-[290px]"} group relative flex flex-row items-center justify-between rounded-md pt-6 transition`}
                         >
                             <div className="flex h-full flex-col items-center transition outline-none">
-                                <div className="h-[150px] w-[150px]">
+                                <div
+                                    className={`${pack.length <= 12 ? "h-[150px] w-[150px]" : "h-[120px] w-[120px]"}`}
+                                >
                                     <Image
                                         src={`/app-logos/${item.mainstream_app_id}.jpg`}
                                         alt={item.mainstream_app_name}
@@ -104,18 +106,26 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                         className="h-auto w-full rounded-2xl"
                                     />
                                 </div>
-                                <div className="mt-3 max-w-[150px] text-center text-[28px] leading-tight tracking-tight text-[#aeaeae]">
+                                <div
+                                    className={`${pack.length <= 12 ? "max-w-[150px] text-[28px]" : "max-w-[120px] text-[25px]"} mt-3 text-center leading-tight tracking-tight text-[#aeaeae]`}
+                                >
                                     {item.mainstream_app_name}
                                 </div>
                             </div>
-                            <div className="-mt-20">
+                            <div
+                                className={
+                                    pack.length <= 12 ? "-mt-20" : "-mt-12"
+                                }
+                            >
                                 <ArrowRight
-                                    size={42}
+                                    size={pack.length <= 12 ? 42 : 32}
                                     className="text-[#e6e6e6]"
                                 />
                             </div>
                             <div className="flex h-full flex-col items-center transition outline-none">
-                                <div className="h-[150px] w-[150px]">
+                                <div
+                                    className={`${pack.length <= 12 ? "h-[150px] w-[150px]" : "h-[120px] w-[120px]"}`}
+                                >
                                     <Image
                                         src={`/app-logos/${item.private_alternative_id}.jpg`}
                                         alt={item.private_alternative_name}
@@ -125,7 +135,9 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                         className="h-auto w-full rounded-2xl"
                                     />
                                 </div>
-                                <div className="mt-3 max-w-[150px] text-center text-[28px] leading-tight tracking-tight text-[#aeaeae]">
+                                <div
+                                    className={`${pack.length <= 12 ? "max-w-[150px] text-[28px]" : "max-w-[120px] text-[25px]"} mt-3 text-center leading-tight tracking-tight text-[#aeaeae]`}
+                                >
                                     {item.private_alternative_name}
                                 </div>
                             </div>
