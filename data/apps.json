@@ -196,6 +196,24 @@
                 { "id": "ivpn", "name": "IVPN" },
                 { "id": "windscribe", "name": "Windscribe VPN" }
             ]
+        },
+        {
+            "name": "AI",
+            "order": 13,
+            "mainstream_apps": [
+                { "id": "chatgpt", "name": "ChatGPT" },
+                { "id": "gemini", "name": "Gemini" },
+                { "id": "copilot", "name": "Copilot" },
+                { "id": "meta_ai", "name": "Meta AI" },
+                { "id": "grok", "name": "Grok" },
+                { "id": "perplexity", "name": "Perplexity" },
+                { "id": "deepseek", "name": "DeepSeek" },
+                { "id": "claude", "name": "Claude" }
+            ],
+            "private_alternatives": [
+                { "id": "ollama", "name": "Ollama" },
+                { "id": "lumo", "name": "Lumo" }
+            ]
         }
     ]
 }
