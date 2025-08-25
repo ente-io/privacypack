@@ -134,7 +134,8 @@
                 { "id": "bitwarden", "name": "Bitwarden" },
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
-                { "id": "keepassxc", "name": "KeePassXC" }
+                { "id": "keepassxc", "name": "KeePassXC" },
+                { "id": "keepassdx", "name": "KeePassDX" }
             ]
         },
         {
