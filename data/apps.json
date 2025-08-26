@@ -82,7 +82,9 @@
                 { "id": "signal", "name": "Signal" },
                 { "id": "simplex_chat", "name": "SimpleX Chat" },
                 { "id": "session", "name": "Session" },
-                { "id": "threema", "name": "Threema" }
+                { "id": "threema", "name": "Threema" },
+                { "id": "element", "name": "Element Classic" },
+                { "id": "briar", "name": "Briar" }
             ]
         },
         {
@@ -101,7 +103,8 @@
                 { "id": "obsidian", "name": "Obsidian" },
                 { "id": "logseq", "name": "Logseq" },
                 { "id": "anytype", "name": "Anytype" },
-                { "id": "online_notepad", "name": "Online Notepad" }
+                { "id": "online_notepad", "name": "Online Notepad" },
+                { "id": "nextcloud_notes", "name": "Nextcloud Notes" }
             ]
         },
         {
@@ -160,7 +163,8 @@
             ],
             "private_alternatives": [
                 { "id": "proton_calendar", "name": "Proton Calendar" },
-                { "id": "tuta_calendar", "name": "Tuta Calendar" }
+                { "id": "tuta_calendar", "name": "Tuta Calendar" },
+                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" }
             ]
         },
         {
@@ -190,7 +194,8 @@
                 { "id": "mullvad_vpn", "name": "Mullvad VPN" },
                 { "id": "proton_vpn", "name": "Proton VPN" },
                 { "id": "obscura_vpn", "name": "Obscura VPN" },
-                { "id": "ivpn", "name": "IVPN" }
+                { "id": "ivpn", "name": "IVPN" },
+                { "id": "windscribe", "name": "Windscribe VPN" }
             ]
         }
     ]
