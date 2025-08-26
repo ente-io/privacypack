@@ -42,7 +42,8 @@
                 { "id": "brave_search", "name": "Brave Search" },
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
                 { "id": "startpage", "name": "Startpage" },
-                { "id": "searxng", "name": "SearXNG" }
+                { "id": "searxng", "name": "SearXNG" },
+                { "id": "qwant", "name": "Qwant" }
             ]
         },
         {
@@ -195,6 +196,18 @@
                 { "id": "obscura_vpn", "name": "Obscura VPN" },
                 { "id": "ivpn", "name": "IVPN" },
                 { "id": "windscribe", "name": "Windscribe VPN" }
+            ]
+        },
+        {
+            "name": "Navigation",
+            "order": 12,
+            "mainstream_apps": [
+                { "id": "googlemaps", "name": "Google Maps" },
+                { "id": "appleplan", "name": "Apple Plan" },
+                { "id": "waze", "name": "Waze" }
+            ],
+            "private_alternatives": [
+                { "id": "herewego", "name": "HERE WeGo" }
             ]
         }
     ]
