@@ -42,7 +42,8 @@
                 { "id": "brave_search", "name": "Brave Search" },
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
                 { "id": "startpage", "name": "Startpage" },
-                { "id": "searxng", "name": "SearXNG" }
+                { "id": "searxng", "name": "SearXNG" },
+                { "id": "nova_search", "name": "Nova Search" }
             ]
         },
         {
@@ -103,7 +104,8 @@
                 { "id": "obsidian", "name": "Obsidian" },
                 { "id": "logseq", "name": "Logseq" },
                 { "id": "anytype", "name": "Anytype" },
-                { "id": "nextcloud_notes", "name": "Nextcloud Notes" }
+                { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
+                { "id": "nova_gists", "name": "Nova Gists" }
             ]
         },
         {
@@ -119,7 +121,8 @@
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "filen", "name": "Filen" },
-                { "id": "fileverse", "name": "Fileverse" }
+                { "id": "fileverse", "name": "Fileverse" },
+                { "id": "nova_central", "name": "Nova Central" }
             ]
         },
         {
@@ -134,7 +137,8 @@
                 { "id": "bitwarden", "name": "Bitwarden" },
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
-                { "id": "keepassxc", "name": "KeePassXC" }
+                { "id": "keepassxc", "name": "KeePassXC" },
+                { "id": "keyflow", "name": "KeyFlow" }
             ]
         },
         {
@@ -163,7 +167,8 @@
             "private_alternatives": [
                 { "id": "proton_calendar", "name": "Proton Calendar" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
-                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" }
+                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
+                { "id": "nova_calendar", "name": "Nova Calendar" }
             ]
         },
         {
