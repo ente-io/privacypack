@@ -12,7 +12,8 @@
             "private_alternatives": [
                 { "id": "proton_mail", "name": "Proton Mail" },
                 { "id": "tuta_mail", "name": "Tuta Mail" },
-                { "id": "posteo", "name": "Posteo" }
+                { "id": "posteo", "name": "Posteo" },
+                { "id": "migadu", "name": "Migadu" }
             ]
         },
         {
