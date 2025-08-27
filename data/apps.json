@@ -149,7 +149,8 @@
                 { "id": "ente_auth", "name": "Ente Auth" },
                 { "id": "aegis_auth", "name": "Aegis Auth" },
                 { "id": "proton_auth", "name": "Proton Auth" },
-                { "id": "bitwarden_auth", "name": "Bitwarden Auth" }
+                { "id": "bitwarden_auth", "name": "Bitwarden Auth" },
+                { "id": "2FAS", "name": "2FAS" }
             ]
         },
         {
