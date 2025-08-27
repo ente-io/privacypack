@@ -84,6 +84,7 @@
                 { "id": "session", "name": "Session" },
                 { "id": "threema", "name": "Threema" },
                 { "id": "element", "name": "Element Classic" },
+                { "id": "delta_chat", "name": "Delta Chat" },
                 { "id": "briar", "name": "Briar" }
             ]
         },
