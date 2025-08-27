@@ -261,6 +261,21 @@
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" }
             ]
+        },
+        {
+            "name": "Office & Collaboration",
+            "order": 13,
+            "mainstream_apps": [
+                { "id": "microsoft_365", "name": "Microsoft 365" },
+                { "id": "google_docs", "name": "Google Docs" },
+                { "id": "zoho_workplace", "name": "Zoho Workplace" }
+            ],
+            "private_alternatives": [
+                { "id": "proton_docs", "name": "Proton Docs" },
+                { "id": "libreoffice", "name": "LibreOffice" },
+                { "id": "collabora", "name": "Collabora" },
+                { "id": "onlyoffice", "name": "ONLYOFFICE" }
+            ]
         }
     ]
 }
