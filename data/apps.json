@@ -119,7 +119,8 @@
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "filen", "name": "Filen" },
-                { "id": "fileverse", "name": "Fileverse" }
+                { "id": "fileverse", "name": "Fileverse" },
+                { "id": "jottacloud", "name": "Jottacloud" }
             ]
         },
         {
