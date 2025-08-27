@@ -61,6 +61,7 @@
                 { "id": "vanadium", "name": "Vanadium" },
                 { "id": "brave", "name": "Brave" },
                 { "id": "cromite", "name": "Cromite" },
+                { "id": "duckduckgo_browser", "name": "DuckDuckGo Browser" },
                 { "id": "firefox", "name": "Firefox" },
                 { "id": "floorp", "name": "Floorp" },
                 { "id": "tor", "name": "Tor" },
