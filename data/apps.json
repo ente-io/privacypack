@@ -230,7 +230,8 @@
                 { "id": "maple_ai", "name": "Maple AI" },
                 { "id": "ollama", "name": "Ollama" },
                 { "id": "lumo", "name": "Lumo" },
-                { "id": "ppq", "name": "PayPerQ" }
+                { "id": "ppq", "name": "PayPerQ" },
+                { "id": "routstr", "name": "Routstr" }
             ]
         },
         {
