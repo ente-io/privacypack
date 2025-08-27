@@ -80,7 +80,6 @@
                 { "id": "messenger", "name": "Messenger" },
                 { "id": "telegram", "name": "Telegram" },
                 { "id": "imessage", "name": "iMessage" },
-                { "id": "discord", "name": "Discord" },
                 { "id": "google_messages", "name": "Google Messages" }
             ],
             "private_alternatives": [
@@ -88,7 +87,6 @@
                 { "id": "simplex_chat", "name": "SimpleX Chat" },
                 { "id": "session", "name": "Session" },
                 { "id": "threema", "name": "Threema" },
-                { "id": "element", "name": "Element Classic" },
                 { "id": "briar", "name": "Briar" },
                 { "id": "dino", "name": "Dino" },
                 { "id": "molly", "name": "Molly" }
@@ -260,6 +258,17 @@
                 { "id": "open_street_map", "name": "OpenStreetMap" },
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" }
+            ]
+        },
+        {
+            "name": "Community",
+            "order": 16,
+            "mainstream_apps": [
+                { "id": "discord", "name": "Discord" },
+                { "id": "guilded", "name": "Guilded" }
+            ],
+            "private_alternatives": [
+                { "id": "matrix", "name": "Matrix" }
             ]
         }
     ]
