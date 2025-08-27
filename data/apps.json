@@ -43,7 +43,8 @@
                 { "id": "brave_search", "name": "Brave Search" },
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
                 { "id": "startpage", "name": "Startpage" },
-                { "id": "searxng", "name": "SearXNG" }
+                { "id": "searxng", "name": "SearXNG" },
+                { "id": "qwant", "name": "Qwant" }
             ]
         },
         {
@@ -257,6 +258,18 @@
                 { "id": "open_street_map", "name": "OpenStreetMap" },
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" }
+            ]
+        },
+        {
+            "name": "Navigation",
+            "order": 13,
+            "mainstream_apps": [
+                { "id": "google_maps", "name": "Google Maps" },
+                { "id": "apple_plan", "name": "Apple Plan" },
+                { "id": "waze", "name": "Waze" }
+            ],
+            "private_alternatives": [
+                { "id": "herewego", "name": "HERE WeGo" }
             ]
         }
     ]
