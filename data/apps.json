@@ -103,7 +103,8 @@
                 { "id": "obsidian", "name": "Obsidian" },
                 { "id": "logseq", "name": "Logseq" },
                 { "id": "anytype", "name": "Anytype" },
-                { "id": "nextcloud_notes", "name": "Nextcloud Notes" }
+                { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
+                { "id": "qownnotes", "name": "QOwnNotes" }
             ]
         },
         {
