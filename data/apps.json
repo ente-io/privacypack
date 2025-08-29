@@ -182,8 +182,18 @@
             ]
         },
         {
-            "name": "App Store",
+            "name": "Translate",
             "order": 11,
+            "mainstream_apps": [
+                { "id": "google_translate", "name": "Google Translate" }
+            ],
+            "private_alternatives": [
+                { "id": "deepl", "name": "DeepL" }
+            ]
+        },
+        {
+            "name": "App Store",
+            "order": 12,
             "mainstream_apps": [
                 { "id": "play_store", "name": "Play Store" },
                 { "id": "app_store", "name": "App Store" }
@@ -197,7 +207,7 @@
         },
         {
             "name": "VPN",
-            "order": 12,
+            "order": 13,
             "mainstream_apps": [
                 { "id": "no_vpn", "name": "No VPN" },
                 { "id": "nordvpn", "name": "NordVPN" },
@@ -215,7 +225,7 @@
         },
         {
             "name": "AI Assistant",
-            "order": 13,
+            "order": 14,
             "mainstream_apps": [
                 { "id": "chatgpt", "name": "ChatGPT" },
                 { "id": "grok", "name": "Grok" },
@@ -235,7 +245,7 @@
         },
         {
             "name": "Smart Home",
-            "order": 14,
+            "order": 15,
             "mainstream_apps": [
                 { "id": "google_home", "name": "Google Home" },
                 { "id": "apple_homekit", "name": "Apple HomeKit" },
@@ -251,7 +261,7 @@
         },
         {
             "name": "Maps",
-            "order": 15,
+            "order": 16,
             "mainstream_apps": [
                 { "id": "google_maps", "name": "Google Maps" },
                 { "id": "apple_maps", "name": "Apple Maps" }
