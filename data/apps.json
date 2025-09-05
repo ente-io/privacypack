@@ -15,7 +15,8 @@
                 { "id": "forwardemail_net", "name": "Forward Email" },
                 { "id": "tuta_mail", "name": "Tuta Mail" },
                 { "id": "posteo", "name": "Posteo" },
-                { "id": "migadu", "name": "Migadu" }
+                { "id": "migadu", "name": "Migadu" },
+                { "id": "disroot_webmail", "name": "Disroot webmail" }
             ]
         },
         {
