@@ -279,9 +279,18 @@
             "name": "Translator",
             "order": 16,
             "mainstream_apps": [
-                { "id": "google_translate", "name": "Google Translate" }
+                { "id": "google_translate", "name": "Google Translate" },
+                { "id": "apple_translate", "name": "Apple Translate" },
+                { "id": "deepl", "name": "DeepL" }
             ],
-            "private_alternatives": [{ "id": "deepl", "name": "DeepL" }]
+            "private_alternatives": [
+                { "id": "libretranslate", "name": "LibreTranslate" },
+                { "id": "translatelocally", "name": "TranslateLocally" },
+                { "id": "apertium", "name": "Apertium" },
+                { "id": "mozilla_translate", "name": "Mozilla Translate" },
+                { "id": "kagi_translate", "name": "Kagi Translate" }
+    
+            ]
         },
         {
             "name": "Community",
