@@ -32,7 +32,8 @@
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "immich", "name": "Immich" },
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
-                { "id": "zeitkapsl", "name": "zeitkapsl" }
+                { "id": "zeitkapsl", "name": "zeitkapsl" },
+                { "id": "filen", "name": "Filen" }
             ]
         },
         {
@@ -304,7 +305,8 @@
                 { "id": "controld", "name": "ControlD DNS" },
                 { "id": "nextdns", "name": "NextDNS" },
                 { "id": "adguard", "name": "AdGuard DNS" },
-                { "id": "quad9", "name": "Quad9 DNS" }
+                { "id": "quad9", "name": "Quad9 DNS" },
+                { "id": "mullvad_dns", "name": "Mullvad DNS" }
             ]
         },
         {
