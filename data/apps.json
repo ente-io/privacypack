@@ -243,6 +243,7 @@
                 { "id": "lumo", "name": "Lumo" },
                 { "id": "ppq", "name": "PayPerQ" },
                 { "id": "routstr", "name": "Routstr" }
+                { "id": "kagi", "name": "Kagi Search Assistant" }
             ]
         },
         {
