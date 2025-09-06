@@ -47,8 +47,7 @@
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
                 { "id": "startpage", "name": "Startpage" },
                 { "id": "searxng", "name": "SearXNG" },
-                { "id": "mojeek", "name": "Mojeek" },
-                { "id": "ecosia", "name": "Ecosia" }
+                { "id": "mojeek", "name": "Mojeek" }
             ]
         },
         {
