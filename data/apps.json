@@ -166,6 +166,7 @@
                 { "id": "microsoft_auth", "name": "Microsoft Auth" },
                 { "id": "authy", "name": "Authy" },
                 { "id": "apple_passwords", "name": "Apple Passwords" },
+                { "id": "1password", "name": "1Password" },
                 { "id": "vaultwarden", "name": "Vaultwarden" }
             ],
             "private_alternatives": [
