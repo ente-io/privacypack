@@ -16,6 +16,9 @@
                 { "id": "tuta_mail", "name": "Tuta Mail" },
                 { "id": "posteo", "name": "Posteo" },
                 { "id": "migadu", "name": "Migadu" }
+                { "id": "infomaniak_ksuite", "name": "Infomaniak kSuite" }
+                { "id": "startmail", "name": "Startmail" }
+                { "id": "soverin_mail", "name": "Soverin Mail" }
             ]
         },
         {
@@ -33,6 +36,7 @@
                 { "id": "immich", "name": "Immich" },
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
                 { "id": "zeitkapsl", "name": "zeitkapsl" }
+                { "id": "crypt_ee", "name": "Crypt.ee" }
             ]
         },
         {
@@ -49,6 +53,7 @@
                 { "id": "startpage", "name": "Startpage" },
                 { "id": "searxng", "name": "SearXNG" },
                 { "id": "mojeek", "name": "Mojeek" }
+                { "id": "ecosia", "name": "Ecosia" }
             ]
         },
         {
@@ -96,6 +101,7 @@
                 { "id": "briar", "name": "Briar" },
                 { "id": "dino", "name": "Dino" },
                 { "id": "molly", "name": "Molly" }
+                { "id": "element", "name": "Element" }
             ]
         },
         {
@@ -118,6 +124,8 @@
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
                 { "id": "joplin", "name": "Joplin" }
+                { "id": "simple_notes", "name": "Simple Notes" }
+                { "id": "tagspaces", "name": "Tagspaces" }
             ]
         },
         {
@@ -137,6 +145,9 @@
                 { "id": "fileverse", "name": "Fileverse" },
                 { "id": "jottacloud", "name": "Jottacloud" },
                 { "id": "cryptomator", "name": "Cryptomator" }
+                { "id": "tresorit", "name": "Tresorit" }
+                { "id": "infomaniak_ksuite", "name": "Infomaniak kSuite" }
+                { "id": "crypt_ee", "name": "Crypt.ee" }
             ]
         },
         {
@@ -155,6 +166,7 @@
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
                 { "id": "keepass", "name": "KeePass" }
+                { "id": "passbolt", "name": "Passbolt" }
             ]
         },
         {
@@ -188,6 +200,8 @@
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
                 { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
                 { "id": "radicale", "name": "Radicale" }
+                { "id": "infomaniak_ksuite", "name": "Infomaniak kSuite" }
+                { "id": "etesync", "name": "Etesync" }
             ]
         },
         {
@@ -243,6 +257,7 @@
                 { "id": "lumo", "name": "Lumo" },
                 { "id": "ppq", "name": "PayPerQ" },
                 { "id": "routstr", "name": "Routstr" }
+                { "id": "lechat", "name": "LeChat" }
             ]
         },
         {
@@ -259,6 +274,7 @@
                 { "id": "openhab", "name": "OpenHAB" },
                 { "id": "domoticz", "name": "Domoticz" },
                 { "id": "iobroker", "name": "ioBroker" }
+                { "id": "homey", "name": "Homey" }
             ]
         },
         {
@@ -281,7 +297,12 @@
             "mainstream_apps": [
                 { "id": "google_translate", "name": "Google Translate" }
             ],
-            "private_alternatives": [{ "id": "deepl", "name": "DeepL" }]
+            "private_alternatives": [
+                { "id": "deepl", "name": "DeepL" }
+                { "id": "reverso", "name": "Reverso" }
+                { "id": "etranslation", "name": "eTranslation" }
+                { "id": "supertext", "name": "Supertext" }                
+            ]
         },
         {
             "name": "Community",
@@ -305,6 +326,7 @@
                 { "id": "nextdns", "name": "NextDNS" },
                 { "id": "adguard", "name": "AdGuard DNS" },
                 { "id": "quad9", "name": "Quad9 DNS" }
+                { "id": "dns0_eu", "name": "DNS0.eu" }
             ]
         },
         {
@@ -320,6 +342,10 @@
                 { "id": "qubes_os", "name": "Qubes OS" },
                 { "id": "fedora", "name": "Fedora" },
                 { "id": "ubuntu", "name": "Ubuntu" }
+                { "id": "zorin_os", "name": "Zorin OS" }
+                { "id": "tuxedo_os", "name": "Tuxedo OS" }
+                { "id": "debian", "name": "Debian" }
+                { "id": "freebsd", "name": "FreeBSD" }
             ]
         },
         {
@@ -333,6 +359,11 @@
                 { "id": "graphene_os", "name": "GrapheneOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" }
+                { "id": "/e/OS", "name": "/e/OS" }
+                { "id": "volla_os", "name": "Volla OS" }
+                { "id": "sailfish_os", "name": "Sailfish OS" }
+                { "id": "postmarket_os", "name": "postmarketOS" }
+                { "id": "ubuntu_touch", "name": "Ubuntu Touch" }
             ]
         }
     ]
