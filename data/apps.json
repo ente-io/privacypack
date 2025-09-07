@@ -154,7 +154,8 @@
                 { "id": "bitwarden", "name": "Bitwarden" },
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
-                { "id": "keepass", "name": "KeePass" }
+                { "id": "keepass", "name": "KeePass" },
+                { "id": "vaultwarden", "name": "Vaultwarden" }
             ]
         },
         {
@@ -164,7 +165,9 @@
                 { "id": "google_auth", "name": "Google Auth" },
                 { "id": "microsoft_auth", "name": "Microsoft Auth" },
                 { "id": "authy", "name": "Authy" },
-                { "id": "apple_passwords", "name": "Apple Passwords" }
+                { "id": "apple_passwords", "name": "Apple Passwords" },
+                { "id": "1password", "name": "1Password" },
+                { "id": "vaultwarden", "name": "Vaultwarden" }
             ],
             "private_alternatives": [
                 { "id": "ente_auth", "name": "Ente Auth" },
