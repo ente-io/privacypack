@@ -242,7 +242,8 @@
                 { "id": "ollama", "name": "Ollama" },
                 { "id": "lumo", "name": "Lumo" },
                 { "id": "ppq", "name": "PayPerQ" },
-                { "id": "routstr", "name": "Routstr" }
+                { "id": "routstr", "name": "Routstr" },
+                { "id": "kagi_assistant", "name": "Kagi Assistant" }
             ]
         },
         {
