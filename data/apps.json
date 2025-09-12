@@ -155,6 +155,7 @@
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
                 { "id": "keepass", "name": "KeePass" }
+                { "id": "keepassxc", "name": "KeePassXC" }
             ]
         },
         {
