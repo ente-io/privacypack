@@ -282,7 +282,10 @@
             "mainstream_apps": [
                 { "id": "google_translate", "name": "Google Translate" }
             ],
-            "private_alternatives": [{ "id": "deepl", "name": "DeepL" }]
+            "private_alternatives": [
+                { "id": "deepl", "name": "DeepL" }
+                { "id": "kagi", "name": "Kagi Translate" }
+            ]
         },
         {
             "name": "Community",
