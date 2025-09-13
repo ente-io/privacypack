@@ -32,7 +32,8 @@
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "immich", "name": "Immich" },
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
-                { "id": "zeitkapsl", "name": "zeitkapsl" }
+                { "id": "zeitkapsl", "name": "zeitkapsl" },
+                { "id": "pixelunion", "name": "PixelUnion" }
             ]
         },
         {
