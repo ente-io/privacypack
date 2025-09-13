@@ -252,7 +252,8 @@
                 { "id": "google_home", "name": "Google Home" },
                 { "id": "apple_homekit", "name": "Apple HomeKit" },
                 { "id": "amazon_alexa", "name": "Amazon Alexa" },
-                { "id": "samsung_smartthings", "name": "Samsung SmartThings" }
+                { "id": "samsung_smartthings", "name": "Samsung SmartThings" },
+                { "id": "philips_hue", "name": "Philips Hue" }
             ],
             "private_alternatives": [
                 { "id": "home_assistant", "name": "Home Assistant" },
