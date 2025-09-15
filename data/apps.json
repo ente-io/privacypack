@@ -335,6 +335,17 @@
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
+        },
+                {
+            "name": "Entertainment",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "plex", "name": "Plex" },
+                {"id": "netflix", "name": "Netflix"}
+            ],
+            "private_alternatives": [
+                { "id": "jellyfin", "name": "Jellyfin" }
+            ]
         }
     ]
 }
