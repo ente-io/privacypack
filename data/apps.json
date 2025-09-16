@@ -119,6 +119,7 @@
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
                 { "id": "joplin", "name": "Joplin" }
+                { "id": "quillpad", "name": "Quillpad" }
             ]
         },
         {
