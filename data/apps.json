@@ -338,5 +338,12 @@
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
         }
+        {
+            "name": "Streaming",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "netflix", "name": "Netflix" }
+                { "id": "youtube", "name": "YouTube"}
+            ] 
     ]
 }
