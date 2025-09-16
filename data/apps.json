@@ -202,6 +202,7 @@
                 { "id": "f_droid", "name": "F-Droid" },
                 { "id": "aurora_store", "name": "Aurora Store" },
                 { "id": "obtainium", "name": "Obtainium" }
+                { "id": "izzyondroid", "name": "IzzyOnDroid" }
             ]
         },
         {
@@ -269,10 +270,11 @@
                 { "id": "apple_maps", "name": "Apple Maps" }
             ],
             "private_alternatives": [
-                { "id": "open_street_map", "name": "OpenStreetMap" },
-                { "id": "organic_maps", "name": "Organic Maps" },
+                { "id": "comaps", "name": "CoMaps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
+                { "id": "open_street_map", "name": "OpenStreetMap" },
+                { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "osmand", "name": "OsmAnd" }
             ]
         },
@@ -291,7 +293,10 @@
                 { "id": "discord", "name": "Discord" },
                 { "id": "guilded", "name": "Guilded" }
             ],
-            "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
+            "private_alternatives": [
+                { "id": "matrix", "name": "Matrix" }
+                { "id": "zulip", "name": "Zulip" }
+            ]
         },
         {
             "name": "DNS",
@@ -335,6 +340,22 @@
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
+        },
+               {
+            "name": "Documents",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "google_drie", "name": "Google Drive" },
+                { "id": "microsoft365copilot", "name": "Microsoft 365 Copilot" },
+                { "id": "google_docs", "name": "Google Docs" },
+                { "id": "microsoft_word", "name": "Microsoft Word" }
+            ],
+            "private_alternatives": [
+                { "id": "cryptpad", "name": "CryptPad" },
+                { "id": "libreoffice", "name": "LibreOffice" },
+                { "id": "onlyoffice", "name": "OnlyOffice" }
+            ]
         }
+        
     ]
 }
