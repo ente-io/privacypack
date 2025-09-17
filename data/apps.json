@@ -335,6 +335,21 @@
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
+        },
+        {
+            "name": "Social Media",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "reddit", "name": "Reddit" },
+                { "id": "x_twitter", "name": "X (Twitter)" },
+                { "id": "instagram", "name": "instagram" }
+            ],
+            "private_alternatives": [
+                { "id": "piefed", "name": "PieFed" },
+                { "id": "bluesky", "name": "Bluesky" },
+                { "id": "mastodon", "name": "Mastodon" },
+                { "id": "pixelfed", "name": "Pixelfed" }
+            ]
         }
     ]
 }
