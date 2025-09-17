@@ -136,7 +136,8 @@
                 { "id": "filen", "name": "Filen" },
                 { "id": "fileverse", "name": "Fileverse" },
                 { "id": "jottacloud", "name": "Jottacloud" },
-                { "id": "cryptomator", "name": "Cryptomator" }
+                { "id": "cryptomator", "name": "Cryptomator" },
+                { "id": "pcloud", "name": "pCloud" }
             ]
         },
         {
@@ -320,7 +321,10 @@
                 { "id": "linux_mint", "name": "Linux Mint" },
                 { "id": "qubes_os", "name": "Qubes OS" },
                 { "id": "fedora", "name": "Fedora" },
-                { "id": "ubuntu", "name": "Ubuntu" }
+                { "id": "ubuntu", "name": "Ubuntu" },
+                { "id": "debian", "name": "Debian" },
+                { "id": "pop_os", "name": "Pop!_OS" },
+                { "id": "kali_linux", "name": "Kali Linux"}
             ]
         },
         {
