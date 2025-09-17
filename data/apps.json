@@ -340,6 +340,7 @@
             "name": "Social Media",
             "order": 21,
             "mainstream_apps": [
+                { "id": "facebook", "name": "Facebook" },
                 { "id": "reddit", "name": "Reddit" },
                 { "id": "x_twitter", "name": "X (Twitter)" },
                 { "id": "instagram", "name": "instagram" }
