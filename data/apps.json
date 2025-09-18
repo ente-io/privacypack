@@ -346,7 +346,7 @@
             "order": 21,
             "mainstream_apps": [
                 { "id": "google_drie", "name": "Google Drive" },
-                { "id": "microsoft365copilot", "name": "Microsoft 365 Copilot" },
+                { "id": "microsoft365", "name": "Microsoft 365" },
                 { "id": "google_docs", "name": "Google Docs" },
                 { "id": "microsoft_word", "name": "Microsoft Word" }
             ],
