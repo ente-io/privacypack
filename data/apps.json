@@ -74,7 +74,8 @@
                 { "id": "mullvad_browser", "name": "Mullvad Browser" },
                 { "id": "orion", "name": "Orion" },
                 { "id": "waterfox", "name": "Waterfox" },
-                { "id": "ironfox", "name": "IronFox" }
+                { "id": "ironfox", "name": "IronFox" },
+                { "id": "duckduckgo_browser", "name": "DuckDuckGo Browser" }
             ]
         },
         {
@@ -221,7 +222,8 @@
                 { "id": "windscribe", "name": "Windscribe VPN" },
                 { "id": "portmaster_spn", "name": "Portmaster SPN" },
                 { "id": "mozilla_vpn", "name": "Mozilla VPN" },
-                { "id": "urnetwork", "name": "URnetwork dVPN" }
+                { "id": "urnetwork", "name": "URnetwork dVPN" },
+                { "id": "duckduckgo_vpn", "name": "DuckDuckGo VPN" }
             ]
         },
         {
@@ -242,7 +244,8 @@
                 { "id": "ollama", "name": "Ollama" },
                 { "id": "lumo", "name": "Lumo" },
                 { "id": "ppq", "name": "PayPerQ" },
-                { "id": "routstr", "name": "Routstr" }
+                { "id": "routstr", "name": "Routstr" },
+                { "id": "duckai", "name": "Duck.ai" }
             ]
         },
         {
