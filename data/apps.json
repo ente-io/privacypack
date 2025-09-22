@@ -335,6 +335,19 @@
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
+        },
+        {
+            "name": "Email Aliasing",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "no_email_aliasing", "name": "No Aliasing" }
+            ],
+            "private_alternatives": [
+                { "id": "addy_io", "name": "Addy.io" },
+                { "id": "proton_mail_simplelogin", "name": "Simple Login (by Proton)" },
+                { "id": "firefox_relay", "name": "FireFox Relay" },
+                { "id": "duckduckgo", "name": "Duck Duck Go: Email Protection" }
+            ]
         }
     ]
 }
