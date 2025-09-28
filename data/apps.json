@@ -79,6 +79,7 @@
                 { "id": "orion", "name": "Orion" },
                 { "id": "waterfox", "name": "Waterfox" },
                 { "id": "ironfox", "name": "IronFox" }
+                {"id":"iceraven","name":"Iceraven"}
             ]
         },
         {
