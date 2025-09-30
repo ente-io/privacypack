@@ -374,7 +374,12 @@
             "order": 21,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
-                {"id": "netflix", "name": "Netflix"}
+                { "id": "netflix", "name": "Netflix" }
+				{ "id": "hulu", "name": "Hulu" }
+				{ "id": "hbo_max", "name": "HBO Max" }
+				{ "id": "prime_video", "name": "Prime Video" }
+				{ "id": "paramount_plus", "name": "Paramount+" }
+				{ "id": "disney_plus", "name": "Disney+" }
             ],
             "private_alternatives": [
                 { "id": "jellyfin", "name": "Jellyfin" }
