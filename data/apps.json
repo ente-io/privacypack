@@ -91,6 +91,7 @@
                 { "id": "telegram", "name": "Telegram" },
                 { "id": "imessage", "name": "iMessage" },
                 { "id": "google_messages", "name": "Google Messages" }
+                { "id": "viber", "name": "Viber" }
             ],
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
@@ -123,6 +124,7 @@
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
                 { "id": "joplin", "name": "Joplin" }
+                { "id": "quillpad", "name": "Quillpad" }
             ]
         },
         {
@@ -380,5 +382,12 @@
                 { "id": "jellyfin", "name": "Jellyfin" }
             ]
         }
+        {
+            "name": "Streaming",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "netflix", "name": "Netflix" }
+                { "id": "youtube", "name": "YouTube"}
+            ] 
     ]
 }
