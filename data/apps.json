@@ -358,12 +358,22 @@
                 { "id": "nextdns", "name": "NextDNS" },
                 { "id": "adguard", "name": "AdGuard DNS" },
                 { "id": "quad9", "name": "Quad9 DNS" },
-                { "id": "mullvad_dns", "name": "Mullvad DNS" }
+                { "id": "mullvad_dns", "name": "Mullvad DNS" },
+                { "id": "pi_hole", "name": "Pi-hole" }
             ]
         },
         {
-            "name": "Computer OS",
+            "name": "Adblock",
             "order": 21,
+            "mainstream_apps": [
+                { "id": "adblock", "name": "Adblock" },
+                { "id": "adblock_plus", "name": "Adblock Plus" }
+            ],
+            "private_alternatives": [{ "id": "ublock_origin", "name": "Ublock Origin" }]
+        },
+        {
+            "name": "Computer OS",
+            "order": 22,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
                 { "id": "macos", "name": "macOS" }
@@ -383,7 +393,7 @@
         },
         {
             "name": "Phone OS",
-            "order": 22,
+            "order": 23,
             "mainstream_apps": [
                 { "id": "android", "name": "Android" },
                 { "id": "ios", "name": "iOS" }
@@ -396,7 +406,7 @@
         },
                 {
             "name": "Entertainment",
-            "order": 23,
+            "order": 24,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 {"id": "netflix", "name": "Netflix"}
