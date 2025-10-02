@@ -154,6 +154,8 @@
                 { "id": "google_drive", "name": "Google Drive" },
                 { "id": "onedrive", "name": "OneDrive" },
                 { "id": "dropbox", "name": "Dropbox" },
+                { "id": "mega", "name": "Mega" },
+                { "id": "idrive", "name": "IDrive"},
                 { "id": "icloud", "name": "iCloud" }
             ],
             "private_alternatives": [
@@ -165,7 +167,8 @@
                 { "id": "jottacloud", "name": "Jottacloud" },
                 { "id": "cryptomator", "name": "Cryptomator" },
                 { "id": "pcloud", "name": "pCloud" },
-                { "id": "syncthing", "name": "Syncthing" }
+                { "id": "syncthing", "name": "Syncthing" },
+                { "id": "sync", "name": "Sync" }
             ]
         },
         {
