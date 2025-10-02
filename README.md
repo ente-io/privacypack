@@ -48,6 +48,7 @@ When adding a new app, please ensure the logo meets these specifications:
 - General: 200x200px, no rounded corners, no transparent background, sufficient padding around the logo
 - File size: < 50KB
 - Location: Place the logo file in `/public/app-logos/{app_id}.jpg`
+- Use [Photopea](https://www.photopea.com/) to make it easier to resize images.
 
 ## About
 
