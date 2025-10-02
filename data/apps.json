@@ -363,7 +363,7 @@
             ]
         },
         {
-            "name": "Adblock",
+            "name": "Adblocking",
             "order": 21,
             "mainstream_apps": [
                 { "id": "adblock", "name": "Adblock" },
