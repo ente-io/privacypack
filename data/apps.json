@@ -83,8 +83,30 @@
             ]
         },
         {
-            "name": "Messaging",
+            "name": "Dialer",
             "order": 5,
+            "mainstream_apps": [
+                { "id": "phone", "name": "Phone" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_phone", "name": "Fossify Phone" },
+                { "id": "right_dialer", "name": "Right Dialer" }
+            ]
+        },
+        {
+            "name": "Contacts",
+            "order": 6,
+            "mainstream_apps": [
+                { "id": "contacts", "name": "Contacts" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_contacts", "name": "Fossify Contacts" },
+                { "id": "right_contacts", "name": "Right Contacts" }
+            ]
+        },
+        {
+            "name": "Messaging",
+            "order": 7,
             "mainstream_apps": [
                 { "id": "whatsapp", "name": "WhatsApp" },
                 { "id": "messenger", "name": "Messenger" },
@@ -105,7 +127,7 @@
         },
         {
             "name": "Notes",
-            "order": 6,
+            "order": 8,
             "mainstream_apps": [
                 { "id": "google_keep", "name": "Google Keep" },
                 { "id": "apple_notes", "name": "Apple Notes" },
@@ -127,7 +149,7 @@
         },
         {
             "name": "Drive",
-            "order": 7,
+            "order": 9,
             "mainstream_apps": [
                 { "id": "google_drive", "name": "Google Drive" },
                 { "id": "onedrive", "name": "OneDrive" },
@@ -148,7 +170,7 @@
         },
         {
             "name": "Passwords",
-            "order": 8,
+            "order": 10,
             "mainstream_apps": [
                 { "id": "google_passwords", "name": "Google Passwords" },
                 { "id": "samsung_pass", "name": "Samsung Pass" },
@@ -169,7 +191,7 @@
         },
         {
             "name": "2FA",
-            "order": 9,
+            "order": 11,
             "mainstream_apps": [
                 { "id": "google_auth", "name": "Google Auth" },
                 { "id": "microsoft_auth", "name": "Microsoft Auth" },
@@ -188,7 +210,7 @@
         },
         {
             "name": "Calendar",
-            "order": 10,
+            "order": 12,
             "mainstream_apps": [
                 { "id": "google_calendar", "name": "Google Calendar" },
                 { "id": "outlook_calendar", "name": "Outlook Calendar" },
@@ -204,7 +226,7 @@
         },
         {
             "name": "App Store",
-            "order": 11,
+            "order": 13,
             "mainstream_apps": [
                 { "id": "play_store", "name": "Play Store" },
                 { "id": "app_store", "name": "App Store" }
@@ -218,7 +240,7 @@
         },
         {
             "name": "VPN",
-            "order": 12,
+            "order": 14,
             "mainstream_apps": [
                 { "id": "no_vpn", "name": "No VPN" },
                 { "id": "nordvpn", "name": "NordVPN" },
@@ -241,7 +263,7 @@
         },
         {
             "name": "AI Assistant",
-            "order": 13,
+            "order": 15,
             "mainstream_apps": [
                 { "id": "chatgpt", "name": "ChatGPT" },
                 { "id": "grok", "name": "Grok" },
@@ -264,7 +286,7 @@
         },
         {
             "name": "Smart Home",
-            "order": 14,
+            "order": 16,
             "mainstream_apps": [
                 { "id": "google_home", "name": "Google Home" },
                 { "id": "apple_homekit", "name": "Apple HomeKit" },
@@ -281,7 +303,7 @@
         },
         {
             "name": "Maps",
-            "order": 15,
+            "order": 17,
             "mainstream_apps": [
                 { "id": "google_maps", "name": "Google Maps" },
                 { "id": "apple_maps", "name": "Apple Maps" }
@@ -296,7 +318,7 @@
         },
         {
             "name": "Translator",
-            "order": 16,
+            "order": 18,
             "mainstream_apps": [
                 { "id": "google_translate", "name": "Google Translate" },
                 { "id": "apple_translate", "name": "Apple Translate" },
@@ -313,7 +335,7 @@
         },
         {
             "name": "Community",
-            "order": 17,
+            "order": 19,
             "mainstream_apps": [
                 { "id": "discord", "name": "Discord" },
                 { "id": "guilded", "name": "Guilded" }
@@ -322,7 +344,7 @@
         },
         {
             "name": "DNS",
-            "order": 18,
+            "order": 20,
             "mainstream_apps": [
                 { "id": "isp_dns", "name": "ISP DNS" },
                 { "id": "google_search", "name": "Google DNS" },
@@ -338,7 +360,7 @@
         },
         {
             "name": "Computer OS",
-            "order": 19,
+            "order": 21,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
                 { "id": "macos", "name": "macOS" }
@@ -358,7 +380,7 @@
         },
         {
             "name": "Phone OS",
-            "order": 20,
+            "order": 22,
             "mainstream_apps": [
                 { "id": "android", "name": "Android" },
                 { "id": "ios", "name": "iOS" }
@@ -371,7 +393,7 @@
         },
                 {
             "name": "Entertainment",
-            "order": 21,
+            "order": 23,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 {"id": "netflix", "name": "Netflix"}
