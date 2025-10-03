@@ -424,10 +424,19 @@
             "order": 25,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
-                {"id": "netflix", "name": "Netflix"}
+                { "id": "netflix", "name": "Netflix" },
+                { "id": "disney_plus", "name": "Disney+"},
+                { "id": "hbo_max", "name": "HBO Max"},
+                { "id": "hulu", "name": "Hulu"},
+                { "id": "paramount_plus", "name": "Paramount+"},
+                { "id": "apple_tv", "name": "Apple TV"},
+                { "id": "prime_video", "name": "Prime Video"},
+                { "id": "youtube", "name": "YouTube"}
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
+                { "id": "stremio", "name": "Stremio" },
+                { "id": "kodi", "name": "Kodi"}
             ]
         }
     ]
