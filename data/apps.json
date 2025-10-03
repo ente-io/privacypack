@@ -47,6 +47,7 @@
                 { "id": "bing", "name": "Bing" }
             ],
             "private_alternatives": [
+                { "id": "mullvad_leta", "name": "Mullvad Leta"},
                 { "id": "kagi", "name": "Kagi" },
                 { "id": "brave_search", "name": "Brave Search" },
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
