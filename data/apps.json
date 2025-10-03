@@ -36,7 +36,8 @@
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
                 { "id": "zeitkapsl", "name": "zeitkapsl" },
                 { "id": "filen", "name": "Filen" },
-                { "id": "photoprism", "name": "PhotoPrism" }
+                { "id": "photoprism", "name": "PhotoPrism" },
+                { "id": "fossify_gallery", "name": "Fossify Gallery"}
             ]
         },
         {
