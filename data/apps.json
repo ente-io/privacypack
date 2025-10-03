@@ -431,13 +431,17 @@
                 { "id": "paramount_plus", "name": "Paramount+"},
                 { "id": "apple_tv", "name": "Apple TV"},
                 { "id": "prime_video", "name": "Prime Video"},
-                { "id": "youtube", "name": "YouTube"}
+                { "id": "youtube", "name": "YouTube"},
+                { "id": "vimeo", "name": "Vimeo"},
+                { "id": "dailymotion", "name": "Dailymotion"}
             ],
             "private_alternatives": [
                 { "id": "jellyfin", "name": "Jellyfin" },
                 { "id": "stremio", "name": "Stremio" },
                 { "id": "kodi", "name": "Kodi"},
-                { "id": "peertube", "name": "PeerTube"}
+                { "id": "peertube", "name": "PeerTube"},
+                { "id": "freetube", "name": "FreeTube"},
+                { "id": "newpipe", "name": "NewPipe"}
             ]
         }
     ]
