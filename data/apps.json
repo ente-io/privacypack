@@ -1,7 +1,7 @@
 {
     "categories": [
         {
-            "name": "Mail",
+            "name": "Email",
             "order": 1,
             "mainstream_apps": [
                 { "id": "gmail", "name": "Gmail" },
@@ -16,7 +16,7 @@
                 { "id": "tuta_mail", "name": "Tuta Mail" },
                 { "id": "posteo", "name": "Posteo" },
                 { "id": "migadu", "name": "Migadu" },
-		        { "id": "startmail", "name": "StartMail" },
+		{ "id": "startmail", "name": "StartMail" },
                 { "id": "disroot_webmail", "name": "Disroot webmail" }
             ]
         },
@@ -31,7 +31,6 @@
             ],
             "private_alternatives": [
                 { "id": "ente_photos", "name": "Ente Photos" },
-                { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "immich", "name": "Immich" },
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
                 { "id": "zeitkapsl", "name": "zeitkapsl" },
@@ -122,7 +121,8 @@
                 { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
-                { "id": "joplin", "name": "Joplin" }
+                { "id": "joplin", "name": "Joplin" },
+                { "id": "easy_notes", "name": "Easy Notes" }
             ]
         },
         {
@@ -181,9 +181,7 @@
                 { "id": "aegis_auth", "name": "Aegis Auth" },
                 { "id": "proton_auth", "name": "Proton Auth" },
                 { "id": "bitwarden_auth", "name": "Bitwarden Auth" },
-                { "id": "yubico_auth", "name": "Yubico Authenticator" },
-                { "id": "1password", "name": "1Password" },
-                { "id": "vaultwarden", "name": "Vaultwarden" }
+                { "id": "yubico_auth", "name": "Yubico Authenticator" }
             ]
         },
         {
@@ -199,7 +197,9 @@
                 { "id": "mailbox_org", "name": "Mailbox.org" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
                 { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
-                { "id": "radicale", "name": "Radicale" }
+                { "id": "radicale", "name": "Radicale" },
+                { "id": "fossify_calendar", "name": "Fossify Calendar" },
+                { "id": "right_calendar", "name": "Right Calendar" }
             ]
         },
         {
@@ -213,14 +213,16 @@
                 { "id": "accrescent", "name": "Accrescent" },
                 { "id": "f_droid", "name": "F-Droid" },
                 { "id": "aurora_store", "name": "Aurora Store" },
-                { "id": "obtainium", "name": "Obtainium" }
+                { "id": "obtainium", "name": "Obtainium" },
+                { "id": "neo_store", "name": "Neo Store" },
+                { "id": "droid_ify", "name": "Droid-ify" }
             ]
         },
         {
             "name": "VPN",
             "order": 12,
             "mainstream_apps": [
-                { "id": "no_vpn", "name": "No VPN" },
+                { "id": "no", "name": "No VPN" },
                 { "id": "nordvpn", "name": "NordVPN" },
                 { "id": "expressvpn", "name": "ExpressVPN" },
                 { "id": "surfshark", "name": "Surfshark" }
@@ -236,7 +238,7 @@
                 { "id": "urnetwork", "name": "URnetwork dVPN" },
                 { "id": "duckduckgo", "name": "DuckDuckGo VPN" },
                 { "id": "nymvpn", "name": "NymVPN" },
-				{ "id": "tor_vpn", "name": "Tor VPN" }
+		{ "id": "tor_vpn", "name": "Tor VPN" }
             ]
         },
         {
@@ -291,7 +293,8 @@
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
-                { "id": "osmand", "name": "OsmAnd" }
+                { "id": "osmand", "name": "OsmAnd" },
+                { "id": "comaps", "name": "CoMaps" }
             ]
         },
         {
@@ -303,8 +306,8 @@
                 { "id": "deepl", "name": "DeepL" }
             ],
             "private_alternatives": [
-                { "id": "libretranslate", "name": "LibreTranslate" },
-                { "id": "translatelocally", "name": "TranslateLocally" },
+                { "id": "libretranslate", "name": "Libre Translate" },
+                { "id": "translatelocally", "name": "Translate Locally" },
                 { "id": "apertium", "name": "Apertium" },
                 { "id": "mozilla_translate", "name": "Mozilla Translate" },
                 { "id": "kagi_translate", "name": "Kagi Translate" }
@@ -318,7 +321,12 @@
                 { "id": "discord", "name": "Discord" },
                 { "id": "guilded", "name": "Guilded" }
             ],
-            "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
+            "private_alternatives": [
+            	{ "id": "matrix", "name": "Matrix" },
+            	{ "id": "element", "name": "Element" },
+            	{ "id": "revolt", "name": "Revolt" },
+            	{ "id": "zulip", "name": "Zulip" }
+            ]
         },
         {
             "name": "DNS",
@@ -366,18 +374,421 @@
             "private_alternatives": [
                 { "id": "graphene_os", "name": "GrapheneOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
-                { "id": "lineage_os", "name": "LineageOS" }
+                { "id": "lineage_os", "name": "LineageOS" },
+                { "id": "iodéos", "name": "iodéOS" }
             ]
         },
-                {
-            "name": "Entertainment",
+        {
+            "name": "Movie Streaming Service",
             "order": 21,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
-                {"id": "netflix", "name": "Netflix"}
+                {"id": "netflix", "name": "Netflix"},
+                { "id": "google_tv", "name": "Google TV" },
+                { "id": "apple_tv", "name": "Apple TV" },
+                { "id": "disney+", "name": "Disney+" },
+                { "id": "hbo_max", "name": "HBO Max" },
+                { "id": "hulu", "name": "Hulu" },
+                { "id": "paramount+", "name": "Paramount+" },
+                { "id": "prime_video", "name": "Prime Video" },
+                { "id": "crunchyroll", "name": "Crunchyroll" }
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
+                { "id": "cloudstream", "name": "CloudStream" },
+                { "id": "streamwatch", "name": "StreamWatch" },
+                { "id": "watchit", "name": "WatchIT" },
+                { "id": "stremio", "name": "Stremio" }
+            ]
+        },
+        {
+            "name": "Email Alias",
+            "order": 22,
+            "mainstream_apps": [
+                { "id": "icloud_mail", "name": "iCloud Mail" },
+                { "id": "temporarymail", "name": "TemporaryMail" },
+                { "id": "guerrilla_mail", "name": "Guerrilla Mail" },
+                { "id": "burner_mail", "name": "Burner Mail" },
+                { "id": "adguard_mail", "name": "AdGuard Mail" },
+                { "id": "cloaked", "name": "Cloaked" },
+                { "id": "no", "name": "No Alias" }
+            ],
+            "private_alternatives": [
+                { "id": "duckduckgo_email_protection", "name": "DuckDuckGo Email Protection" },
+                { "id": "simplelogin", "name": "SimpleLogin" },
+                { "id": "addy_io", "name": "Addy.io" },
+                { "id": "firefox_relay", "name": "Firefox Relay" },
+                { "id": "maildrop", "name": "MailDrop" }
+            ]
+        },
+        {
+            "name": "Video Hosting",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "youtube", "name": "YouTube" },
+                {"id": "dailymotion", "name": "Dailymotion"},
+                {"id": "vimeo", "name": "Vimeo"},
+                {"id": "twitch", "name": "Twitch"},
+                {"id": "bilibili", "name": "BiliBili"},
+                {"id": "rumble", "name": "Rumble"},
+                {"id": "kick", "name": "Kick"},
+                {"id": "floatplane", "name": "Floatplane"}
+                
+            ],
+            "private_alternatives": [
+                { "id": "odysee", "name": "Odysee" },
+                {"id": "lbry", "name": "LBRY"},
+                {"id": "peertube", "name": "PeerTube"}
+            ]
+        },
+        {
+            "name": "Youtube Clients",
+            "order": 24,
+            "mainstream_apps": [
+                { "id": "youtube", "name": "YouTube" }
+            ],
+            "private_alternatives": [
+                { "id": "pipepipe", "name": "PipePipe" },
+                { "id": "grayjay", "name": "Grayjay" },
+                { "id": "tubular", "name": "Tubular" },
+                { "id": "libretube", "name": "LibreTube" },
+                { "id": "newpipe", "name": "NewPipe" },
+                { "id": "smarttube", "name": "SmartTube" }
+            ]
+        },
+        {
+            "name": "Social Network & Photo Sharing Toolss",
+            "order": 25,
+            "mainstream_apps": [
+                { "id": "facebook", "name": "Facebook" },
+                { "id": "instagram", "name": "Instagram" },
+                { "id": "snapchat", "name": "Snapchat" },
+                { "id": "flickr", "name": "Flickr" },
+                { "id": "vk", "name": "VK" },
+                { "id": "bereal", "name": "BeReal" }
+            ],
+            "private_alternatives": [
+                { "id": "pixelfed", "name": "Pixelfed" }
+            ]
+        },
+        {
+            "name": "Pixelfed Clients",
+            "order": 26,
+            "mainstream_apps": [
+                { "id": "pixelfed", "name": "Pixelfed" }
+            ],
+            "private_alternatives": [
+                { "id": "pixelix", "name": "Pixelix" },
+                { "id": "impressia", "name": "Impressia" },
+                { "id": "pixeldroid", "name": "PixelDroid" }
+            ]
+        },
+        {
+            "name": "Social Network & Microblog",
+            "order": 27,
+            "mainstream_apps": [
+                { "id": "x_twitter", "name": "X / Twitter" },
+                { "id": "threads", "name": "Threads" },
+                { "id": "tumblr", "name": "Tumblr" },
+                { "id": "parler", "name": "Parler" },
+                { "id": "viva_engage", "name": "Viva Engage" },
+                { "id": "truth_social", "name": "Truth Social" }
+            ],
+            "private_alternatives": [
+                { "id": "bluesky", "name": "Bluesky" },
+                { "id": "mastodon", "name": "Mastodon" },
+                { "id": "minds.com", "name": "Minds.com" }
+            ]
+        },
+        {
+            "name": "Social Network & Video Sharing Tools",
+            "order": 28,
+            "mainstream_apps": [
+                { "id": "tiktok", "name": "Tiktok" },
+                { "id": "likee", "name": "Likee" },
+                { "id": "moj", "name": "Moj" },
+                { "id": "rednote", "name": "RedNote" },
+                { "id": "coub", "name": "Coub" }
+            ],
+            "private_alternatives": [
+                { "id": "loops_by_pixelfed", "name": "Loops by Pixelfed" }
+            ]
+        },
+        {
+            "name": "Social Bookmarking Tools",
+            "order": 29,
+            "mainstream_apps": [
+                { "id": "pinterest", "name": "Pinterest" },
+                { "id": "wetransfer", "name": "WeTransfer" },
+                { "id": "pearltrees", "name": "Pearltrees" },
+                { "id": "refind", "name": "Refind" },
+                { "id": "raindrop.io", "name": "Raindrop.io" },
+                { "id": "savee", "name": "Savee" },
+                { "id": "cosmos", "name": "Cosmos" }
+            ],
+            "private_alternatives": [
+                { "id": "karakeep", "name": "Karakeep" }
+            ]
+        },
+        {
+            "name": "Reddit Clients",
+            "order": 30,
+            "mainstream_apps": [
+                { "id": "reddit", "name": "Reddit" }
+            ],
+            "private_alternatives": [
+                { "id": "infinity_for_reddit", "name": "Infinity for Reddit" },
+                { "id": "stealth", "name": "Stealth" },
+                { "id": "relay_for_reddit", "name": "Relay for reddit" },
+                { "id": "redreader", "name": "RedReader" },
+                { "id": "redlib", "name": "RedLib" }
+            ]
+        },
+        {
+            "name": "Contacts",
+            "order": 31,
+            "mainstream_apps": [
+                { "id": "google_contacts", "name": "Google Contacts" },
+                { "id": "apple_contacts", "name": "Apple Contacts" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_contacts", "name": "Fossify Contacts" },
+                { "id": "right_contacts", "name": "Right Contacts" },
+                { "id": "connect_you", "name": "Connect You" },
+                { "id": "nextcloud_contacts", "name": "Nextcloud Contacts" }
+            ]
+        },
+        {
+            "name": "News & RSS Feed",
+            "order": 32,
+            "mainstream_apps": [
+                { "id": "google_news", "name": "Google News" },
+                { "id": "apple_news", "name": "Apple News" }
+            ],
+            "private_alternatives": [
+                { "id": "kagi_news", "name": "Kagi News" },
+                { "id": "thud", "name": "Thud" },
+                { "id": "feeder", "name": "Feeder" },
+                { "id": "twine", "name": "Twine" },
+                { "id": "read_you", "name": "Read You" },
+                { "id": "neo_feed", "name": "Neo Feed" }
+            ]
+        },
+        {
+            "name": "Weather Forecast Tools",
+            "order": 32,
+            "mainstream_apps": [
+                { "id": "google_weather", "name": "Google Weather" },
+                { "id": "weather_by_xiaomi", "name": "Weather By Xiaomi" },
+                { "id": "weather_by_coloros", "name": "Weather by ColorOS" },
+                { "id": "accuweather", "name": "AccuWeather" },
+                { "id": "1weather", "name": "1Weather" }
+            ],
+            "private_alternatives": [
+                { "id": "breezy_weather", "name": "Breezy Weather" },
+                { "id": "bura", "name": "Bura" },
+                { "id": "forecastie", "name": "Forecastie" },
+                { "id": "rain", "name": "Rain" },
+                { "id": "weather_master", "name": "Weather Master" }
+            ]
+        },
+        {
+            "name": "SMS",
+            "order": 33,
+            "mainstream_apps": [
+                { "id": "google_messages", "name": "Google Messages" },
+                { "id": "imessage", "name": "iMessage" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_messages", "name": "Fossify Messages" },
+                { "id": "right_messages", "name": "Right Messages" },
+                { "id": "quik_sms", "name": "QUIK SMS" }
+            ]
+        },
+        {
+            "name": "Dialer",
+            "order": 34,
+            "mainstream_apps": [
+                { "id": "google_dialer", "name": "Google Dialer" },
+                { "id": "drupe", "name": "Drupe" },
+                { "id": "n_dial", "name": "N Dial" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_dialer", "name": "Fossify Dialer" },
+                { "id": "right_dialer", "name": "Right Dialer" }
+            ]
+        },
+        {
+            "name": "Calculator",
+            "order": 35,
+            "mainstream_apps": [
+                { "id": "calculator_by_google", "name": "Calculator by Google" },
+                { "id": "calculator_by_xiaomi", "name": "Calculator by Xiaomi" },
+                { "id": "samsung_calculator", "name": "Samsung Calculator" }
+            ],
+            "private_alternatives": [
+                { "id": "calculator_you", "name": "Calculator You" },
+                { "id": "fossify_calculator", "name": "Fossify Calculator" },
+                { "id": "calcyou", "name": "CalcYou" },
+                { "id": "numberhub", "name": "NumberHub" },
+                { "id": "opencalc", "name": "OpenCalc" }
+            ]
+        },
+        {
+            "name": "System Cleaner",
+            "order": 36,
+            "mainstream_apps": [
+                { "id": "phone_manager_by_coloros", "name": "Phone Manager by ColorOS" },
+                { "id": "phone_cleaner_for_android", "name": "Phone Cleaner for Android" },
+                { "id": "cleaner_by_xiaomi", "name": "Cleaner by Xiaomi" }
+            ],
+            "private_alternatives": [
+                { "id": "sd_maid_se", "name": "SD Maid SE" },
+                { "id": "cache_cleaner", "name": "Cache Cleaner" }
+            ]
+        },
+        {
+            "name": "Camera App",
+            "order": 37,
+            "mainstream_apps": [
+                { "id": "pixel_camera", "name": "Pixel Camera" }
+            ],
+            "private_alternatives": [
+                { "id": "open_camera", "name": "Open Camera" },
+                { "id": "secure_camera_by_grapheneos", "name": "Secure Camera by GrapheneOS" }
+            ]
+        },
+        {
+            "name": "File Manager",
+            "order": 38,
+            "mainstream_apps": [
+                { "id": "files_by_google", "name": "Files by Google" },
+                { "id": "samsung_my_files", "name": "Samsung My Files" },
+                { "id": "file_manager_by_xiaomi", "name": "File Manager by Xiaomi" },
+                { "id": "my_files_by_coloros", "name": "My Files by ColorOS" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_file_manager", "name": "Fossify File Manager" },
+                { "id": "material_files", "name": "Material Files" },
+                { "id": "prism_file_explorer", "name": "Prism File Explorer" },
+                { "id": "right_files", "name": "Right Files" }
+            ]
+        },
+        {
+            "name": "Large File Transfer Service",
+            "order": 39,
+            "mainstream_apps": [
+                { "id": "google_nearby_share", "name": "Google Nearby Share" },
+                { "id": "shareit", "name": "SHAREit" },
+                { "id": "shareme_by_xiaomi", "name": "ShareMe by Xiaomi" },
+                { "id": "wormhole.app", "name": "Wormhole.app" },
+                { "id": "send_anywhere", "name": "Send Anywhere" }
+            ],
+            "private_alternatives": [
+                { "id": "localsend", "name": "LocalSend" },
+                { "id": "warpinator", "name": "Warpinator" },
+                { "id": "sharrr.com", "name": "Sharrr.com" },
+                { "id": "send.vis.ee", "name": "Send.vis.ee" },
+                { "id": "pairdrop.net", "name": "PairDrop.net" }
+            ]
+        },
+        {
+            "name": "Image Search & OCR",
+            "order": 40,
+            "mainstream_apps": [
+                { "id": "google_lens", "name": "Google Lens" },
+                { "id": "microsoft_lens", "name": "Microsoft Lens" }
+            ],
+            "private_alternatives": [
+                { "id": "oss_document_scanner", "name": "OSS Document Scanner" },
+                { "id": "search_by_image", "name": "Search by Image" }
+            ]
+        },
+        {
+            "name": "Keyboard",
+            "order": 41,
+            "mainstream_apps": [
+                { "id": "gboard", "name": "Gboard" },
+                { "id": "microsoft_swiftkey", "name": "Microsoft SwiftKey" },
+                { "id": "ridmik_keyboard", "name": "Ridmik Keyboard" }
+            ],
+            "private_alternatives": [
+                { "id": "heliboard", "name": "HeliBoard" },
+                { "id": "florisboard", "name": "FlorisBoard" },
+                { "id": "fossify_keyboard", "name": "Fossify Keyboard" },
+                { "id": "futo_keyboard", "name": "FUTO Keyboard" }
+            ]
+        },
+        {
+            "name": "Launcher",
+            "order": 42,
+            "mainstream_apps": [
+                { "id": "pixel_launcher", "name": "Pixel Launcher" },
+                { "id": "microsoft_launcher", "name": "Microsoft Launcher" },
+                { "id": "nova_launcher", "name": "Nova Launcher" },
+                { "id": "poco_launcher", "name": "POCO Launcher" },
+                { "id": "xos_launcher", "name": "XOS Launcher" },
+                { "id": "hios_launcher", "name": "HiOS Launcher" },
+                { "id": "niagara_launcher", "name": "Niagara Launcher" },
+                { "id": "smart_launcher", "name": "Smart Launcher" }
+            ],
+            "private_alternatives": [
+                { "id": "kvæsitso_launcher", "name": "Kvæsitso launcher" },
+                { "id": "lawnchair", "name": "Lawnchair" },
+                { "id": "olauncher", "name": "Olauncher" },
+                { "id": "stario_launcher", "name": "Stario Launcher" },
+                { "id": "neo_launcher", "name": "Neo Launcher" },
+                { "id": "fossify_launcher", "name": "Fossify Launcher" }
+            ]
+        },
+        {
+            "name": "Photo Gallery",
+            "order": 43,
+            "mainstream_apps": [
+                { "id": "gallery_by_google", "name": "Gallery by Google" },
+                { "id": "apple_photos", "name": "Apple Photos" },
+                { "id": "samsung_gallery", "name": "Samsung Gallery" },
+                { "id": "gallery_by_xiaomi", "name": "Gallery by Xiaomi" },
+                { "id": "oppo_photos_by_coloros", "name": "OPPO Photos by ColorOS" },
+                { "id": "nothing_gallery", "name": "Nothing Gallery" }
+            ],
+            "private_alternatives": [
+                { "id": "right_gallery", "name": "Right Gallery" },
+                { "id": "fossify_gallery", "name": "Fossify Gallery" }
+            ]
+        },
+        {
+            "name": "Mobile Remote Control Tools",
+            "order": 44,
+            "mainstream_apps": [
+                { "id": "windows_phone_link", "name": "Windows Phone Link" },
+                { "id": "samsung_flow", "name": "Samsung Flow" },
+                { "id": "airdroid", "name": "AirDroid" }
+            ],
+            "private_alternatives": [
+                { "id": "kde_connect", "name": "KDE Connect" },
+                { "id": "gs_connect", "name": "GS Connect" },
+                { "id": "zorin_connect", "name": "Zorin Connect" }
+            ]
+        },
+        {
+            "name": "Firewalls",
+            "order": 45,
+            "mainstream_apps": [
+                { "id": "windows_firewall", "name": "Windows Firewall" },
+                { "id": "no", "name": "No Firewall" }
+                
+            ],
+            "private_alternatives": [
+                { "id": "portmaster", "name": "Portmaster" },
+                { "id": "lulu_by_objective_see", "name": "LuLu by Objective-See" },
+                { "id": "gufw", "name": "Gufw" },
+                { "id": "rethink_dns_firewall_vpn", "name": "Rethink: DNS + Firewall + VPN" },
+                { "id": "athena_firewall_adblocker", "name": "Athena: Firewall & Adblocker" },
+                { "id": "adguard", "name": "AdGuard" },
+                { "id": "blokada_vpn_dns", "name": "Blokada VPN & DNS" },
+                { "id": "trackercontrol", "name": "TrackerControl" },
+                { "id": "netguard", "name": "NetGuard" }
             ]
         }
     ]
