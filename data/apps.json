@@ -358,7 +358,10 @@
                 { "id": "discord", "name": "Discord" },
                 { "id": "guilded", "name": "Guilded" }
             ],
-            "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
+            "private_alternatives": [
+                { "id": "matrix", "name": "Matrix" },
+                { "id": "element", "name": "Element" }
+            ]
         },
         {
             "name": "DNS",
