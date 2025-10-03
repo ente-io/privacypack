@@ -241,9 +241,22 @@
                 { "id": "obtainium", "name": "Obtainium" }
             ]
         },
+                {
+            "name": "Camera",
+            "order": 14,
+            "mainstream_apps": [
+                { "id": "default_camera", "name": "Default Camera" },
+                { "id": "google_camera", "name": "Google Camera"}
+            ],
+            "private_alternatives": [
+                { "id": "fossify_camera", "name": "Fossify Camera" },
+                { "id": "open_camera", "name": "Open Camera"},
+                { "id": "secure_camera", "name": "Secure Camera"}
+            ]
+        },
         {
             "name": "VPN",
-            "order": 14,
+            "order": 15,
             "mainstream_apps": [
                 { "id": "no_vpn", "name": "No VPN" },
                 { "id": "nordvpn", "name": "NordVPN" },
@@ -266,7 +279,7 @@
         },
         {
             "name": "AI Assistant",
-            "order": 15,
+            "order": 16,
             "mainstream_apps": [
                 { "id": "chatgpt", "name": "ChatGPT" },
                 { "id": "grok", "name": "Grok" },
@@ -289,7 +302,7 @@
         },
         {
             "name": "Smart Home",
-            "order": 16,
+            "order": 17,
             "mainstream_apps": [
                 { "id": "google_home", "name": "Google Home" },
                 { "id": "apple_homekit", "name": "Apple HomeKit" },
@@ -306,7 +319,7 @@
         },
         {
             "name": "Maps",
-            "order": 17,
+            "order": 18,
             "mainstream_apps": [
                 { "id": "google_maps", "name": "Google Maps" },
                 { "id": "apple_maps", "name": "Apple Maps" }
@@ -321,7 +334,7 @@
         },
         {
             "name": "Translator",
-            "order": 18,
+            "order": 19,
             "mainstream_apps": [
                 { "id": "google_translate", "name": "Google Translate" },
                 { "id": "apple_translate", "name": "Apple Translate" },
@@ -338,7 +351,7 @@
         },
         {
             "name": "Community",
-            "order": 19,
+            "order": 20,
             "mainstream_apps": [
                 { "id": "discord", "name": "Discord" },
                 { "id": "guilded", "name": "Guilded" }
@@ -347,7 +360,7 @@
         },
         {
             "name": "DNS",
-            "order": 20,
+            "order": 21,
             "mainstream_apps": [
                 { "id": "isp_dns", "name": "ISP DNS" },
                 { "id": "google_search", "name": "Google DNS" },
@@ -364,7 +377,7 @@
         },
         {
             "name": "Adblocking",
-            "order": 21,
+            "order": 22,
             "mainstream_apps": [
                 { "id": "adblock", "name": "Adblock" },
                 { "id": "adblock_plus", "name": "Adblock Plus" }
@@ -373,7 +386,7 @@
         },
         {
             "name": "Computer OS",
-            "order": 22,
+            "order": 23,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
                 { "id": "macos", "name": "macOS" }
@@ -393,7 +406,7 @@
         },
         {
             "name": "Phone OS",
-            "order": 23,
+            "order": 24,
             "mainstream_apps": [
                 { "id": "android", "name": "Android" },
                 { "id": "ios", "name": "iOS" }
@@ -406,7 +419,7 @@
         },
                 {
             "name": "Entertainment",
-            "order": 24,
+            "order": 25,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 {"id": "netflix", "name": "Netflix"}
