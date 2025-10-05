@@ -10,7 +10,7 @@
                 { "id": "icloud_mail", "name": "iCloud Mail" }
             ],
             "private_alternatives": [
-                { "id": "mailbox_org", "name": "Mailbox.org" },
+                { "id": "mailbox", "name": "mailbox" },
                 { "id": "proton_mail", "name": "Proton Mail" },
                 { "id": "forwardemail_net", "name": "Forward Email" },
                 { "id": "tuta_mail", "name": "Tuta Mail" },
@@ -135,7 +135,7 @@
                 { "id": "icloud", "name": "iCloud" }
             ],
             "private_alternatives": [
-                { "id": "mailbox_org", "name": "Mailbox.org" },
+                { "id": "mailbox", "name": "mailbox" },
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "filen", "name": "Filen" },
@@ -196,7 +196,7 @@
             ],
             "private_alternatives": [
                 { "id": "proton_calendar", "name": "Proton Calendar" },
-                { "id": "mailbox_org", "name": "Mailbox.org" },
+                { "id": "mailbox", "name": "mailbox" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
                 { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
                 { "id": "radicale", "name": "Radicale" }
