@@ -353,7 +353,8 @@
                 { "id": "pop_os", "name": "Pop!_OS" },
                 { "id": "kali_linux", "name": "Kali Linux"},
                 { "id": "openmandriva", "name": "OpenMandriva" },
-                { "id": "nixos", "name": "NixOS" }
+                { "id": "nixos", "name": "NixOS" },
+                { "id": "tiger_os", "name": "Tiger OS" }
             ]
         },
         {
