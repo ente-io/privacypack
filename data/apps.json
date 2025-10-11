@@ -109,6 +109,7 @@
             "mainstream_apps": [
                 { "id": "google_keep", "name": "Google Keep" },
                 { "id": "apple_notes", "name": "Apple Notes" },
+                { "id": "bear_app", "name": "Bear" },
                 { "id": "evernote", "name": "Evernote" },
                 { "id": "notion", "name": "Notion" }
             ],
