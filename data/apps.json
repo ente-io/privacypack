@@ -291,7 +291,8 @@
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
-                { "id": "osmand", "name": "OsmAnd" }
+                { "id": "osmand", "name": "OsmAnd" },
+				{"id": "comaps", "name": "CoMaps"}
             ]
         },
         {
@@ -353,7 +354,8 @@
                 { "id": "pop_os", "name": "Pop!_OS" },
                 { "id": "kali_linux", "name": "Kali Linux"},
                 { "id": "openmandriva", "name": "OpenMandriva" },
-                { "id": "nixos", "name": "NixOS" }
+                { "id": "nixos", "name": "NixOS" },
+				{ "id": "cachyos", "name": "CachyOs" }
             ]
         },
         {
@@ -366,7 +368,8 @@
             "private_alternatives": [
                 { "id": "graphene_os", "name": "GrapheneOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
-                { "id": "lineage_os", "name": "LineageOS" }
+                { "id": "lineage_os", "name": "LineageOS" },
+				{ "id": "eos", "name": "\\e\\ Os" }
             ]
         },
                 {
@@ -374,10 +377,12 @@
             "order": 21,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
-                {"id": "netflix", "name": "Netflix"}
+                {"id": "netflix", "name": "Netflix"},
+				{"id": "amazon_prime", "name": "Amazon Prime"}
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
+				{"id": "emby", "name": "Emby"}
             ]
         }
     ]
