@@ -236,7 +236,8 @@
                 { "id": "urnetwork", "name": "URnetwork dVPN" },
                 { "id": "duckduckgo", "name": "DuckDuckGo VPN" },
                 { "id": "nymvpn", "name": "NymVPN" },
-				{ "id": "tor_vpn", "name": "Tor VPN" }
+				{ "id": "tor_vpn", "name": "Tor VPN" },
+				{ "id": "airvpn", "name": "AirVPN" )
             ]
         },
         {
@@ -291,7 +292,8 @@
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
-                { "id": "osmand", "name": "OsmAnd" }
+                { "id": "osmand", "name": "OsmAnd" },
+				{ "id": "comaps", "name": "CoMaps" }
             ]
         },
         {
