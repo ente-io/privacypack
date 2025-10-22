@@ -214,6 +214,7 @@
                 { "id": "f_droid", "name": "F-Droid" },
                 { "id": "aurora_store", "name": "Aurora Store" },
                 { "id": "obtainium", "name": "Obtainium" }
+				{ "id": "izzyondroid", "name": "IzzyOnDroid" }
             ]
         },
         {
