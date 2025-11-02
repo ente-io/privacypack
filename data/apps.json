@@ -122,8 +122,7 @@
                 { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
-                { "id": "joplin", "name": "Joplin" },
-				{ "id": "trilium", "name": "Trilium" }
+                { "id": "joplin", "name": "Joplin" }
             ]
         },
         {
