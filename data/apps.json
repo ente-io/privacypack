@@ -122,7 +122,8 @@
                 { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
-                { "id": "joplin", "name": "Joplin" }
+                { "id": "joplin", "name": "Joplin" },
+				{ "id": "trilium", "name": "Trilium" }
             ]
         },
         {
@@ -319,7 +320,6 @@
             ],
             "private_alternatives": [
                 { "id": "matrix", "name": "Matrix" }
-                { "id": "mastodon", "name": "Mastodon" }
             ]
         },
         {
@@ -335,7 +335,7 @@
                 { "id": "nextdns", "name": "NextDNS" },
                 { "id": "adguard", "name": "AdGuard DNS" },
                 { "id": "quad9", "name": "Quad9 DNS" },
-                { "id": "mullvad_dns", "name": "Mullvad DNS" }
+                { "id": "mullvad_dns", "name": "Mullvad DNS" },
                 { "id": "pihole", "name": "Pi-hole" }
             ]
         },
@@ -387,7 +387,7 @@
 				{ "id": "disney_plus", "name": "Disney+" }
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
                 { "id": "emby", "name": "emby" }
             ]
         }
