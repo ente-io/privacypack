@@ -16,8 +16,10 @@
                 { "id": "tuta_mail", "name": "Tuta Mail" },
                 { "id": "posteo", "name": "Posteo" },
                 { "id": "migadu", "name": "Migadu" },
-		        { "id": "startmail", "name": "StartMail" },
-                { "id": "disroot_webmail", "name": "Disroot webmail" }
+		            { "id": "startmail", "name": "StartMail" },
+                { "id": "disroot_webmail", "name": "Disroot webmail" },
+                { "id": "Fastmail", "name": "fastmail" },
+                { "id": "Purelymail", "name": "purelymail" }
             ]
         },
         {
@@ -309,7 +311,7 @@
                 { "id": "apertium", "name": "Apertium" },
                 { "id": "mozilla_translate", "name": "Mozilla Translate" },
                 { "id": "kagi_translate", "name": "Kagi Translate" }
-    
+
             ]
         },
         {
