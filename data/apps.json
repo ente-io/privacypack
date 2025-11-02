@@ -30,6 +30,7 @@
                 { "id": "dropbox", "name": "Dropbox" }
             ],
             "private_alternatives": [
+				{ "id": "jottacloud", "name": "Jottacloud" },
                 { "id": "ente_photos", "name": "Ente Photos" },
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "immich", "name": "Immich" },
