@@ -64,7 +64,8 @@
                 { "id": "chrome", "name": "Chrome" },
                 { "id": "safari", "name": "Safari" },
                 { "id": "edge", "name": "Edge" },
-                { "id": "opera", "name": "Opera" }
+                { "id": "opera", "name": "Opera" },
+                { "id": "opera_gx", "name": "Opera GX" }
             ],
             "private_alternatives": [
                 { "id": "zen_browser", "name": "Zen Browser" },
@@ -81,7 +82,8 @@
                 { "id": "orion", "name": "Orion" },
                 { "id": "waterfox", "name": "Waterfox" },
                 { "id": "ironfox", "name": "IronFox" },
-                { "id": "duckduckgo", "name": "DuckDuckGo Browser" }
+                { "id": "duckduckgo", "name": "DuckDuckGo Browser" },
+				{ "id": "ungoogled_chromium", "name": "Ungoogled Chromium"}
             ]
         },
         {
@@ -124,7 +126,8 @@
                 { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
-                { "id": "joplin", "name": "Joplin" }
+                { "id": "joplin", "name": "Joplin" },
+                { "id": "physical_notes", "name": "Physical Notepad" }
             ]
         },
         {
@@ -201,7 +204,8 @@
                 { "id": "mailbox", "name": "mailbox" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
                 { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
-                { "id": "radicale", "name": "Radicale" }
+                { "id": "radicale", "name": "Radicale" },
+                { "id": "physical_calendar", "name": "Physical Calendar" }
             ]
         },
         {
@@ -261,7 +265,8 @@
                 { "id": "ppq", "name": "PayPerQ" },
                 { "id": "routstr", "name": "Routstr" },
                 { "id": "duckai", "name": "Duck.ai" },
-                { "id": "kagi_assistant", "name": "Kagi Assistant" }
+                { "id": "kagi_assistant", "name": "Kagi Assistant" },
+                { "id": "no_ai", "name": "No AI" }
             ]
         },
         {
@@ -301,7 +306,8 @@
             "mainstream_apps": [
                 { "id": "google_translate", "name": "Google Translate" },
                 { "id": "apple_translate", "name": "Apple Translate" },
-                { "id": "deepl", "name": "DeepL" }
+                { "id": "deepl", "name": "DeepL" },
+                { "id": "microsoft_translator", "name": "Microsoft Translator" }
             ],
             "private_alternatives": [
                 { "id": "libretranslate", "name": "LibreTranslate" },
@@ -342,7 +348,8 @@
             "order": 19,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
-                { "id": "macos", "name": "macOS" }
+                { "id": "macos", "name": "macOS" },
+                { "id": "chrome_os", "name": "ChromeOS" }
             ],
             "private_alternatives": [
                 { "id": "arch_linux", "name": "Arch Linux" },
@@ -356,7 +363,12 @@
                 { "id": "openmandriva", "name": "OpenMandriva" },
                 { "id": "nixos", "name": "NixOS" },
                 { "id": "tiger_os", "name": "Tiger OS" },
-				        { "id": "opensuse", "name": "OpenSUSE" }
+				{ "id": "opensuse", "name": "OpenSUSE" },
+				{ "id": "endeavour_os", "name": "EndeavourOS" },
+				{ "id": "zorin_os", "name": "ZorinOS" },
+				{ "id": "gentoo", "name": "Gentoo" },
+				{ "id": "nobara", "name": "Nobara" },
+				{ "id": "bazzite", "name": "Bazzite" }
             ]
         },
         {
@@ -382,7 +394,8 @@
 				{ "id": "hbo_max", "name": "HBO Max" },
 				{ "id": "prime_video", "name": "Prime Video" },
 				{ "id": "paramount_plus", "name": "Paramount+" },
-				{ "id": "disney_plus", "name": "Disney+" }
+				{ "id": "disney_plus", "name": "Disney+" },
+				{ "id": "apple_tv_plus", "name": "Apple TV+" }
             ],
             "private_alternatives": [
                 { "id": "jellyfin", "name": "Jellyfin" }
