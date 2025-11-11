@@ -168,6 +168,7 @@
                 { "id": "keepass", "name": "KeePass" },
                 { "id": "keevault", "name": "Kee Vault" },
                 { "id": "aliasvault", "name": "AliasVault" },
+                { "id": "gopass", "name": "Gopass" },
                 { "id": "vaultwarden", "name": "Vaultwarden" }
             ]
         },
