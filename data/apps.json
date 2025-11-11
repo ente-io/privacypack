@@ -320,7 +320,8 @@
             "order": 17,
             "mainstream_apps": [
                 { "id": "discord", "name": "Discord" },
-                { "id": "guilded", "name": "Guilded" }
+                { "id": "guilded", "name": "Guilded" },
+                { "id": "reddit", "name": "Reddit" }
             ],
             "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
         },
