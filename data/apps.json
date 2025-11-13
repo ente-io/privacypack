@@ -322,7 +322,9 @@
                 { "id": "discord", "name": "Discord" },
                 { "id": "guilded", "name": "Guilded" }
             ],
-            "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
+            "private_alternatives": [
+                { "id": "matrix", "name": "Matrix" }
+            ]
         },
         {
             "name": "DNS",
@@ -337,7 +339,8 @@
                 { "id": "nextdns", "name": "NextDNS" },
                 { "id": "adguard", "name": "AdGuard DNS" },
                 { "id": "quad9", "name": "Quad9 DNS" },
-                { "id": "mullvad_dns", "name": "Mullvad DNS" }
+                { "id": "mullvad_dns", "name": "Mullvad DNS" },
+                { "id": "pihole", "name": "Pi-hole" }
             ]
         },
         {
@@ -388,7 +391,8 @@
 				{ "id": "disney_plus", "name": "Disney+" }
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
+                { "id": "emby", "name": "emby" }
             ]
         }
         ,
