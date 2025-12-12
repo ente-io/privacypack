@@ -400,7 +400,8 @@
                 { "id": "postman", "name": "Postman" }
             ],
             "private_alternatives": [
-                { "id": "bruno", "name": "Bruno" }
+                { "id": "bruno", "name": "Bruno" },
+                { "id": "hoppscotch", "name": "Hoppscotch" }
             ]
         }
     ]
