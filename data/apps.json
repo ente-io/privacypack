@@ -311,7 +311,8 @@
                 { "id": "translatelocally", "name": "TranslateLocally" },
                 { "id": "apertium", "name": "Apertium" },
                 { "id": "mozilla_translate", "name": "Mozilla Translate" },
-                { "id": "kagi_translate", "name": "Kagi Translate" }
+                { "id": "kagi_translate", "name": "Kagi Translate" },
+				{ "id": "translateyou", "name": "TranslateYou"}
     
             ]
         },
@@ -323,7 +324,10 @@
                 { "id": "guilded", "name": "Guilded" },
                 { "id": "slack", "name": "Slack" }
             ],
-            "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
+			"private_alternatives": [
+				{ "id": "matrix", "name": "Matrix" },
+				{ "id": "revolt", "name": "Revolt" }
+			]
         },
         {
             "name": "DNS",
