@@ -93,7 +93,8 @@
                 { "id": "messenger", "name": "Messenger" },
                 { "id": "telegram", "name": "Telegram" },
                 { "id": "imessage", "name": "iMessage" },
-                { "id": "google_messages", "name": "Google Messages" }
+                { "id": "google_messages", "name": "Google Messages" },
+				{ "id": "google_chat", "name": "Google Chat" }
             ],
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
