@@ -323,7 +323,10 @@
                 { "id": "guilded", "name": "Guilded" },
                 { "id": "slack", "name": "Slack" }
             ],
-            "private_alternatives": [{ "id": "matrix", "name": "Matrix" }]
+            "private_alternatives": [
+				{ "id": "matrix", "name": "Matrix" }
+				{ "id": "zilip", "name": "Zulip" }
+			]
         },
         {
             "name": "DNS",
