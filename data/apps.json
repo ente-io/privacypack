@@ -292,6 +292,7 @@
                 { "id": "apple_maps", "name": "Apple Maps" }
             ],
             "private_alternatives": [
+                { "id": "comaps", "name": "CoMaps" },
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
