@@ -428,13 +428,14 @@
             "order": 24,
             "mainstream_apps": [
                 { "id": "google_docs", "name": "Google Docs" },
+                { "id": "google_sheets", "name": "Google Sheets" },
                 { "id": "microsoft_office", "name": "Microsoft Office" }
             ],
             "private_alternatives": [
                 { "id": "cryptpad", "name": "CryptPad" },
                 { "id": "libreoffice", "name": "LibreOffice" },
-                { "id": "ddocs", "name": "DDocs" },
-                { "id": "onlyoffice", "name": "OnlyOffice" }
+                { "id": "onlyoffice", "name": "OnlyOffice" },
+                { "id": "proton_docs", "name": "Proton Docs" }
             ]
         }
     ]
