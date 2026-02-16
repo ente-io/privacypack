@@ -364,7 +364,8 @@
                 { "id": "openmandriva", "name": "OpenMandriva" },
                 { "id": "nixos", "name": "NixOS" },
                 { "id": "tiger_os", "name": "Tiger OS" },
-				        { "id": "opensuse", "name": "OpenSUSE" }
+				{ "id": "opensuse", "name": "OpenSUSE" },
+				{ "id":"zorin_os", "name": "Zorin OS" }
             ]
         },
         {
