@@ -190,6 +190,7 @@
                 { "id": "1password", "name": "1Password" },
                 { "id": "vaultwarden", "name": "Vaultwarden" },
                 { "id": "stratum", "name": "Stratum" }
+                { "id": "2fas_auth", "name": "2FAS Auth" }
             ]
         },
         {
@@ -362,7 +363,6 @@
                 { "id": "ubuntu", "name": "Ubuntu" },
                 { "id": "debian", "name": "Debian" },
                 { "id": "pop_os", "name": "Pop!_OS" },
-                { "id": "kali_linux", "name": "Kali Linux"},
                 { "id": "openmandriva", "name": "OpenMandriva" },
                 { "id": "nixos", "name": "NixOS" },
                 { "id": "tiger_os", "name": "Tiger OS" },
@@ -392,10 +392,13 @@
 				{ "id": "hbo_max", "name": "HBO Max" },
 				{ "id": "prime_video", "name": "Prime Video" },
 				{ "id": "paramount_plus", "name": "Paramount+" },
-				{ "id": "disney_plus", "name": "Disney+" }
+				{ "id": "disney_plus", "name": "Disney+" },
+				{ "id": "youtube", "name": "Youtube" }
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
+				{ "id": "newpipe", "name": "Newpipe" },
+				{ "id": "grayjay", "name": "Grayjay" }
             ]
         }
         ,
