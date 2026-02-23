@@ -391,10 +391,13 @@
 				{ "id": "hbo_max", "name": "HBO Max" },
 				{ "id": "prime_video", "name": "Prime Video" },
 				{ "id": "paramount_plus", "name": "Paramount+" },
-				{ "id": "disney_plus", "name": "Disney+" }
+				{ "id": "disney_plus", "name": "Disney+" },
+				{ "id": "youtube", "name": "Youtube" }
             ],
             "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" }
+                { "id": "jellyfin", "name": "Jellyfin" },
+				{ "id": "newpipe", "name": "Newpipe" },
+				{ "id": "grayjay", "name": "Grayjay" }
             ]
         }
         ,
