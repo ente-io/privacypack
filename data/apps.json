@@ -381,29 +381,49 @@
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
         },
-                {
-            "name": "Entertainment",
-            "order": 21,
-            "mainstream_apps": [
-                { "id": "plex", "name": "Plex" },
-                { "id": "netflix", "name": "Netflix" },
-				{ "id": "hulu", "name": "Hulu" },
-				{ "id": "hbo_max", "name": "HBO Max" },
-				{ "id": "prime_video", "name": "Prime Video" },
-				{ "id": "paramount_plus", "name": "Paramount+" },
-				{ "id": "disney_plus", "name": "Disney+" },
-				{ "id": "youtube", "name": "Youtube" }
-            ],
-            "private_alternatives": [
-                { "id": "jellyfin", "name": "Jellyfin" },
-				{ "id": "newpipe", "name": "Newpipe" },
-				{ "id": "grayjay", "name": "Grayjay" }
-            ]
-        }
-        ,
+        {
+          "name": "Entertainment",
+          "order": 21,
+          "mainstream_apps": [
+            { "id": "plex", "name": "Plex" },
+            { "id": "netflix", "name": "Netflix" },
+            { "id": "hulu", "name": "Hulu" },
+            { "id": "hbo_max", "name": "HBO Max" },
+            { "id": "prime_video", "name": "Prime Video" },
+            { "id": "paramount_plus", "name": "Paramount+" },
+            { "id": "disney_plus", "name": "Disney+" },
+            { "id": "youtube", "name": "Youtube" }
+          ],
+          "private_alternatives": [
+            { "id": "jellyfin", "name": "Jellyfin" },
+            { "id": "newpipe", "name": "Newpipe" },
+            { "id": "grayjay", "name": "Grayjay" }
+          ]
+        },
+        {
+          "name": "Music",
+          "order": 22,
+          "mainstream_apps": [
+            { "id": "youtube_music", "name": "Youtube Music" },
+            { "id": "soundcloud", "name": "SoundCloud" },
+            { "id": "apple_music", "name": "Apple Music" },
+            { "id": "amazon_music", "name": "Amazon Music" },
+            { "id": "deezer", "name": "Deezer" },
+            { "id": "pandora", "name": "Pandora" },
+            { "id": "spotify", "name": "Spotify" }
+          ],
+          "private_alternatives": [
+            { "id": "musify", "name": "Musify" },
+            { "id": "auxio", "name": "Auxio" },
+            { "id": "symphony", "name": "Symphony" },
+            { "id": "navidrome", "name": "Navidrome" },
+            { "id": "jellyfin", "name": "Jellyfin" },
+            { "id": "spotube", "name": "Spotube" }
+          ]
+        },
         {
             "name": "API Testing",
-            "order": 22,
+            "order": 23,
             "mainstream_apps": [
                 { "id": "postman", "name": "Postman" }
             ],
