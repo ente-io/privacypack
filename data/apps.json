@@ -261,6 +261,7 @@
                 { "id": "perplexity", "name": "Perplexity" }
             ],
             "private_alternatives": [
+                { "id": "brave_leo", "name": "Brave Leo" },
                 { "id": "maple_ai", "name": "Maple AI" },
                 { "id": "ollama", "name": "Ollama" },
                 { "id": "lumo", "name": "Lumo" },
@@ -311,6 +312,7 @@
                 { "id": "deepl", "name": "DeepL" }
             ],
             "private_alternatives": [
+                { "id": "brave_translate", "name": "Brave Translate" },
                 { "id": "libretranslate", "name": "LibreTranslate" },
                 { "id": "translatelocally", "name": "TranslateLocally" },
                 { "id": "apertium", "name": "Apertium" },
@@ -356,6 +358,9 @@
                 { "id": "macos", "name": "macOS" }
             ],
             "private_alternatives": [
+                { "id": "secureblue", "name": "secureblue" },
+                { "id": "tails", "name": "Tails" },
+                { "id": "whonix", "name": "Whonix" },
                 { "id": "arch_linux", "name": "Arch Linux" },
                 { "id": "linux_mint", "name": "Linux Mint" },
                 { "id": "qubes_os", "name": "Qubes OS" },
@@ -412,6 +417,35 @@
             "private_alternatives": [
                 { "id": "bruno", "name": "Bruno" },
                 { "id": "hoppscotch", "name": "Hoppscotch" }
+            ]
+        },
+        {
+            "name": "Video Conferencing",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "zoom", "name": "Zoom" },
+                { "id": "google_meet", "name": "Google Meet" },
+                { "id": "microsoft_teams", "name": "Microsoft Teams" },
+                { "id": "webex", "name": "Webex" }
+            ],
+            "private_alternatives": [
+                { "id": "brave_talk", "name": "Brave Talk" },
+                { "id": "signal_video", "name": "Signal Video" }
+            ]
+        },
+        {
+            "name": "Office Suite",
+            "order": 24,
+            "mainstream_apps": [
+                { "id": "google_docs", "name": "Google Docs" },
+                { "id": "google_sheets", "name": "Google Sheets" },
+                { "id": "microsoft_office", "name": "Microsoft Office" }
+            ],
+            "private_alternatives": [
+                { "id": "cryptpad", "name": "CryptPad" },
+                { "id": "libreoffice", "name": "LibreOffice" },
+                { "id": "onlyoffice", "name": "OnlyOffice" },
+                { "id": "proton_docs", "name": "Proton Docs" }
             ]
         }
     ]
