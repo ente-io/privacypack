@@ -143,6 +143,7 @@
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
                 { "id": "filen", "name": "Filen" },
+                { "id": "ik-kdrive", "name": "Infomaniak kDrive" },
                 { "id": "fileverse", "name": "Fileverse" },
                 { "id": "jottacloud", "name": "Jottacloud" },
                 { "id": "cryptomator", "name": "Cryptomator" },
@@ -267,7 +268,8 @@
                 { "id": "ppq", "name": "PayPerQ" },
                 { "id": "routstr", "name": "Routstr" },
                 { "id": "duckai", "name": "Duck.ai" },
-                { "id": "kagi_assistant", "name": "Kagi Assistant" }
+                { "id": "kagi_assistant", "name": "Kagi Assistant" },
+                { "id": "ik-euria", "name": "Euria" }
             ]
         },
         {
