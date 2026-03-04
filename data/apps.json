@@ -267,7 +267,8 @@
                 { "id": "ppq", "name": "PayPerQ" },
                 { "id": "routstr", "name": "Routstr" },
                 { "id": "duckai", "name": "Duck.ai" },
-                { "id": "kagi_assistant", "name": "Kagi Assistant" }
+                { "id": "kagi_assistant", "name": "Kagi Assistant" },
+                { "id": "brave_leo", "name": "Brave Leo" }
             ]
         },
         {
