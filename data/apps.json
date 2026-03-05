@@ -38,7 +38,8 @@
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
                 { "id": "zeitkapsl", "name": "zeitkapsl" },
                 { "id": "filen", "name": "Filen" },
-                { "id": "photoprism", "name": "PhotoPrism" }
+                { "id": "photoprism", "name": "PhotoPrism" },
+				{ "id": "fossify_gallery", "name": "Fossify Gallery" }
             ]
         },
         {
@@ -104,7 +105,8 @@
                 { "id": "briar", "name": "Briar" },
                 { "id": "dino", "name": "Dino" },
                 { "id": "molly", "name": "Molly" },
-                { "id": "rocket_chat", "name": "Rocket Chat" }
+                { "id": "rocket_chat", "name": "Rocket Chat" },
+				{ "id": "fossify_messages", "name": "Fossify messages"}
             ]
         },
         {
@@ -126,7 +128,8 @@
                 { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
-                { "id": "joplin", "name": "Joplin" }
+                { "id": "joplin", "name": "Joplin" },
+				{ "id" : "fossify_notes", "name": "Fossify Notes"}
             ]
         },
         {
@@ -206,7 +209,8 @@
                 { "id": "mailbox", "name": "mailbox" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
                 { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
-                { "id": "radicale", "name": "Radicale" }
+                { "id": "radicale", "name": "Radicale" },
+				{ "id": "fossify_calendar", "name": "Fossify Calendar"}
             ]
         },
         {
