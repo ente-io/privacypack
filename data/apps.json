@@ -105,7 +105,8 @@
                 { "id": "briar", "name": "Briar" },
                 { "id": "dino", "name": "Dino" },
                 { "id": "molly", "name": "Molly" },
-                { "id": "rocket_chat", "name": "Rocket Chat" }
+                { "id": "rocket_chat", "name": "Rocket Chat" },
+				{ "id": "fossify_messages", "name": "Fossify messages"}
             ]
         },
         {
