@@ -55,7 +55,8 @@
                 { "id": "startpage", "name": "Startpage" },
                 { "id": "searxng", "name": "SearXNG" },
                 { "id": "mojeek", "name": "Mojeek" },
-                { "id": "qwant", "name": "Qwant" }
+                { "id": "qwant", "name": "Qwant" },
+                { "id": "murena_search", "name": "Murena Search" }
             ]
         },
         {
@@ -417,4 +418,3 @@
         }
     ]
 }
-
