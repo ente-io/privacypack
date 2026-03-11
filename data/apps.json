@@ -182,15 +182,16 @@
                 { "id": "apple_passwords", "name": "Apple Passwords" }
             ],
             "private_alternatives": [
-                { "id": "ente_auth", "name": "Ente Auth" },
-                { "id": "aegis_auth", "name": "Aegis Auth" },
-                { "id": "proton_auth", "name": "Proton Auth" },
-                { "id": "bitwarden_auth", "name": "Bitwarden Auth" },
-                { "id": "yubico_auth", "name": "Yubico Authenticator" },
-                { "id": "1password", "name": "1Password" },
-                { "id": "vaultwarden", "name": "Vaultwarden" },
-                { "id": "stratum", "name": "Stratum" },
+				{ "id": "1password", "name": "1Password" },
+				{ "id": "2fa", "name": "2fa" },
                 { "id": "2fas_auth", "name": "2FAS Auth" }
+                { "id": "aegis_auth", "name": "Aegis Auth" },
+				{ "id": "bitwarden_auth", "name": "Bitwarden Auth" },
+                { "id": "ente_auth", "name": "Ente Auth" },
+                { "id": "proton_auth", "name": "Proton Auth" },
+				{ "id": "stratum", "name": "Stratum" },
+				{ "id": "vaultwarden", "name": "Vaultwarden" },
+                { "id": "yubico_auth", "name": "Yubico Authenticator" },
             ]
         },
         {
@@ -202,11 +203,12 @@
                 { "id": "apple_calendar", "name": "Apple Calendar" }
             ],
             "private_alternatives": [
-                { "id": "proton_calendar", "name": "Proton Calendar" },
+				{ "id": "etar", "name": "Etar" },
                 { "id": "mailbox", "name": "mailbox" },
+				{ "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
+				{ "id": "proton_calendar", "name": "Proton Calendar" },
+				{ "id": "radicale", "name": "Radicale" }
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
-                { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
-                { "id": "radicale", "name": "Radicale" }
             ]
         },
         {
