@@ -56,7 +56,7 @@
                 { "id": "searxng", "name": "SearXNG" },
                 { "id": "mojeek", "name": "Mojeek" },
                 { "id": "qwant", "name": "Qwant" },
-                { "id": "murena_search", "name": "Murena Search" }
+                { "id": "murena_find", "name": "Murena Find" }
             ]
         },
         {
