@@ -384,7 +384,7 @@
                 { "id": "lineage_os", "name": "LineageOS" }
             ]
         },
-                {
+        {
             "name": "Entertainment",
             "order": 21,
             "mainstream_apps": [
@@ -402,8 +402,7 @@
 				{ "id": "newpipe", "name": "Newpipe" },
 				{ "id": "grayjay", "name": "Grayjay" }
             ]
-        }
-        ,
+        },
         {
             "name": "API Testing",
             "order": 22,
@@ -414,6 +413,26 @@
                 { "id": "bruno", "name": "Bruno" },
                 { "id": "hoppscotch", "name": "Hoppscotch" }
             ]
+		},
+		{
+            "name": "Office Suite",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "Microsoft_365", "name": "Microsoft 365" },
+                { "id": "Google_Workspace", "name": "Google Workspace" },
+                { "id": "Apple_iWork", "name": "Apple iWork" },
+                { "id": "Zoho_Office", "name": "Zoho Office" }
+				{ "id": "WPS", "name": "WPS Office" }
+				{ "id": "MobiOffice", "name": "MobiOffice" }
+				{ "id": "Polaris_Office", "name": "Polaris Office" }
+            ],
+            "private_alternatives": [
+                { "id": "LibreOffice", "name": "LibreOffice" },
+                { "id": "Collabora", "name": "Collabora" },
+                { "id": "OnlyOffice", "name": "OnlyOffice" },
+                { "id": "OpenOffice", "name": "OpenOffice" },
+                { "id": "CryptPad", "name": "CryptPad" },
+             ]
         }
     ]
 }
