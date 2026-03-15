@@ -403,18 +403,5 @@
 				{ "id": "grayjay", "name": "Grayjay" }
             ]
         }
-        ,
-        {
-            "name": "API Testing",
-            "order": 22,
-            "mainstream_apps": [
-                { "id": "postman", "name": "Postman" }
-            ],
-            "private_alternatives": [
-                { "id": "bruno", "name": "Bruno" },
-                { "id": "hoppscotch", "name": "Hoppscotch" }
-            ]
-        }
     ]
 }
-
