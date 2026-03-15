@@ -381,7 +381,8 @@
             "private_alternatives": [
                 { "id": "graphene_os", "name": "GrapheneOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
-                { "id": "lineage_os", "name": "LineageOS" }
+                { "id": "lineage_os", "name": "LineageOS" },
+                { "id": "e_os", "name": "/e/OS" }
             ]
         },
                 {
