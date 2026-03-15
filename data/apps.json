@@ -55,7 +55,8 @@
                 { "id": "startpage", "name": "Startpage" },
                 { "id": "searxng", "name": "SearXNG" },
                 { "id": "mojeek", "name": "Mojeek" },
-                { "id": "qwant", "name": "Qwant" }
+                { "id": "qwant", "name": "Qwant" },
+                { "id": "murena_find", "name": "Murena Find" }
             ]
         },
         {
@@ -93,7 +94,8 @@
                 { "id": "messenger", "name": "Messenger" },
                 { "id": "telegram", "name": "Telegram" },
                 { "id": "imessage", "name": "iMessage" },
-                { "id": "google_messages", "name": "Google Messages" }
+                { "id": "google_messages", "name": "Google Messages" },
+				{ "id": "google_chat", "name": "Google Chat" }
             ],
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
@@ -270,6 +272,8 @@
                 { "id": "duckai", "name": "Duck.ai" },
                 { "id": "kagi_assistant", "name": "Kagi Assistant" },
                 { "id": "ik-euria", "name": "Euria" }
+                { "id": "brave_leo", "name": "Brave Leo" },
+                { "id": "mistralai_lechat", "name": "LeChat" }
             ]
         },
         {
@@ -382,7 +386,8 @@
             "private_alternatives": [
                 { "id": "graphene_os", "name": "GrapheneOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
-                { "id": "lineage_os", "name": "LineageOS" }
+                { "id": "lineage_os", "name": "LineageOS" },
+                { "id": "e_os", "name": "/e/OS" }
             ]
         },
                 {
@@ -401,21 +406,9 @@
             "private_alternatives": [
                 { "id": "jellyfin", "name": "Jellyfin" },
 				{ "id": "newpipe", "name": "Newpipe" },
-				{ "id": "grayjay", "name": "Grayjay" }
-            ]
-        }
-        ,
-        {
-            "name": "API Testing",
-            "order": 22,
-            "mainstream_apps": [
-                { "id": "postman", "name": "Postman" }
-            ],
-            "private_alternatives": [
-                { "id": "bruno", "name": "Bruno" },
-                { "id": "hoppscotch", "name": "Hoppscotch" }
+				{ "id": "grayjay", "name": "Grayjay" },
+                { "id": "stremio", "name": "Stremio" }
             ]
         }
     ]
 }
-
