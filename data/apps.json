@@ -18,7 +18,8 @@
                 { "id": "migadu", "name": "Migadu" },
 		        { "id": "startmail", "name": "StartMail" },
                 { "id": "runbox", "name": "Runbox" },
-                { "id": "disroot_webmail", "name": "Disroot webmail" }
+                { "id": "disroot_webmail", "name": "Disroot webmail" },
+                { "id": "murena_workspace", "name": "Murena Email" }
             ]
         },
         {
@@ -38,7 +39,8 @@
                 { "id": "nextcloud_memories", "name": "Nextcloud Memories" },
                 { "id": "zeitkapsl", "name": "zeitkapsl" },
                 { "id": "filen", "name": "Filen" },
-                { "id": "photoprism", "name": "PhotoPrism" }
+                { "id": "photoprism", "name": "PhotoPrism" },
+                { "id": "murena_workspace", "name": "Murena Gallery" }
             ]
         },
         {
@@ -128,7 +130,8 @@
                 { "id": "nextcloud_notes", "name": "Nextcloud Notes" },
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
-                { "id": "joplin", "name": "Joplin" }
+                { "id": "joplin", "name": "Joplin" },
+                { "id": "murena_workspace", "name": "Murena Notes" }
             ]
         },
         {
@@ -149,7 +152,8 @@
                 { "id": "jottacloud", "name": "Jottacloud" },
                 { "id": "cryptomator", "name": "Cryptomator" },
                 { "id": "pcloud", "name": "pCloud" },
-                { "id": "syncthing", "name": "Syncthing" }
+                { "id": "syncthing", "name": "Syncthing" },
+                { "id": "murena_workspace", "name": "Murena Workspace" }
             ]
         },
         {
@@ -171,7 +175,8 @@
                 { "id": "keevault", "name": "Kee Vault" },
                 { "id": "aliasvault", "name": "AliasVault" },
                 { "id": "gopass", "name": "Gopass" },
-                { "id": "vaultwarden", "name": "Vaultwarden" }
+                { "id": "vaultwarden", "name": "Vaultwarden" },
+                { "id": "murena_workspace", "name": "Murena Passwords" }
             ]
         },
         {
@@ -208,7 +213,8 @@
                 { "id": "mailbox", "name": "mailbox" },
                 { "id": "tuta_calendar", "name": "Tuta Calendar" },
                 { "id": "nextcloud_calendar", "name": "Nextcloud Calendar" },
-                { "id": "radicale", "name": "Radicale" }
+                { "id": "radicale", "name": "Radicale" },
+                { "id": "murena_workspace", "name": "Murena Calendar" }
             ]
         },
         {
