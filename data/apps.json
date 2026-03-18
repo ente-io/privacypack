@@ -340,7 +340,9 @@
             ],
             "private_alternatives": [
                 { "id": "matrix", "name": "Matrix" },
-                { "id": "zulip", "name": "Zulip" }
+                { "id": "zulip", "name": "Zulip" },
+				{ "id": "stoat", "name": "Stoat" },
+				{ "id": "fluxer", "name": "Fluxer" }
             ]
         },
         {
@@ -413,7 +415,8 @@
                 { "id": "jellyfin", "name": "Jellyfin" },
 				{ "id": "newpipe", "name": "Newpipe" },
 				{ "id": "grayjay", "name": "Grayjay" },
-                { "id": "stremio", "name": "Stremio" }
+                { "id": "stremio", "name": "Stremio" },
+				{ "id": "libretube", "name": "Libretube" }
             ]
         }
     ]
