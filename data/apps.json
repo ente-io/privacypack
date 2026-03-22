@@ -398,26 +398,46 @@
                 { "id": "e_os", "name": "/e/OS" }
             ]
         },
-                {
+        {
             "name": "Entertainment",
             "order": 21,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 { "id": "netflix", "name": "Netflix" },
-				{ "id": "hulu", "name": "Hulu" },
-				{ "id": "hbo_max", "name": "HBO Max" },
-				{ "id": "prime_video", "name": "Prime Video" },
-				{ "id": "paramount_plus", "name": "Paramount+" },
-				{ "id": "disney_plus", "name": "Disney+" },
-				{ "id": "youtube", "name": "Youtube" }
+				        { "id": "hulu", "name": "Hulu" },
+				        { "id": "hbo_max", "name": "HBO Max" },
+				        { "id": "prime_video", "name": "Prime Video" },
+				        { "id": "paramount_plus", "name": "Paramount+" },
+				        { "id": "disney_plus", "name": "Disney+" },
+				        { "id": "youtube", "name": "Youtube" }
             ],
             "private_alternatives": [
                 { "id": "jellyfin", "name": "Jellyfin" },
-				{ "id": "newpipe", "name": "Newpipe" },
-				{ "id": "grayjay", "name": "Grayjay" },
+				        { "id": "newpipe", "name": "Newpipe" },
+				        { "id": "grayjay", "name": "Grayjay" },
                 { "id": "stremio", "name": "Stremio" },
-				{ "id": "libretube", "name": "Libretube" }
+				        { "id": "libretube", "name": "Libretube" }
             ]
+		    },
+		    {
+            "name": "Office Suite",
+            "order": 22,
+            "mainstream_apps": [
+                { "id": "Microsoft_365", "name": "Microsoft 365" },
+                { "id": "Google_Workspace", "name": "Google Workspace" },
+                { "id": "Apple_iWork", "name": "Apple iWork" },
+                { "id": "Zoho_Office", "name": "Zoho Office" },
+                { "id": "WPS", "name": "WPS Office" },
+                { "id": "MobiOffice", "name": "MobiOffice" },
+                { "id": "Polaris_Office", "name": "Polaris Office" }
+            ],
+            "private_alternatives": [
+                { "id": "LibreOffice", "name": "LibreOffice" },
+                { "id": "Collabora", "name": "Collabora" },
+                { "id": "OnlyOffice", "name": "OnlyOffice" },
+                { "id": "OpenOffice", "name": "OpenOffice" },
+                { "id": "CryptPad", "name": "CryptPad" }
+             ]
         }
     ]
 }
