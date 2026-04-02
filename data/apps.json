@@ -85,7 +85,8 @@
                 { "id": "orion", "name": "Orion" },
                 { "id": "waterfox", "name": "Waterfox" },
                 { "id": "ironfox", "name": "IronFox" },
-                { "id": "duckduckgo", "name": "DuckDuckGo Browser" }
+                { "id": "duckduckgo", "name": "DuckDuckGo Browser" },
+                { "id": "helium", "name": "Helium" }
             ]
         },
         {
