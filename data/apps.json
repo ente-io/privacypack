@@ -437,7 +437,8 @@
                 { "id": "Collabora", "name": "Collabora" },
                 { "id": "OnlyOffice", "name": "OnlyOffice" },
                 { "id": "OpenOffice", "name": "OpenOffice" },
-                { "id": "CryptPad", "name": "CryptPad" }
+                { "id": "CryptPad", "name": "CryptPad" },
+                { "id": "fileverse", "name": "Fileverse dDocs/dSheets"}
              ]
         }
     ]
