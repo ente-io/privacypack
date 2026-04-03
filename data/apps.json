@@ -69,6 +69,7 @@
                 { "id": "safari", "name": "Safari" },
                 { "id": "edge", "name": "Edge" },
                 { "id": "opera", "name": "Opera" }
+				{ "id": "operagx", "name": "Opera GX" }
             ],
             "private_alternatives": [
                 { "id": "zen_browser", "name": "Zen Browser" },
