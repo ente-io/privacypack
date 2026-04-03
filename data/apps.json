@@ -69,6 +69,7 @@
                 { "id": "safari", "name": "Safari" },
                 { "id": "edge", "name": "Edge" },
                 { "id": "opera", "name": "Opera" }
+				{ "id": "operagx", "name": "Opera GX" }
             ],
             "private_alternatives": [
                 { "id": "zen_browser", "name": "Zen Browser" },
@@ -133,6 +134,7 @@
                 { "id": "fileverse", "name": "DDocs.new" },
                 { "id": "joplin", "name": "Joplin" },
                 { "id": "murena_workspace", "name": "Murena Notes" }
+				{ "id": "signalnts", "name": "Signal Note to Self" }
             ]
         },
         {
@@ -231,6 +233,7 @@
                 { "id": "f_droid", "name": "F-Droid" },
                 { "id": "aurora_store", "name": "Aurora Store" },
                 { "id": "obtainium", "name": "Obtainium" }
+				{ "id": "applounge", "name": "App Lounge" }
             ]
         },
         {
@@ -439,6 +442,26 @@
                 { "id": "OpenOffice", "name": "OpenOffice" },
                 { "id": "CryptPad", "name": "CryptPad" },
                 { "id": "fileverse", "name": "Fileverse dDocs/dSheets"}
+             ]
+        },
+				    {
+            "name": "Music",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "spotify, "name": "Spotify" },
+                { "id": "ytmusic", "name": "YouTube Music" },
+                { "id": "applemusic", "name": "Apple Music" },
+                { "id": "soundcloud", "name": "Soundcloud" },
+                { "id": "amazonmusic", "name": "Amazon Music" },
+                { "id": "deezer", "name": "Deezer" },
+                { "id": "qobuz", "name": "Qobuz" },
+				{ "id": "tidal", "name": "Tidal" }
+            ],
+            "private_alternatives": [
+                { "id": "jellyfin", "name": "Jellyfin" },
+                { "id": "navidrome", "name": "Navidrome" },
+                { "id": "archivetune", "name": "ArchiveTune" },
+                { "id": "physical", "name": "Physical Media" }
              ]
         }
     ]
