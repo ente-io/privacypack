@@ -443,6 +443,26 @@
                 { "id": "CryptPad", "name": "CryptPad" },
                 { "id": "fileverse", "name": "Fileverse dDocs/dSheets"}
              ]
+        },
+				    {
+            "name": "Music",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "spotify, "name": "Spotify" },
+                { "id": "ytmusic", "name": "YouTube Music" },
+                { "id": "applemusic", "name": "Apple Music" },
+                { "id": "soundcloud", "name": "Soundcloud" },
+                { "id": "amazonmusic", "name": "Amazon Music" },
+                { "id": "deezer", "name": "Deezer" },
+                { "id": "qobuz", "name": "Qobuz" },
+				{ "id": "tidal", "name": "Tidal" }
+            ],
+            "private_alternatives": [
+                { "id": "jellyfin", "name": "Jellyfin" },
+                { "id": "navidrome", "name": "Navidrome" },
+                { "id": "archivetune", "name": "ArchiveTune" },
+                { "id": "physical", "name": "Physical Media" }
+             ]
         }
     ]
 }
