@@ -343,7 +343,8 @@
                 { "id": "matrix", "name": "Matrix" },
                 { "id": "zulip", "name": "Zulip" },
 				{ "id": "stoat", "name": "Stoat" },
-				{ "id": "fluxer", "name": "Fluxer" }
+				{ "id": "fluxer", "name": "Fluxer" },
+				{ "id": "gamevox", "name": "GameVox" }
             ]
         },
         {
