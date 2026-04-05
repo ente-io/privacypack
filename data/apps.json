@@ -40,7 +40,8 @@
                 { "id": "zeitkapsl", "name": "zeitkapsl" },
                 { "id": "filen", "name": "Filen" },
                 { "id": "photoprism", "name": "PhotoPrism" },
-                { "id": "murena_workspace", "name": "Murena Gallery" }
+                { "id": "murena_workspace", "name": "Murena Gallery" },
+                { "id": "megatech_photos", "name": "Megatech Photos" }
             ]
         },
         {
