@@ -132,7 +132,8 @@
                 { "id": "qownnotes", "name": "QOwnNotes" },
                 { "id": "fileverse", "name": "DDocs.new" },
                 { "id": "joplin", "name": "Joplin" },
-                { "id": "murena_workspace", "name": "Murena Notes" }
+                { "id": "murena_workspace", "name": "Murena Notes" },
+                { "id": "super_productivity", "name": "Super Productivity" }
             ]
         },
         {
