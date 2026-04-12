@@ -174,6 +174,7 @@
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
                 { "id": "keepass", "name": "KeePass" },
+                { "id": "keepassxc", "name": "KeePassXC" },
                 { "id": "keevault", "name": "Kee Vault" },
                 { "id": "aliasvault", "name": "AliasVault" },
                 { "id": "gopass", "name": "Gopass" },
@@ -199,7 +200,8 @@
                 { "id": "1password", "name": "1Password" },
                 { "id": "vaultwarden", "name": "Vaultwarden" },
                 { "id": "stratum", "name": "Stratum" },
-                { "id": "2fas_auth", "name": "2FAS Auth" }
+                { "id": "2fas_auth", "name": "2FAS Auth" },
+                { "id": "freeotp", "name": "FreeOTP" }
             ]
         },
         {
