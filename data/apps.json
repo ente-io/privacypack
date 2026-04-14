@@ -152,7 +152,6 @@
                 { "id": "ik-kdrive", "name": "Infomaniak kDrive" },
                 { "id": "fileverse", "name": "Fileverse" },
                 { "id": "jottacloud", "name": "Jottacloud" },
-                { "id": "cryptomator", "name": "Cryptomator" },
                 { "id": "pcloud", "name": "pCloud" },
                 { "id": "syncthing", "name": "Syncthing" },
                 { "id": "murena_workspace", "name": "Murena Workspace" }
@@ -442,6 +441,18 @@
                 { "id": "CryptPad", "name": "CryptPad" },
                 { "id": "fileverse", "name": "Fileverse dDocs/dSheets"}
              ]
+        },
+        	{
+            "name": "Data Encryption",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "no_vpn", "name": "No Encryption" }
+            ],
+            "private_alternatives": [
+                { "id": "cryptomator", "name": "Cryptomator" },
+                { "id": "veracrypt", "name": "VeraCrypt" }
+            ]
         }
+        
     ]
 }
