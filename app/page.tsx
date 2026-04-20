@@ -41,7 +41,7 @@ export default function Home() {
                     <a
                         href="https://ente.com/"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                     >
                         <Image
                             src="/ente.svg"

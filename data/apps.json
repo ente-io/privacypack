@@ -153,6 +153,7 @@
                 { "id": "fileverse", "name": "Fileverse" },
                 { "id": "jottacloud", "name": "Jottacloud" },
                 { "id": "cryptomator", "name": "Cryptomator" },
+                { "id": "ente_locker", "name": "Ente Locker" },
                 { "id": "pcloud", "name": "pCloud" },
                 { "id": "syncthing", "name": "Syncthing" },
                 { "id": "murena_workspace", "name": "Murena Workspace" }
@@ -245,6 +246,7 @@
             "private_alternatives": [
                 { "id": "mullvad_vpn", "name": "Mullvad VPN" },
                 { "id": "proton_vpn", "name": "Proton VPN" },
+                { "id": "brave_vpn", "name": "Brave VPN" },
                 { "id": "obscura_vpn", "name": "Obscura VPN" },
                 { "id": "ivpn", "name": "IVPN" },
                 { "id": "windscribe", "name": "Windscribe VPN" },
@@ -295,6 +297,7 @@
             ],
             "private_alternatives": [
                 { "id": "home_assistant", "name": "Home Assistant" },
+                { "id": "apple_homekit", "name": "Apple HomeKit" },
                 { "id": "openhab", "name": "OpenHAB" },
                 { "id": "domoticz", "name": "Domoticz" },
                 { "id": "iobroker", "name": "ioBroker" }
@@ -309,6 +312,7 @@
             ],
             "private_alternatives": [
                 { "id": "comaps", "name": "CoMaps" },
+                { "id": "apple_maps", "name": "Apple Maps" },
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
@@ -328,7 +332,8 @@
                 { "id": "translatelocally", "name": "TranslateLocally" },
                 { "id": "apertium", "name": "Apertium" },
                 { "id": "mozilla_translate", "name": "Mozilla Translate" },
-                { "id": "kagi_translate", "name": "Kagi Translate" }
+                { "id": "kagi_translate", "name": "Kagi Translate" },
+                { "id": "brave_translate", "name": "Brave Translate" }
             ]
         },
         {
@@ -356,11 +361,12 @@
             ],
             "private_alternatives": [
                 { "id": "controld", "name": "ControlD DNS" },
+                { "id": "cloudflare", "name": "Cloudflare DNS" },
                 { "id": "nextdns", "name": "NextDNS" },
                 { "id": "adguard", "name": "AdGuard DNS" },
                 { "id": "quad9", "name": "Quad9 DNS" },
                 { "id": "mullvad_dns", "name": "Mullvad DNS" },
-				{ "id": "opennic", "name": "OpenNIC" }
+                { "id": "opennic", "name": "OpenNIC" }
             ]
         },
         {
@@ -372,9 +378,11 @@
             ],
             "private_alternatives": [
                 { "id": "arch_linux", "name": "Arch Linux" },
+                { "id": "macos", "name": "macOS" },
                 { "id": "linux_mint", "name": "Linux Mint" },
                 { "id": "qubes_os", "name": "Qubes OS" },
                 { "id": "fedora", "name": "Fedora" },
+                { "id": "secureblue", "name": "secureblue" },
                 { "id": "ubuntu", "name": "Ubuntu" },
                 { "id": "debian", "name": "Debian" },
                 { "id": "pop_os", "name": "Pop!_OS" },
@@ -394,6 +402,7 @@
             ],
             "private_alternatives": [
                 { "id": "graphene_os", "name": "GrapheneOS" },
+                { "id": "ios", "name": "iOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" },
                 { "id": "e_os", "name": "/e/OS" }
