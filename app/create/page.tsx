@@ -101,6 +101,7 @@ export default function App() {
                         <a
                             href="https://github.com/ente-io/privacypack?tab=readme-ov-file#add-a-missing-app"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sm text-[#868686] underline decoration-[#525252] underline-offset-4 hover:text-white hover:decoration-white"
                         >
                             Add a missing app

@@ -38,7 +38,11 @@ export default function Home() {
             <div className="my-20 flex flex-col items-center gap-2">
                 <span className="text-xs text-[#aeaeae]">Toy by</span>
                 <div className="w-16">
-                    <a href="https://ente.com/" target="_blank">
+                    <a
+                        href="https://ente.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <Image
                             src="/ente.svg"
                             alt="Ente logo"
