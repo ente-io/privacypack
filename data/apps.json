@@ -371,8 +371,24 @@
             ]
         },
         {
-            "name": "DNS",
+            "name": "Video Conferencing",
             "order": 19,
+            "mainstream_apps": [
+                { "id": "zoom", "name": "Zoom" },
+                { "id": "google_meet", "name": "Google Meet" },
+                { "id": "microsoft_teams", "name": "Microsoft Teams" },
+                { "id": "webex", "name": "Webex" }
+            ],
+            "private_alternatives": [
+                { "id": "brave_talk", "name": "Brave Talk" },
+                { "id": "proton_meet", "name": "Proton Meet" },
+                { "id": "jitsi", "name": "Jitsi" },
+                { "id": "nextcloud_talk", "name": "Nextcloud Talk" }
+            ]
+        },
+        {
+            "name": "DNS",
+            "order": 20,
             "mainstream_apps": [
                 { "id": "isp_dns", "name": "ISP DNS" },
                 { "id": "google_search", "name": "Google DNS" },
@@ -390,7 +406,7 @@
         },
         {
             "name": "Computer OS",
-            "order": 20,
+            "order": 21,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
                 { "id": "macos", "name": "macOS" }
@@ -414,7 +430,7 @@
         },
         {
             "name": "Phone OS",
-            "order": 21,
+            "order": 22,
             "mainstream_apps": [
                 { "id": "android", "name": "Android" },
                 { "id": "ios", "name": "iOS" }
@@ -429,7 +445,7 @@
         },
         {
             "name": "Entertainment",
-            "order": 22,
+            "order": 23,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 { "id": "netflix", "name": "Netflix" },
@@ -450,7 +466,7 @@
         },
         {
             "name": "Office Suite",
-            "order": 23,
+            "order": 24,
             "mainstream_apps": [
                 { "id": "Microsoft_365", "name": "Microsoft 365" },
                 { "id": "Google_Workspace", "name": "Google Workspace" },
