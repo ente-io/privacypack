@@ -125,6 +125,7 @@
                 { "id": "standard_notes", "name": "Standard Notes" },
                 { "id": "memos", "name": "Memos" },
                 { "id": "notesnook", "name": "Notesnook" },
+                { "id": "signal", "name": "Signal Note to Self" },
                 { "id": "obsidian", "name": "Obsidian" },
                 { "id": "logseq", "name": "Logseq" },
                 { "id": "anytype", "name": "Anytype" },
