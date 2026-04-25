@@ -284,7 +284,8 @@
                 { "id": "kagi_assistant", "name": "Kagi Assistant" },
                 { "id": "ik-euria", "name": "Euria" },
                 { "id": "brave_leo", "name": "Brave Leo" },
-                { "id": "mistralai_lechat", "name": "LeChat" }
+                { "id": "mistralai_lechat", "name": "LeChat" },
+                { "id": "ensu", "name": "Ensu" }
             ]
         },
         {
@@ -388,8 +389,38 @@
             ]
         },
         {
-            "name": "DNS",
+            "name": "Payments",
             "order": 20,
+            "mainstream_apps": [
+                { "id": "paypal", "name": "PayPal" },
+                { "id": "venmo", "name": "Venmo" },
+                { "id": "cash_app", "name": "Cash App" },
+                { "id": "apple_pay", "name": "Apple Pay" },
+                { "id": "google_pay", "name": "Google Pay" }
+            ],
+            "private_alternatives": [
+                { "id": "cash", "name": "Cash" },
+                { "id": "monero", "name": "Monero" },
+                { "id": "zcash", "name": "Zcash" }
+            ]
+        },
+        {
+            "name": "Crypto Wallets",
+            "order": 21,
+            "mainstream_apps": [
+                { "id": "coinbase_wallet", "name": "Coinbase Wallet" },
+                { "id": "metamask", "name": "MetaMask" },
+                { "id": "phantom", "name": "Phantom" }
+            ],
+            "private_alternatives": [
+                { "id": "brave_wallet", "name": "Brave Wallet" },
+                { "id": "cake_wallet", "name": "Cake Wallet" },
+                { "id": "zodl", "name": "ZODL" }
+            ]
+        },
+        {
+            "name": "DNS",
+            "order": 22,
             "mainstream_apps": [
                 { "id": "isp_dns", "name": "ISP DNS" },
                 { "id": "google_search", "name": "Google DNS" },
@@ -407,7 +438,7 @@
         },
         {
             "name": "Computer OS",
-            "order": 21,
+            "order": 23,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
                 { "id": "macos", "name": "macOS" }
@@ -431,7 +462,7 @@
         },
         {
             "name": "Phone OS",
-            "order": 22,
+            "order": 24,
             "mainstream_apps": [
                 { "id": "android", "name": "Android" },
                 { "id": "ios", "name": "iOS" }
@@ -446,7 +477,7 @@
         },
         {
             "name": "Entertainment",
-            "order": 23,
+            "order": 25,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 { "id": "netflix", "name": "Netflix" },
@@ -467,7 +498,7 @@
         },
         {
             "name": "Office Suite",
-            "order": 24,
+            "order": 26,
             "mainstream_apps": [
                 { "id": "Microsoft_365", "name": "Microsoft 365" },
                 { "id": "Google_Workspace", "name": "Google Workspace" },

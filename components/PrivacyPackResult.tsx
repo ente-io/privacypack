@@ -14,6 +14,43 @@ interface PrivacyPackResultProps {
 }
 
 const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
+    const layout =
+        pack.length <= 12
+            ? {
+                  gridTop: "200px",
+                  gridTemplateColumns: "repeat(3, 1fr)",
+                  columnGap: "110px",
+                  rowGap: "56px",
+                  cardClass: "h-[270px] w-[380px] pt-6",
+                  logoClass: "h-[150px] w-[150px]",
+                  textClass: "max-w-[150px] text-[28px]",
+                  arrowClass: "-mt-20",
+                  arrowSize: 42,
+              }
+            : pack.length <= 20
+              ? {
+                    gridTop: "200px",
+                    gridTemplateColumns: "repeat(4, 1fr)",
+                    columnGap: "72px",
+                    rowGap: "76px",
+                    cardClass: "h-[190px] w-[290px] pt-6",
+                    logoClass: "h-[120px] w-[120px]",
+                    textClass: "max-w-[120px] text-[25px]",
+                    arrowClass: "-mt-12",
+                    arrowSize: 32,
+                }
+              : {
+                    gridTop: "170px",
+                    gridTemplateColumns: "repeat(5, 1fr)",
+                    columnGap: "42px",
+                    rowGap: "32px",
+                    cardClass: "h-[150px] w-[240px] pt-4",
+                    logoClass: "h-[84px] w-[84px]",
+                    textClass: "max-w-[86px] text-[18px]",
+                    arrowClass: "-mt-11",
+                    arrowSize: 26,
+                };
+
     return (
         <div
             style={{
@@ -76,14 +113,13 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
             <div
                 style={{
                     position: "absolute",
-                    top: "200px",
+                    top: layout.gridTop,
                     left: "48px",
                     right: "48px",
                     display: "grid",
-                    gridTemplateColumns:
-                        pack.length <= 12 ? "repeat(3, 1fr)" : "repeat(4, 1fr)",
-                    columnGap: pack.length <= 12 ? "110px" : "72px",
-                    rowGap: pack.length <= 12 ? "56px" : "76px",
+                    gridTemplateColumns: layout.gridTemplateColumns,
+                    columnGap: layout.columnGap,
+                    rowGap: layout.rowGap,
                     justifyItems: "center",
                 }}
             >
@@ -91,12 +127,10 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                     return (
                         <div
                             key={item.category}
-                            className={`${pack.length <= 12 ? "h-[270px] w-[380px]" : "h-[190px] w-[290px]"} group relative flex flex-row items-center justify-between rounded-md pt-6 transition`}
+                            className={`${layout.cardClass} group relative flex flex-row items-center justify-between rounded-md transition`}
                         >
                             <div className="flex h-full flex-col items-center transition outline-none">
-                                <div
-                                    className={`${pack.length <= 12 ? "h-[150px] w-[150px]" : "h-[120px] w-[120px]"}`}
-                                >
+                                <div className={layout.logoClass}>
                                     <Image
                                         src={`/app-logos/${item.mainstream_app_id}.jpg`}
                                         alt={item.mainstream_app_name}
@@ -107,25 +141,19 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                     />
                                 </div>
                                 <div
-                                    className={`${pack.length <= 12 ? "max-w-[150px] text-[28px]" : "max-w-[120px] text-[25px]"} mt-3 text-center leading-tight tracking-tight text-[#aeaeae]`}
+                                    className={`${layout.textClass} mt-3 break-words text-center leading-tight tracking-tight text-[#aeaeae]`}
                                 >
                                     {item.mainstream_app_name}
                                 </div>
                             </div>
-                            <div
-                                className={
-                                    pack.length <= 12 ? "-mt-20" : "-mt-12"
-                                }
-                            >
+                            <div className={layout.arrowClass}>
                                 <ArrowRight
-                                    size={pack.length <= 12 ? 42 : 32}
+                                    size={layout.arrowSize}
                                     className="text-[#e6e6e6]"
                                 />
                             </div>
                             <div className="flex h-full flex-col items-center transition outline-none">
-                                <div
-                                    className={`${pack.length <= 12 ? "h-[150px] w-[150px]" : "h-[120px] w-[120px]"}`}
-                                >
+                                <div className={layout.logoClass}>
                                     <Image
                                         src={`/app-logos/${item.private_alternative_id}.jpg`}
                                         alt={item.private_alternative_name}
@@ -136,7 +164,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                     />
                                 </div>
                                 <div
-                                    className={`${pack.length <= 12 ? "max-w-[150px] text-[28px]" : "max-w-[120px] text-[25px]"} mt-3 text-center leading-tight tracking-tight text-[#aeaeae]`}
+                                    className={`${layout.textClass} mt-3 break-words text-center leading-tight tracking-tight text-[#aeaeae]`}
                                 >
                                     {item.private_alternative_name}
                                 </div>

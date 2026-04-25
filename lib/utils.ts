@@ -56,22 +56,39 @@ function canvasToBlob(canvas: HTMLCanvasElement) {
 
 function waitForImages(container: HTMLElement) {
     const images = Array.from(container.querySelectorAll("img"));
+    const imageTimeoutMs = 8000;
 
     return Promise.all(
         images.map(
             (image) =>
                 new Promise<void>((resolve) => {
+                    image.loading = "eager";
+                    image.decoding = "sync";
+
                     if (image.complete) {
                         resolve();
                         return;
                     }
 
-                    image.addEventListener("load", () => resolve(), {
+                    const timeout = window.setTimeout(
+                        () => resolve(),
+                        imageTimeoutMs,
+                    );
+                    const resolveOnce = () => {
+                        window.clearTimeout(timeout);
+                        resolve();
+                    };
+
+                    image.addEventListener("load", () => resolveOnce(), {
                         once: true,
                     });
-                    image.addEventListener("error", () => resolve(), {
+                    image.addEventListener("error", () => resolveOnce(), {
                         once: true,
                     });
+
+                    const decodePromise = image.decode?.();
+
+                    decodePromise?.then(resolveOnce).catch(resolveOnce);
                 }),
         ),
     );
@@ -104,6 +121,11 @@ function renderPrivacyPackInVirtualDOM() {
         true,
     ) as HTMLElement;
 
+    clonedPrivacyPack.querySelectorAll("img").forEach((image) => {
+        image.loading = "eager";
+        image.decoding = "sync";
+    });
+
     virtualDiv.appendChild(clonedPrivacyPack);
     clonedPrivacyPack.style.cssText = `
       display: block !important;
@@ -111,6 +133,7 @@ function renderPrivacyPackInVirtualDOM() {
       transform: none !important;
       width: 1500px !important;
       height: 1500px !important;
+      box-sizing: border-box !important;
       margin: 0 !important;
       padding: 16px !important;
       background-color: #121212 !important;
@@ -146,6 +169,7 @@ async function capturePrivacyPackImage() {
                     clonedDiv.style.cssText = `
                         width: 1500px !important;
                         height: 1500px !important;
+                        box-sizing: border-box !important;
                         display: block !important;
                         visibility: visible !important;
                         position: static !important;
@@ -155,6 +179,7 @@ async function capturePrivacyPackImage() {
                         padding: 16px !important;
                         background-color: #121212 !important;
                         font-family: monospace;
+                        overflow: hidden !important;
                     `;
                 }
             },

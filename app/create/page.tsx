@@ -193,7 +193,7 @@ export default function App() {
                                                         className="h-full w-full rounded-xl object-cover md:rounded-2xl"
                                                     />
                                                 </div>
-                                                <div className="mt-5 max-w-18 text-center text-xs leading-tight font-medium tracking-tight lg:max-w-24 lg:text-base xl:max-w-28 2xl:max-w-40">
+                                                <div className="mt-5 max-w-18 break-words text-center text-xs leading-tight font-medium tracking-tight lg:max-w-24 lg:text-base xl:max-w-28 2xl:max-w-40">
                                                     {item.mainstream_app_name}
                                                 </div>
                                                 <ChevronDown className="mt-1 h-4 w-4" />
@@ -230,7 +230,7 @@ export default function App() {
                                                                 className="h-auto w-full rounded-sm"
                                                             />
                                                         </div>
-                                                        <span className="text-xs sm:text-sm">
+                                                        <span className="break-words text-xs sm:text-sm">
                                                             {
                                                                 mainstream_app.name
                                                             }
@@ -275,7 +275,7 @@ export default function App() {
                                                         />
                                                     )}
                                                 </div>
-                                                <div className="mt-5 max-w-18 text-center text-xs leading-tight font-medium tracking-tight lg:max-w-24 lg:text-base xl:max-w-28 2xl:max-w-40">
+                                                <div className="mt-5 max-w-18 break-words text-center text-xs leading-tight font-medium tracking-tight lg:max-w-24 lg:text-base xl:max-w-28 2xl:max-w-40">
                                                     {item.private_alternative_name ||
                                                         "[Pick]"}
                                                 </div>
@@ -315,7 +315,7 @@ export default function App() {
                                                                     className="h-auto w-full rounded-sm"
                                                                 />
                                                             </div>
-                                                            <span className="text-xs sm:text-sm">
+                                                            <span className="break-words text-xs sm:text-sm">
                                                                 {
                                                                     private_alternative.name
                                                                 }
