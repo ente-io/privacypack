@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Terms = () => {
     return (
-        <div className="flex w-screen flex-col items-center">
+        <div className="flex min-h-screen w-full flex-col items-center">
             <div className="flex w-full flex-col gap-5 p-8 text-gray-400 lg:w-[56rem] lg:p-16">
                 <h1 className="mb-8 text-3xl text-white uppercase">
                     Terms and Conditions
                 </h1>
-                <p>Last Updated: August 23, 2025</p>
+                <p>Last Updated: April 25, 2026</p>
                 <p>
                     These Terms and Conditions (&quot;Agreement&quot; or
                     &quot;Terms&quot;) are a legally binding agreement between
@@ -38,8 +38,9 @@ const Terms = () => {
                     <strong>privacypack.org</strong> allows users to create and
                     share cards showing the mainstream apps they previously used
                     and the privacy-respecting alternatives they have switched
-                    to. The Site is for informational and educational purposes
-                    only.
+                    to. Cards are generated in the user&apos;s browser and can
+                    be downloaded or shared by the user. The Site is for
+                    informational and educational purposes only.
                 </p>
 
                 <h2 className="text-xl text-white">
@@ -87,10 +88,9 @@ const Terms = () => {
                     the Site or its services.
                 </p>
                 <p>
-                    <strong>(b) Public Visibility:</strong> Packs submitted by
-                    users may be publicly viewable. No personally identifiable
-                    information is disclosed unless voluntarily included in
-                    content by the user.
+                    <strong>(b) Your shared copies:</strong> If you download or
+                    share a card outside the Site, you are responsible for where
+                    and how you share that copy.
                 </p>
 
                 <h2 className="text-xl text-white">
@@ -105,8 +105,8 @@ const Terms = () => {
                 <h2 className="text-xl text-white">7. Indemnification</h2>
                 <p>
                     You agree to indemnify and hold us harmless from any claims,
-                    damages, or legal costs arising from your content
-                    submissions or violation of these Terms.
+                    damages, or legal costs arising from your use of the Site,
+                    generated cards, shared copies, or violation of these Terms.
                 </p>
 
                 <h2 className="text-xl text-white">
@@ -137,7 +137,7 @@ const Terms = () => {
                 <p>
                     You can reach us by email at:{" "}
                     <a
-                        href="mailto: privacy@ente.io"
+                        href="mailto:privacy@ente.io"
                         className="underline underline-offset-2"
                     >
                         privacy@ente.io

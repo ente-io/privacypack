@@ -105,7 +105,6 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                         height={0}
                         sizes="100vw"
                         className="h-auto w-full"
-                        priority
                     />
                 </div>
             </div>
@@ -141,7 +140,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                     />
                                 </div>
                                 <div
-                                    className={`${layout.textClass} mt-3 break-words text-center leading-tight tracking-tight text-[#aeaeae]`}
+                                    className={`${layout.textClass} mt-3 text-center leading-tight break-words text-[#aeaeae]`}
                                 >
                                     {item.mainstream_app_name}
                                 </div>
@@ -164,7 +163,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                                     />
                                 </div>
                                 <div
-                                    className={`${layout.textClass} mt-3 break-words text-center leading-tight tracking-tight text-[#aeaeae]`}
+                                    className={`${layout.textClass} mt-3 text-center leading-tight break-words text-[#aeaeae]`}
                                 >
                                     {item.private_alternative_name}
                                 </div>

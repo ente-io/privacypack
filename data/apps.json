@@ -54,6 +54,7 @@
                 { "id": "kagi", "name": "Kagi" },
                 { "id": "brave_search", "name": "Brave Search" },
                 { "id": "duckduckgo", "name": "DuckDuckGo" },
+                { "id": "prieco", "name": "PriEco" },
                 { "id": "startpage", "name": "Startpage" },
                 { "id": "searxng", "name": "SearXNG" },
                 { "id": "mojeek", "name": "Mojeek" },
@@ -410,7 +411,8 @@
             "mainstream_apps": [
                 { "id": "coinbase_wallet", "name": "Coinbase Wallet" },
                 { "id": "metamask", "name": "MetaMask" },
-                { "id": "phantom", "name": "Phantom" }
+                { "id": "phantom", "name": "Phantom" },
+                { "id": "trust_wallet", "name": "Trust Wallet" }
             ],
             "private_alternatives": [
                 { "id": "brave_wallet", "name": "Brave Wallet" },

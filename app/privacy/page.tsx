@@ -2,18 +2,18 @@ import Link from "next/link";
 
 const Privacy = () => {
     return (
-        <div className="flex w-screen flex-col items-center">
+        <div className="flex min-h-screen w-full flex-col items-center">
             <div className="flex w-full flex-col gap-5 p-8 text-gray-400 lg:w-[56rem] lg:p-16">
-                <h1 className="mb-8 text-3xl text-white uppercase">Privacy Policy</h1>
-                <p>Last Updated: August 23, 2025</p>
+                <h1 className="mb-8 text-3xl text-white uppercase">
+                    Privacy Policy
+                </h1>
+                <p>Last Updated: April 25, 2026</p>
                 <p>
                     We respect the privacy of our Users (&quot;User&quot;,
                     &quot;your&quot;, &quot;you&quot;). This Privacy Policy
-                    (&quot;Policy&quot;) explains how we handle your information
-                    when you use our website, <strong>privacypack.org</strong>{" "}
-                    (the &quot;Site&quot;). Please read this Policy carefully to
-                    understand our practices regarding your information and how
-                    we treat it.
+                    (&quot;Policy&quot;) explains how we handle information when
+                    you use our website, <strong>privacypack.org</strong> (the
+                    &quot;Site&quot;).
                 </p>
                 <p>
                     By accessing or using the Site, you agree to the terms of
@@ -26,35 +26,41 @@ const Privacy = () => {
                     <strong>privacypack.org</strong> allows users to create and
                     share cards showing the mainstream apps they previously used
                     and the privacy-respecting alternatives they have switched
-                    to.
+                    to. The card is generated in your browser.
                 </p>
 
                 <h2 className="text-xl text-white">
                     2. Data Collection and Usage
                 </h2>
                 <p>
-                    Users can create and share cards displaying
-                    &quot;before&quot; and &quot;after&quot; app logos. These
-                    cards are publicly viewable only if shared by the user.
+                    The Site does not require an account, does not ask you to
+                    enter personal information, and does not upload or store the
+                    app choices you make while building a card.
+                </p>
+                <p>
+                    Like most websites, the hosting provider may process basic
+                    request information needed to serve the Site, such as IP
+                    address, browser information, and request timestamps.
                 </p>
 
                 <h2 className="text-xl text-white">3. Data Sharing</h2>
                 <p>
-                    User-shared cards may be publicly viewable, depending on how
-                    users choose to share them.
+                    We do not publish, host, or index your cards. If you
+                    download or share a card, that happens through your browser,
+                    device, or the third-party app or service you choose.
                 </p>
 
                 <h2 className="text-xl text-white">4. User Rights</h2>
                 <p>
                     Users have the right to stop using the Site at any time. If
-                    you wish to remove any publicly shared card, you can do so
-                    through the Site interface.
+                    you download or share a card elsewhere, you control that
+                    copy through the place where you saved or shared it.
                 </p>
 
                 <h2 className="text-xl text-white">5. Data Retention</h2>
                 <p>
-                    User-shared cards remain publicly available until removed by
-                    the user.
+                    The Site does not retain your generated cards or app
+                    selections.
                 </p>
 
                 <h2 className="text-xl text-white">
@@ -85,7 +91,7 @@ const Privacy = () => {
                 <p>
                     You can reach us by email at:{" "}
                     <a
-                        href="mailto: privacy@ente.io"
+                        href="mailto:privacy@ente.io"
                         className="underline underline-offset-2"
                     >
                         privacy@ente.io
