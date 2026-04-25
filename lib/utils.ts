@@ -1,47 +1,110 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 import html2canvas from "html2canvas-pro";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+    return twMerge(clsx(inputs));
 }
 
-function downloadBlob (blob: Blob) {
+function downloadBlob(blob: Blob) {
+    const url = URL.createObjectURL(blob);
+
     try {
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = "privacypack.png";
-      link.click();
-      URL.revokeObjectURL(link.href);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "privacypack.png";
+        link.rel = "noopener";
+        link.style.display = "none";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
     } catch (error) {
-      console.error("Error downloading blob:", error);
+        URL.revokeObjectURL(url);
+        throw error;
     }
-  };
+
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function nextAnimationFrame() {
+    return new Promise<void>((resolve) => {
+        requestAnimationFrame(() => resolve());
+    });
+}
+
+function copyNextFontStyles(clonedDoc: Document) {
+    document.querySelectorAll("style[data-next-font]").forEach((style) => {
+        clonedDoc.head.appendChild(style.cloneNode(true));
+    });
+}
+
+function canvasToBlob(canvas: HTMLCanvasElement) {
+    return new Promise<Blob>((resolve, reject) => {
+        canvas.toBlob(
+            (blob) => {
+                if (blob) {
+                    resolve(blob);
+                } else {
+                    reject(new Error("Could not create PrivacyPack image."));
+                }
+            },
+            "image/png",
+            1.0,
+        );
+    });
+}
+
+function waitForImages(container: HTMLElement) {
+    const images = Array.from(container.querySelectorAll("img"));
+
+    return Promise.all(
+        images.map(
+            (image) =>
+                new Promise<void>((resolve) => {
+                    if (image.complete) {
+                        resolve();
+                        return;
+                    }
+
+                    image.addEventListener("load", () => resolve(), {
+                        once: true,
+                    });
+                    image.addEventListener("error", () => resolve(), {
+                        once: true,
+                    });
+                }),
+        ),
+    );
+}
 
 function renderPrivacyPackInVirtualDOM() {
-  const virtualDiv = document.createElement("div");
+    const originalPrivacyPack = document.getElementById(
+        "privacy-pack-result-to-capture",
+    );
 
-  virtualDiv.style.cssText = `
+    if (!originalPrivacyPack) {
+        throw new Error("PrivacyPack result card was not found.");
+    }
+
+    const virtualDiv = document.createElement("div");
+
+    virtualDiv.style.cssText = `
     position: fixed;
-    left: 0;
+    left: -10000px;
     top: 0;
     width: 1500px;
     height: 1500px;
-    clip-path: polygon(0 0, 0 0, 0 0);
     pointer-events: none;
     background-color: #121212;
     font-family: monospace;
+    overflow: hidden;
   `;
 
-  document.body.appendChild(virtualDiv);
-
-  const originalPrivacyPack = document.getElementById("privacy-pack-result-to-capture");
-
-  if (originalPrivacyPack) {
-    const clonedPrivacyPack = originalPrivacyPack.cloneNode(true) as HTMLElement;
+    const clonedPrivacyPack = originalPrivacyPack.cloneNode(
+        true,
+    ) as HTMLElement;
 
     virtualDiv.appendChild(clonedPrivacyPack);
-
     clonedPrivacyPack.style.cssText = `
       display: block !important;
       position: static !important;
@@ -53,147 +116,89 @@ function renderPrivacyPackInVirtualDOM() {
       background-color: #121212 !important;
       font-family: monospace;
     `;
-  }
 
-  return virtualDiv;
-};
+    document.body.appendChild(virtualDiv);
+
+    return virtualDiv;
+}
+
+async function capturePrivacyPackImage() {
+    const virtualDiv = renderPrivacyPackInVirtualDOM();
+
+    try {
+        await nextAnimationFrame();
+        await waitForImages(virtualDiv);
+
+        const canvas = await html2canvas(virtualDiv, {
+            backgroundColor: "#121212",
+            width: 1500,
+            height: 1500,
+            scale: 1,
+            logging: false,
+            onclone: (clonedDoc) => {
+                copyNextFontStyles(clonedDoc);
+
+                const clonedDiv = clonedDoc.getElementById(
+                    "privacy-pack-result-to-capture",
+                );
+
+                if (clonedDiv) {
+                    clonedDiv.style.cssText = `
+                        width: 1500px !important;
+                        height: 1500px !important;
+                        display: block !important;
+                        visibility: visible !important;
+                        position: static !important;
+                        transform: none !important;
+                        transform-origin: 0 0 !important;
+                        margin: 0 !important;
+                        padding: 16px !important;
+                        background-color: #121212 !important;
+                        font-family: monospace;
+                    `;
+                }
+            },
+        });
+
+        return await canvasToBlob(canvas);
+    } finally {
+        virtualDiv.remove();
+    }
+}
 
 export async function handleShare() {
-  const virtualDiv = renderPrivacyPackInVirtualDOM();
+    const blob = await capturePrivacyPackImage();
+    const file = new File([blob], "privacypack.png", {
+        type: "image/png",
+    });
+    const sharePayload = {
+        text: "",
+        url: "https://privacypack.org",
+        files: [file],
+    };
 
-  // Make it briefly visible for capture
-  virtualDiv.style.visibility = "visible";
-
-  requestAnimationFrame(async () => {
-    try {
-      const canvas = await html2canvas(virtualDiv, {
-        backgroundColor: "#121212",
-        width: 1500,
-        height: 1500,
-        scale: 1,
-        logging: true,
-        onclone: (clonedDoc) => {
-          document.querySelectorAll('style[data-next-font]').forEach((style) => {
-    clonedDoc.head.appendChild(style.cloneNode(true));
-  });
-          const clonedDiv = clonedDoc.querySelector(
-            ".share-card-to-capture",
-          ) as HTMLElement;
-          if (clonedDiv) {
-            clonedDiv.style.cssText = `
-              width: 1500px !important;
-              height: 1500px !important;
-              display: block !important;
-              visibility: visible !important;
-              position: static !important;
-              transform: none !important;
-              transform-origin: 0 0 !important;
-              margin: 0 !important;
-              padding: 0 !important;
-              font-family: monospace;
-            `;
-          }
-        },
-      });
-
-      canvas.toBlob(
-        async (blob) => {
-          if (blob) {
-            const file = new File([blob], "privacypack.png", {
-              type: "image/png",
-            });
-
-            // If Web Share API is supported
-            if (
-              navigator.canShare &&
-              navigator.canShare({
-                text: "",
-                url: "https://privacypack.org",
-                files: [file],
-              })
-            ) {
-              try {
-                await navigator.share({
-                  text: "",
-                  url: "https://privacypack.org",
-                  files: [file],
-                });
-                console.log("Image shared successfully!");
-              } catch (error) {
-                console.error("Error sharing image:", error);
-                downloadBlob(blob);
-              }
-            } else {
-              // Fallback for downloading if sharing isn't supported
-              downloadBlob(blob);
+    if (
+        typeof navigator.canShare === "function" &&
+        navigator.canShare(sharePayload)
+    ) {
+        try {
+            await navigator.share(sharePayload);
+            return;
+        } catch (error) {
+            if (error instanceof DOMException && error.name === "AbortError") {
+                return;
             }
-          }
-        },
-        "image/png",
-        1.0,
-      );
-    } catch (error) {
-      console.error("Error capturing the div:", error);
-    } finally {
-      // Hide and remove the virtual div
-      virtualDiv.style.visibility = "hidden";
-      document.body.removeChild(virtualDiv);
+
+            downloadBlob(blob);
+            return;
+        }
     }
-  });
-};
+
+    downloadBlob(blob);
+}
 
 export async function handleDownload() {
-  const virtualDiv = renderPrivacyPackInVirtualDOM();
+    const blob = await capturePrivacyPackImage();
 
-  // Make it briefly visible for capture
-  virtualDiv.style.visibility = "visible";
-
-  requestAnimationFrame(async () => {
-    try {
-      const canvas = await html2canvas(virtualDiv, {
-        backgroundColor: "#121212",
-        width: 1500,
-        height: 1500,
-        scale: 1,
-        logging: true,
-        onclone: (clonedDoc) => {document.querySelectorAll('style[data-next-font]').forEach((style) => {
-    clonedDoc.head.appendChild(style.cloneNode(true));
-  });
-          const clonedDiv = clonedDoc.querySelector(
-            ".share-card-to-capture",
-          ) as HTMLElement;
-          if (clonedDiv) {
-            clonedDiv.style.cssText = `
-              width: 1500px !important;
-              height: 1500px !important;
-              display: block !important;
-              visibility: visible !important;
-              position: static !important;
-              transform: none !important;
-              transform-origin: 0 0 !important;
-              margin: 0 !important;
-              padding: 0 !important;
-              font-family: monospace;
-            `;
-          }
-        },
-      });
-
-      canvas.toBlob(
-        async (blob) => {
-          if (blob) {
-            downloadBlob(blob);
-          }
-        },
-        "image/png",
-        1.0,
-      );
-    } catch (error) {
-      console.error("Error capturing the div:", error);
-    } finally {
-      // Hide and remove the virtual div
-      virtualDiv.style.visibility = "hidden";
-      document.body.removeChild(virtualDiv);
-    }
-  });
-};
+    downloadBlob(blob);
+}

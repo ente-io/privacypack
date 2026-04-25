@@ -37,3 +37,8 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 *.pem
+
+# Local agent/runtime artifacts
+/.codex/
+/.claude/
+/CLAUDE.md

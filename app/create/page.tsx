@@ -20,9 +20,19 @@ import PrivacyPackResult from "@/components/PrivacyPackResult";
 import { handleDownload, handleShare } from "@/lib/utils";
 import Image from "next/image";
 
+type AppOption = {
+    id: string;
+    name: string;
+};
+
+const categories = [...data.categories].sort((a, b) => a.order - b.order);
+
+const sortByName = (apps: AppOption[]) =>
+    [...apps].sort((a, b) => a.name.localeCompare(b.name));
+
 export default function App() {
     const [pack, setPack] = useState(() => {
-        const initialPack = data.categories.map((category) => ({
+        const initialPack = categories.map((category) => ({
             category: category.name,
             order: category.order,
             mainstream_app_id: category.mainstream_apps[0].id,
@@ -65,7 +75,7 @@ export default function App() {
 
     const handleSelectApp = (
         categoryName: string,
-        app: { id: string; name: string },
+        app: AppOption,
         type: "mainstream" | "private",
     ) => {
         setPack((prev) =>
@@ -136,9 +146,15 @@ export default function App() {
 
                 <div className="mt-16 mb-10 grid grid-cols-1 gap-14 sm:mx-auto md:grid-cols-2 md:gap-20 lg:my-24 lg:gap-28 xl:my-24 xl:grid-cols-3 xl:gap-20 2xl:my-32 2xl:gap-40">
                     {pack.map((item) => {
-                        const category = data.categories.find(
+                        const category = categories.find(
                             (c) => c.name === item.category,
                         );
+                        const mainstreamApps = category
+                            ? sortByName(category.mainstream_apps)
+                            : [];
+                        const privateAlternatives = category
+                            ? sortByName(category.private_alternatives)
+                            : [];
 
                         const mainKey = `${item.category}-main`;
                         const altKey = `${item.category}-alt`;
@@ -189,17 +205,10 @@ export default function App() {
                                             side="bottom"
                                             className="rounded-2xl"
                                         >
-                                            {category?.mainstream_apps
-                                                .sort((a, b) =>
-                                                    a.name.localeCompare(
-                                                        b.name,
-                                                    ),
-                                                )
-                                                .map((mainstream_app) => (
+                                            {mainstreamApps.map(
+                                                (mainstream_app) => (
                                                     <DropdownMenuItem
-                                                        key={
-                                                            mainstream_app.name
-                                                        }
+                                                        key={mainstream_app.id}
                                                         onClick={() =>
                                                             handleSelectApp(
                                                                 item.category,
@@ -227,7 +236,8 @@ export default function App() {
                                                             }
                                                         </span>
                                                     </DropdownMenuItem>
-                                                ))}
+                                                ),
+                                            )}
                                         </DropdownMenuContent>
                                     </DropdownMenu>
 
@@ -277,13 +287,8 @@ export default function App() {
                                             side="bottom"
                                             className="rounded-2xl"
                                         >
-                                            {category?.private_alternatives
-                                                .sort((a, b) =>
-                                                    a.name.localeCompare(
-                                                        b.name,
-                                                    ),
-                                                )
-                                                .map((private_alternative) => (
+                                            {privateAlternatives.map(
+                                                (private_alternative) => (
                                                     <DropdownMenuItem
                                                         key={
                                                             private_alternative.id
@@ -317,7 +322,8 @@ export default function App() {
                                                             </span>
                                                         </div>
                                                     </DropdownMenuItem>
-                                                ))}
+                                                ),
+                                            )}
                                             <DropdownMenuItem
                                                 onClick={() => {
                                                     handleSelectApp(
