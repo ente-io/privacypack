@@ -150,6 +150,7 @@
                 { "id": "mailbox", "name": "mailbox" },
                 { "id": "nextcloud", "name": "Nextcloud" },
                 { "id": "proton_drive", "name": "Proton Drive" },
+                { "id": "tresorit", "name": "Tresorit" },
                 { "id": "filen", "name": "Filen" },
                 { "id": "ik-kdrive", "name": "Infomaniak kDrive" },
                 { "id": "fileverse", "name": "Fileverse" },
@@ -351,6 +352,8 @@
             "private_alternatives": [
                 { "id": "matrix", "name": "Matrix" },
                 { "id": "zulip", "name": "Zulip" },
+                { "id": "discourse", "name": "Discourse" },
+                { "id": "gamevox", "name": "GameVox" },
                 { "id": "stoat", "name": "Stoat" },
                 { "id": "fluxer", "name": "Fluxer" }
             ]
@@ -369,6 +372,7 @@
                 { "id": "minds", "name": "Minds" },
                 { "id": "pixelfed", "name": "Pixelfed" },
                 { "id": "mastodon", "name": "Mastodon" },
+                { "id": "nostr", "name": "Nostr" },
                 { "id": "lemmy", "name": "Lemmy" },
                 { "id": "peertube", "name": "PeerTube" }
             ]
