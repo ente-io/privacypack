@@ -573,7 +573,8 @@
                 { "id": "github", "name": "GitHub" },
                 { "id": "gitlab", "name": "GitLab" },
                 { "id": "azure_repos", "name": "Azure Repos" },
-                { "id": "bitbucket", "name": "Bitbucket" }
+                { "id": "bitbucket", "name": "Bitbucket" },
+                { "id": "sourceforge", "name": "SourceForge" }
             ],
             "private_alternatives": [
               { "id": "gitlab", "name": "GitLab (self hosted)" },
