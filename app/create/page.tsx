@@ -11,8 +11,11 @@ import {
 import React, { useState, useRef } from "react";
 import {
     DropdownMenu,
+    DropdownMenuCheckboxItem,
     DropdownMenuContent,
     DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import data from "../../data/apps.json";
@@ -25,10 +28,24 @@ type AppOption = {
     name: string;
 };
 
+const MAX_PRIVATE_ALTERNATIVES = 3;
+
 const categories = [...data.categories].sort((a, b) => a.order - b.order);
 
 const sortByName = (apps: AppOption[]) =>
     [...apps].sort((a, b) => a.name.localeCompare(b.name));
+
+const getPrivateAlternativeLabel = (alternatives: AppOption[]) => {
+    if (alternatives.length === 0) {
+        return "[Pick]";
+    }
+
+    if (alternatives.length === 1) {
+        return alternatives[0].name;
+    }
+
+    return `${alternatives[0].name} +${alternatives.length - 1}`;
+};
 
 export default function App() {
     const [pack, setPack] = useState(() => {
@@ -37,8 +54,7 @@ export default function App() {
             order: category.order,
             mainstream_app_id: category.mainstream_apps[0].id,
             mainstream_app_name: category.mainstream_apps[0].name,
-            private_alternative_id: "",
-            private_alternative_name: "",
+            private_alternatives: [] as AppOption[],
         }));
         return initialPack;
     });
@@ -47,7 +63,9 @@ export default function App() {
     const [openKey, setOpenKey] = useState<string | null>(null);
     const touchKeyRef = useRef<string | null>(null);
 
-    const selectedPack = pack.filter((item) => item.private_alternative_id);
+    const selectedPack = pack.filter(
+        (item) => item.private_alternatives.length > 0,
+    );
     const canExport = selectedPack.length > 0;
 
     const getTouchTriggerHandlers = (key: string) => ({
@@ -129,25 +147,71 @@ export default function App() {
         }
     };
 
-    const handleSelectApp = (
+    const handleSelectMainstreamApp = (
         categoryName: string,
         app: AppOption,
-        type: "mainstream" | "private",
     ) => {
         setPack((prev) =>
             prev.map((item) =>
                 item.category === categoryName
-                    ? type === "mainstream"
-                        ? {
-                              ...item,
-                              mainstream_app_id: app.id,
-                              mainstream_app_name: app.name,
-                          }
-                        : {
-                              ...item,
-                              private_alternative_id: app.id,
-                              private_alternative_name: app.name,
-                          }
+                    ? {
+                          ...item,
+                          mainstream_app_id: app.id,
+                          mainstream_app_name: app.name,
+                      }
+                    : item,
+            ),
+        );
+        setExportMessage(null);
+        setOpenKey(null);
+    };
+
+    const handleTogglePrivateAlternative = (
+        categoryName: string,
+        app: AppOption,
+    ) => {
+        setPack((prev) =>
+            prev.map((item) => {
+                if (item.category !== categoryName) {
+                    return item;
+                }
+
+                const isSelected = item.private_alternatives.some(
+                    (alternative) => alternative.id === app.id,
+                );
+
+                if (isSelected) {
+                    return {
+                        ...item,
+                        private_alternatives: item.private_alternatives.filter(
+                            (alternative) => alternative.id !== app.id,
+                        ),
+                    };
+                }
+
+                if (
+                    item.private_alternatives.length >= MAX_PRIVATE_ALTERNATIVES
+                ) {
+                    return item;
+                }
+
+                return {
+                    ...item,
+                    private_alternatives: [...item.private_alternatives, app],
+                };
+            }),
+        );
+        setExportMessage(null);
+    };
+
+    const handleClearPrivateAlternatives = (categoryName: string) => {
+        setPack((prev) =>
+            prev.map((item) =>
+                item.category === categoryName
+                    ? {
+                          ...item,
+                          private_alternatives: [],
+                      }
                     : item,
             ),
         );
@@ -250,6 +314,18 @@ export default function App() {
                         const privateAlternatives = category
                             ? sortByName(category.private_alternatives)
                             : [];
+                        const selectedPrivateAlternatives =
+                            item.private_alternatives;
+                        const privateAlternativeLabel =
+                            getPrivateAlternativeLabel(
+                                selectedPrivateAlternatives,
+                            );
+                        const privateAlternativeAccessibleLabel =
+                            selectedPrivateAlternatives.length > 0
+                                ? selectedPrivateAlternatives
+                                      .map((alternative) => alternative.name)
+                                      .join(", ")
+                                : "none selected";
 
                         const mainKey = `${item.category}-main`;
                         const altKey = `${item.category}-alt`;
@@ -309,10 +385,9 @@ export default function App() {
                                                     <DropdownMenuItem
                                                         key={mainstream_app.id}
                                                         onClick={() =>
-                                                            handleSelectApp(
+                                                            handleSelectMainstreamApp(
                                                                 item.category,
                                                                 mainstream_app,
-                                                                "mainstream",
                                                             )
                                                         }
                                                         className="flex cursor-pointer flex-row items-center gap-2 rounded-lg"
@@ -351,6 +426,7 @@ export default function App() {
                                         <DropdownMenuTrigger asChild>
                                             <button
                                                 type="button"
+                                                aria-label={`${item.category} private alternatives: ${privateAlternativeAccessibleLabel}; ${selectedPrivateAlternatives.length} of ${MAX_PRIVATE_ALTERNATIVES} selected`}
                                                 {...getTouchTriggerHandlers(
                                                     altKey,
                                                 )}
@@ -358,26 +434,67 @@ export default function App() {
                                             >
                                                 <div
                                                     className={`h-18 w-18 rounded-xl md:rounded-2xl lg:h-24 lg:w-24 xl:h-28 xl:w-28 2xl:h-40 2xl:w-40 ${
-                                                        !item.private_alternative_id &&
-                                                        "bg-[#383838]"
-                                                    }`}
+                                                        selectedPrivateAlternatives.length ===
+                                                        0
+                                                            ? "bg-[#383838]"
+                                                            : ""
+                                                    } ${
+                                                        selectedPrivateAlternatives.length >
+                                                        1
+                                                            ? "grid grid-cols-2 place-items-center gap-1 p-1"
+                                                            : ""
+                                                    } relative overflow-hidden`}
                                                 >
-                                                    {item.private_alternative_id && (
-                                                        <Image
-                                                            src={`/app-logos/${item.private_alternative_id}.jpg`}
-                                                            alt={
-                                                                item.private_alternative_name
-                                                            }
-                                                            width={0}
-                                                            height={0}
-                                                            sizes="100vw"
-                                                            className="h-full w-full rounded-xl object-cover md:rounded-2xl"
-                                                        />
+                                                    {selectedPrivateAlternatives.map(
+                                                        (
+                                                            privateAlternative,
+                                                        ) => (
+                                                            <div
+                                                                key={
+                                                                    privateAlternative.id
+                                                                }
+                                                                className={`overflow-hidden rounded-xl md:rounded-2xl ${
+                                                                    selectedPrivateAlternatives.length >
+                                                                    1
+                                                                        ? "aspect-square w-full bg-white/5"
+                                                                        : "h-full w-full"
+                                                                }`}
+                                                            >
+                                                                <Image
+                                                                    src={`/app-logos/${privateAlternative.id}.jpg`}
+                                                                    alt={
+                                                                        privateAlternative.name
+                                                                    }
+                                                                    width={0}
+                                                                    height={0}
+                                                                    sizes={
+                                                                        selectedPrivateAlternatives.length >
+                                                                        1
+                                                                            ? "56px"
+                                                                            : "160px"
+                                                                    }
+                                                                    className={`h-full w-full ${
+                                                                        selectedPrivateAlternatives.length >
+                                                                        1
+                                                                            ? "object-contain"
+                                                                            : "object-cover"
+                                                                    }`}
+                                                                />
+                                                            </div>
+                                                        ),
                                                     )}
+                                                    <span className="absolute top-1 right-1 rounded-full bg-black/70 px-1.5 py-0.5 text-[10px] leading-none font-semibold text-white">
+                                                        {
+                                                            selectedPrivateAlternatives.length
+                                                        }
+                                                        /
+                                                        {
+                                                            MAX_PRIVATE_ALTERNATIVES
+                                                        }
+                                                    </span>
                                                 </div>
                                                 <div className="mt-5 max-w-18 text-center text-xs leading-tight font-medium break-words lg:max-w-24 lg:text-base xl:max-w-28 2xl:max-w-40">
-                                                    {item.private_alternative_name ||
-                                                        "[Pick]"}
+                                                    {privateAlternativeLabel}
                                                 </div>
                                                 <ChevronDown className="mt-1 h-4 w-4" />
                                             </button>
@@ -387,58 +504,95 @@ export default function App() {
                                             side="bottom"
                                             className="rounded-2xl"
                                         >
+                                            <DropdownMenuLabel className="flex items-center justify-between gap-4 text-xs text-[#aeaeae]">
+                                                <span>
+                                                    Private alternatives
+                                                </span>
+                                                <span>
+                                                    {
+                                                        selectedPrivateAlternatives.length
+                                                    }
+                                                    /{MAX_PRIVATE_ALTERNATIVES}
+                                                </span>
+                                            </DropdownMenuLabel>
+                                            <DropdownMenuSeparator />
                                             {privateAlternatives.map(
-                                                (private_alternative) => (
-                                                    <DropdownMenuItem
-                                                        key={
-                                                            private_alternative.id
-                                                        }
-                                                        onClick={() =>
-                                                            handleSelectApp(
-                                                                item.category,
-                                                                private_alternative,
-                                                                "private",
-                                                            )
-                                                        }
-                                                        className="cursor-pointer rounded-lg"
-                                                    >
-                                                        <div className="flex flex-row items-center gap-2">
-                                                            <div className="h-5 w-5">
-                                                                <Image
-                                                                    src={`/app-logos/${private_alternative.id}.jpg`}
-                                                                    alt={
+                                                (private_alternative) => {
+                                                    const isSelected =
+                                                        selectedPrivateAlternatives.some(
+                                                            (alternative) =>
+                                                                alternative.id ===
+                                                                private_alternative.id,
+                                                        );
+                                                    const isDisabled =
+                                                        !isSelected &&
+                                                        selectedPrivateAlternatives.length >=
+                                                            MAX_PRIVATE_ALTERNATIVES;
+
+                                                    return (
+                                                        <DropdownMenuCheckboxItem
+                                                            key={
+                                                                private_alternative.id
+                                                            }
+                                                            checked={
+                                                                isSelected
+                                                            }
+                                                            disabled={
+                                                                isDisabled
+                                                            }
+                                                            onSelect={(
+                                                                event,
+                                                            ) => {
+                                                                event.preventDefault();
+                                                                handleTogglePrivateAlternative(
+                                                                    item.category,
+                                                                    private_alternative,
+                                                                );
+                                                            }}
+                                                            className={`cursor-pointer rounded-lg ${
+                                                                isSelected
+                                                                    ? "bg-white/8 text-white"
+                                                                    : ""
+                                                            }`}
+                                                        >
+                                                            <div className="flex w-full flex-row items-center gap-2 pl-1">
+                                                                <div className="h-5 w-5">
+                                                                    <Image
+                                                                        src={`/app-logos/${private_alternative.id}.jpg`}
+                                                                        alt={
+                                                                            private_alternative.name
+                                                                        }
+                                                                        width={
+                                                                            0
+                                                                        }
+                                                                        height={
+                                                                            0
+                                                                        }
+                                                                        sizes="100vw"
+                                                                        className="h-auto w-full rounded-sm"
+                                                                    />
+                                                                </div>
+                                                                <span className="text-xs break-words sm:text-sm">
+                                                                    {
                                                                         private_alternative.name
                                                                     }
-                                                                    width={0}
-                                                                    height={0}
-                                                                    sizes="100vw"
-                                                                    className="h-auto w-full rounded-sm"
-                                                                />
+                                                                </span>
                                                             </div>
-                                                            <span className="text-xs break-words sm:text-sm">
-                                                                {
-                                                                    private_alternative.name
-                                                                }
-                                                            </span>
-                                                        </div>
-                                                    </DropdownMenuItem>
-                                                ),
+                                                        </DropdownMenuCheckboxItem>
+                                                    );
+                                                },
                                             )}
                                             <DropdownMenuItem
-                                                onClick={() => {
-                                                    handleSelectApp(
+                                                onSelect={() => {
+                                                    handleClearPrivateAlternatives(
                                                         item.category,
-                                                        {
-                                                            id: "",
-                                                            name: "",
-                                                        },
-                                                        "private",
                                                     );
                                                 }}
                                                 className="cursor-pointer rounded-lg"
                                             >
                                                 <div className="flex flex-row items-center gap-2">
-                                                    {item.private_alternative_id ? (
+                                                    {selectedPrivateAlternatives.length >
+                                                    0 ? (
                                                         <>
                                                             <div className="h-5 w-5 pl-1 text-red-500">
                                                                 —

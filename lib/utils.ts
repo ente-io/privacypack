@@ -4,6 +4,13 @@ import { twMerge } from "tailwind-merge";
 const EXPORT_IMAGE_SIZE = 1500;
 const EXPORT_IMAGE_SCALE = 2;
 const DOWNLOAD_URL_REVOKE_DELAY_MS = 60_000;
+export const PRIVACY_PACK_FONT_FAMILY =
+    'jetBrainsMono, "jetBrainsMono Fallback", "JetBrains Mono", monospace';
+
+const PRIVACY_PACK_FONT_FACE_FAMILIES = [
+    "jetBrainsMono",
+    "jetBrainsMono Fallback",
+];
 
 export type ShareResult = "shared" | "copied" | "downloaded" | "cancelled";
 
@@ -40,10 +47,68 @@ function nextAnimationFrame() {
     });
 }
 
-function copyNextFontStyles(clonedDoc: Document) {
-    document.querySelectorAll("style[data-next-font]").forEach((style) => {
-        clonedDoc.head.appendChild(style.cloneNode(true));
+function isPrivacyPackFontFaceRule(rule: CSSRule) {
+    if (rule.type !== CSSRule.FONT_FACE_RULE) {
+        return false;
+    }
+
+    return PRIVACY_PACK_FONT_FACE_FAMILIES.some((family) => {
+        const quoted = `"${family}"`;
+        const singleQuoted = `'${family}'`;
+
+        return (
+            rule.cssText.includes(`font-family: ${family}`) ||
+            rule.cssText.includes(`font-family: ${quoted}`) ||
+            rule.cssText.includes(`font-family: ${singleQuoted}`)
+        );
     });
+}
+
+function getPrivacyPackFontFaceRules() {
+    const fontFaceRules: string[] = [];
+
+    Array.from(document.styleSheets).forEach((styleSheet) => {
+        let cssRules: CSSRuleList;
+
+        try {
+            cssRules = styleSheet.cssRules;
+        } catch {
+            return;
+        }
+
+        Array.from(cssRules).forEach((rule) => {
+            if (
+                isPrivacyPackFontFaceRule(rule) &&
+                !fontFaceRules.includes(rule.cssText)
+            ) {
+                fontFaceRules.push(rule.cssText);
+            }
+        });
+    });
+
+    return fontFaceRules;
+}
+
+function injectPrivacyPackFontStyles(clonedDoc: Document) {
+    const style = clonedDoc.createElement("style");
+    style.setAttribute("data-privacypack-export-font", "true");
+    style.textContent = [
+        ...getPrivacyPackFontFaceRules(),
+        `#privacy-pack-result-to-capture, #privacy-pack-result-to-capture * { font-family: ${PRIVACY_PACK_FONT_FAMILY} !important; }`,
+    ].join("\n");
+
+    clonedDoc.head.appendChild(style);
+}
+
+async function waitForExportFont() {
+    if (!("fonts" in document)) {
+        return;
+    }
+
+    await Promise.allSettled([
+        document.fonts.load("normal 28px jetBrainsMono"),
+        document.fonts.ready,
+    ]);
 }
 
 function canvasToBlob(canvas: HTMLCanvasElement) {
@@ -141,7 +206,7 @@ function renderPrivacyPackInVirtualDOM() {
     height: ${EXPORT_IMAGE_SIZE}px;
     pointer-events: none;
     background-color: #121212;
-    font-family: monospace;
+    font-family: ${PRIVACY_PACK_FONT_FAMILY};
     overflow: hidden;
   `;
 
@@ -165,7 +230,7 @@ function renderPrivacyPackInVirtualDOM() {
       margin: 0 !important;
       padding: 0 !important;
       background-color: #121212 !important;
-      font-family: monospace;
+      font-family: ${PRIVACY_PACK_FONT_FAMILY};
     `;
 
     document.body.appendChild(virtualDiv);
@@ -178,6 +243,7 @@ async function capturePrivacyPackImage() {
 
     try {
         await nextAnimationFrame();
+        await waitForExportFont();
         await waitForImages(virtualDiv);
 
         const { default: html2canvas } = await import("html2canvas-pro");
@@ -188,7 +254,7 @@ async function capturePrivacyPackImage() {
             scale: EXPORT_IMAGE_SCALE,
             logging: false,
             onclone: (clonedDoc) => {
-                copyNextFontStyles(clonedDoc);
+                injectPrivacyPackFontStyles(clonedDoc);
 
                 const clonedDiv = clonedDoc.getElementById(
                     "privacy-pack-result-to-capture",
@@ -207,7 +273,7 @@ async function capturePrivacyPackImage() {
                         margin: 0 !important;
                         padding: 0 !important;
                         background-color: #121212 !important;
-                        font-family: monospace;
+                        font-family: ${PRIVACY_PACK_FONT_FAMILY};
                         overflow: hidden !important;
                     `;
                 }
