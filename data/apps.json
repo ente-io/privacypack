@@ -616,6 +616,24 @@
               { "id": "utag", "name": "uTag" },
               { "id": "fmd", "name": "FMD" }
             ]
+        },
+        {
+            "name": "Mobile Keyboard",
+            "order": 31,
+            "mainstream_apps": [
+                { "id": "gboard", "name": "Gboard" },
+                { "id": "ios", "name": "iOS Keyboard" },
+                { "id": "swiftkey", "name": "Microsoft SwiftKey" },
+                { "id": "baidu_ime", "name": "Baidu IME" }
+            ],
+            "private_alternatives": [
+              { "id": "futo", "name": "FUTO Keyboard" },
+              { "id": "heliboard", "name": "HeliBoard" },
+              { "id": "florisboard", "name": "FlorisBoard" },
+              { "id": "openboard", "name": "OpenBoard" },
+              { "id": "simple_keyboard", "name": "Simple Keyboard" },
+              { "id": "essentials", "name": "Essentials Keyboard" }
+            ]
         }
     ]
 }
