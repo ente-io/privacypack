@@ -421,6 +421,7 @@
             "private_alternatives": [
                 { "id": "brave_wallet", "name": "Brave Wallet" },
                 { "id": "cake_wallet", "name": "Cake Wallet" },
+                { "id": "proton_wallet", "name": "Proton Wallet" },
                 { "id": "zodl", "name": "ZODL" }
             ]
         },
@@ -520,6 +521,7 @@
                 { "id": "OnlyOffice", "name": "OnlyOffice" },
                 { "id": "OpenOffice", "name": "OpenOffice" },
                 { "id": "CryptPad", "name": "CryptPad" },
+                { "id": "proton_docs", "name": "Proton Docs" },
                 { "id": "fileverse", "name": "Fileverse dDocs/dSheets" }
             ]
         },
