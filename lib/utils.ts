@@ -1,6 +1,11 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import html2canvas from "html2canvas-pro";
+
+const EXPORT_IMAGE_SIZE = 1500;
+const EXPORT_IMAGE_SCALE = 2;
+const DOWNLOAD_URL_REVOKE_DELAY_MS = 60_000;
+
+export type ShareResult = "shared" | "copied" | "downloaded" | "cancelled";
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
@@ -23,7 +28,10 @@ function downloadBlob(blob: Blob) {
         throw error;
     }
 
-    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    window.setTimeout(
+        () => URL.revokeObjectURL(url),
+        DOWNLOAD_URL_REVOKE_DELAY_MS,
+    );
 }
 
 function nextAnimationFrame() {
@@ -52,6 +60,26 @@ function canvasToBlob(canvas: HTMLCanvasElement) {
             1.0,
         );
     });
+}
+
+async function copyBlobToClipboard(blob: Blob) {
+    if (
+        typeof navigator.clipboard?.write !== "function" ||
+        typeof ClipboardItem === "undefined"
+    ) {
+        return false;
+    }
+
+    try {
+        await navigator.clipboard.write([
+            new ClipboardItem({
+                [blob.type]: blob,
+            }),
+        ]);
+        return true;
+    } catch {
+        return false;
+    }
 }
 
 function waitForImages(container: HTMLElement) {
@@ -109,8 +137,8 @@ function renderPrivacyPackInVirtualDOM() {
     position: fixed;
     left: -10000px;
     top: 0;
-    width: 1500px;
-    height: 1500px;
+    width: ${EXPORT_IMAGE_SIZE}px;
+    height: ${EXPORT_IMAGE_SIZE}px;
     pointer-events: none;
     background-color: #121212;
     font-family: monospace;
@@ -129,13 +157,13 @@ function renderPrivacyPackInVirtualDOM() {
     virtualDiv.appendChild(clonedPrivacyPack);
     clonedPrivacyPack.style.cssText = `
       display: block !important;
-      position: static !important;
+      position: relative !important;
       transform: none !important;
-      width: 1500px !important;
-      height: 1500px !important;
+      width: ${EXPORT_IMAGE_SIZE}px !important;
+      height: ${EXPORT_IMAGE_SIZE}px !important;
       box-sizing: border-box !important;
       margin: 0 !important;
-      padding: 16px !important;
+      padding: 0 !important;
       background-color: #121212 !important;
       font-family: monospace;
     `;
@@ -152,11 +180,12 @@ async function capturePrivacyPackImage() {
         await nextAnimationFrame();
         await waitForImages(virtualDiv);
 
+        const { default: html2canvas } = await import("html2canvas-pro");
         const canvas = await html2canvas(virtualDiv, {
             backgroundColor: "#121212",
-            width: 1500,
-            height: 1500,
-            scale: 1,
+            width: EXPORT_IMAGE_SIZE,
+            height: EXPORT_IMAGE_SIZE,
+            scale: EXPORT_IMAGE_SCALE,
             logging: false,
             onclone: (clonedDoc) => {
                 copyNextFontStyles(clonedDoc);
@@ -167,16 +196,16 @@ async function capturePrivacyPackImage() {
 
                 if (clonedDiv) {
                     clonedDiv.style.cssText = `
-                        width: 1500px !important;
-                        height: 1500px !important;
+                        width: ${EXPORT_IMAGE_SIZE}px !important;
+                        height: ${EXPORT_IMAGE_SIZE}px !important;
                         box-sizing: border-box !important;
                         display: block !important;
                         visibility: visible !important;
-                        position: static !important;
+                        position: relative !important;
                         transform: none !important;
                         transform-origin: 0 0 !important;
                         margin: 0 !important;
-                        padding: 16px !important;
+                        padding: 0 !important;
                         background-color: #121212 !important;
                         font-family: monospace;
                         overflow: hidden !important;
@@ -203,23 +232,26 @@ export async function handleShare() {
     };
 
     if (
+        typeof navigator.share === "function" &&
         typeof navigator.canShare === "function" &&
         navigator.canShare(sharePayload)
     ) {
         try {
             await navigator.share(sharePayload);
-            return;
+            return "shared";
         } catch (error) {
             if (error instanceof DOMException && error.name === "AbortError") {
-                return;
+                return "cancelled";
             }
-
-            downloadBlob(blob);
-            return;
         }
     }
 
+    if (await copyBlobToClipboard(blob)) {
+        return "copied";
+    }
+
     downloadBlob(blob);
+    return "downloaded";
 }
 
 export async function handleDownload() {
