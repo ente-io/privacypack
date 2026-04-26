@@ -597,7 +597,8 @@
             "mainstream_apps": [
                 { "id": "life360", "name": "Life360" },
                 { "id": "find_my_friends", "name": "Find My Friends" },
-                { "id": "google_maps", "name": "Google Maps" }
+                { "id": "google_maps", "name": "Google Maps" },
+                { "id": "corner", "name": "Corner" }
             ],
             "private_alternatives": [
               { "id": "zood", "name": "Zood Location" },
