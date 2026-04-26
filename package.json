@@ -6,7 +6,12 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
+		"lint": "eslint .",
+		"typecheck": "tsc --noEmit --incremental false",
+		"catalog:validate": "node scripts/validate-catalog.mjs",
+		"test:e2e": "playwright test",
+		"build:cloudflare": "opennextjs-cloudflare build",
+		"check": "npm run catalog:validate && npm run typecheck && npm run lint && npm run build:cloudflare && npm run test:e2e",
 		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
 		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
@@ -27,6 +32,7 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
+		"@playwright/test": "^1.59.1",
 		"@tailwindcss/postcss": "^4",
 		"@types/node": "^20.19.11",
 		"@types/react": "^19",
