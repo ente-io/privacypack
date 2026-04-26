@@ -69,11 +69,64 @@ export default function App() {
 
     const [isDownloading, setIsDownloading] = useState(false);
     const [isSharing, setIsSharing] = useState(false);
+    const [exportMessage, setExportMessage] = useState<{
+        type: "info" | "error";
+        text: string;
+    } | null>(null);
+    const isExporting = isDownloading || isSharing;
 
-    const processSelection = async (action: () => Promise<void> | void) => {
-        const actionPromise = Promise.resolve(action());
+    const reportExportError = (error: unknown) => {
+        console.error(error);
+        setExportMessage({
+            type: "error",
+            text: "Export failed. Please try again.",
+        });
+    };
 
-        return actionPromise;
+    const runDownload = async () => {
+        if (!canExport || isExporting) {
+            return;
+        }
+
+        setExportMessage(null);
+        setIsDownloading(true);
+        try {
+            await handleDownload();
+        } catch (error) {
+            reportExportError(error);
+        } finally {
+            setIsDownloading(false);
+        }
+    };
+
+    const runShare = async () => {
+        if (!canExport || isExporting) {
+            return;
+        }
+
+        setExportMessage(null);
+        setIsSharing(true);
+        try {
+            const result = await handleShare();
+
+            if (result === "copied") {
+                setExportMessage({
+                    type: "info",
+                    text: "Image copied to clipboard.",
+                });
+            }
+
+            if (result === "downloaded") {
+                setExportMessage({
+                    type: "info",
+                    text: "Sharing is unavailable here, so the PNG was downloaded.",
+                });
+            }
+        } catch (error) {
+            reportExportError(error);
+        } finally {
+            setIsSharing(false);
+        }
     };
 
     const handleSelectApp = (
@@ -98,11 +151,13 @@ export default function App() {
                     : item,
             ),
         );
+        setExportMessage(null);
+        setOpenKey(null);
     };
 
     return (
         <>
-            <div className="flex w-full flex-col p-4">
+            <div className="flex w-full flex-col p-4 pb-36 sm:pb-4">
                 <div className="flex w-full flex-row items-center justify-between md:px-4 md:pt-4">
                     <Link
                         href="/"
@@ -110,7 +165,7 @@ export default function App() {
                     >
                         PrivacyPack
                     </Link>
-                    <div className="flex flex-row items-center gap-8">
+                    <div className="flex flex-row items-center gap-3 sm:gap-4">
                         <a
                             href="https://github.com/ente-io/privacypack?tab=readme-ov-file#add-a-missing-app"
                             target="_blank"
@@ -120,19 +175,30 @@ export default function App() {
                             Add a missing app
                         </a>
                         <button
-                            onClick={async () => {
-                                if (!canExport) {
-                                    return;
-                                }
-
-                                setIsDownloading(true);
-                                try {
-                                    await processSelection(handleDownload);
-                                } finally {
-                                    setIsDownloading(false);
-                                }
-                            }}
-                            disabled={!canExport || isDownloading}
+                            onClick={runShare}
+                            disabled={!canExport || isExporting}
+                            id="share-navbar"
+                            title={
+                                canExport
+                                    ? "Share PrivacyPack"
+                                    : "Pick at least one private alternative before exporting"
+                            }
+                            className="hidden h-11 cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#525252] px-5 text-white transition-all duration-150 hover:bg-[#444444] active:bg-[#444444] disabled:cursor-not-allowed disabled:opacity-50 sm:flex"
+                        >
+                            {isSharing ? (
+                                <Loader2
+                                    color="white"
+                                    size={18}
+                                    className="animate-spin"
+                                />
+                            ) : (
+                                <Share2 color="white" size={18} />
+                            )}
+                            <span>{isSharing ? "SHARING..." : "SHARE"}</span>
+                        </button>
+                        <button
+                            onClick={runDownload}
+                            disabled={!canExport || isExporting}
                             id="download-navbar"
                             title={
                                 canExport
@@ -156,6 +222,22 @@ export default function App() {
                         </button>
                     </div>
                 </div>
+
+                {exportMessage && (
+                    <div
+                        role={
+                            exportMessage.type === "error" ? "alert" : "status"
+                        }
+                        aria-live="polite"
+                        className={`mt-4 rounded-lg px-4 py-3 text-sm ${
+                            exportMessage.type === "error"
+                                ? "bg-red-500/12 text-red-200"
+                                : "bg-white/8 text-[#d6d6d6]"
+                        }`}
+                    >
+                        {exportMessage.text}
+                    </div>
+                )}
 
                 <div className="mt-16 mb-10 grid grid-cols-1 gap-14 sm:mx-auto md:grid-cols-2 md:gap-20 lg:my-24 lg:gap-28 xl:my-24 xl:grid-cols-3 xl:gap-20 2xl:my-32 2xl:gap-40">
                     {pack.map((item) => {
@@ -204,6 +286,9 @@ export default function App() {
                                                         width={0}
                                                         height={0}
                                                         sizes="100vw"
+                                                        priority={
+                                                            item.order === 1
+                                                        }
                                                         className="h-full w-full rounded-xl object-cover md:rounded-2xl"
                                                     />
                                                 </div>
@@ -382,76 +467,56 @@ export default function App() {
                     })}
                 </div>
 
-                <button
-                    onClick={async () => {
-                        if (!canExport) {
-                            return;
+                <div className="fixed inset-x-0 bottom-0 z-40 flex flex-col gap-3 border-t border-white/10 bg-[#161616]/95 p-4 sm:hidden">
+                    <button
+                        onClick={runShare}
+                        disabled={!canExport || isExporting}
+                        id="share-mobile"
+                        title={
+                            canExport
+                                ? "Share PrivacyPack"
+                                : "Pick at least one private alternative before exporting"
                         }
-
-                        setIsSharing(true);
-                        try {
-                            await processSelection(handleShare);
-                        } finally {
-                            setIsSharing(false);
+                        className="flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-white text-black transition-all duration-150 active:bg-white/80 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                        {isSharing ? (
+                            <Loader2
+                                color="black"
+                                size={16}
+                                className="animate-spin"
+                            />
+                        ) : (
+                            <Share2 color="black" size={16} />
+                        )}
+                        <span className="text-lg">
+                            {isSharing ? "EXPORTING..." : "SHARE"}
+                        </span>
+                    </button>
+                    <button
+                        onClick={runDownload}
+                        disabled={!canExport || isExporting}
+                        id="download-mobile"
+                        title={
+                            canExport
+                                ? "Download PrivacyPack"
+                                : "Pick at least one private alternative before exporting"
                         }
-                    }}
-                    disabled={!canExport || isSharing}
-                    id="share-mobile"
-                    title={
-                        canExport
-                            ? "Share PrivacyPack"
-                            : "Pick at least one private alternative before exporting"
-                    }
-                    className="mt-8 flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-white text-black transition-all duration-150 active:bg-white/80 disabled:cursor-not-allowed disabled:opacity-50 sm:hidden"
-                >
-                    {isSharing ? (
-                        <Loader2
-                            color="black"
-                            size={16}
-                            className="animate-spin"
-                        />
-                    ) : (
-                        <Share2 color="black" size={16} />
-                    )}
-                    <span className="text-lg">
-                        {isSharing ? "EXPORTING..." : "SHARE"}
-                    </span>
-                </button>
-                <button
-                    onClick={async () => {
-                        if (!canExport) {
-                            return;
-                        }
-
-                        setIsDownloading(true);
-                        try {
-                            await processSelection(handleDownload);
-                        } finally {
-                            setIsDownloading(false);
-                        }
-                    }}
-                    disabled={!canExport || isDownloading}
-                    id="download-mobile"
-                    title={
-                        canExport
-                            ? "Download PrivacyPack"
-                            : "Pick at least one private alternative before exporting"
-                    }
-                    className="mt-3 mb-8 flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#525252] text-white transition-all duration-150 active:bg-[#444444] disabled:cursor-not-allowed disabled:opacity-50 sm:hidden"
-                >
-                    {isDownloading ? (
-                        <Loader2
-                            color="white"
-                            size={16}
-                            className="animate-spin"
-                        />
-                    ) : (
-                        <Download color="white" size={16} />
-                    )}
-                    <span className="text-lg">
-                        {isDownloading ? "DOWNLOADING..." : "DOWNLOAD"}
-                    </span>
-                </button>
+                        className="flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#525252] text-white transition-all duration-150 active:bg-[#444444] disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                        {isDownloading ? (
+                            <Loader2
+                                color="white"
+                                size={16}
+                                className="animate-spin"
+                            />
+                        ) : (
+                            <Download color="white" size={16} />
+                        )}
+                        <span className="text-lg">
+                            {isDownloading ? "DOWNLOADING..." : "DOWNLOAD"}
+                        </span>
+                    </button>
+                </div>
             </div>
 
             <PrivacyPackResult pack={selectedPack} />
