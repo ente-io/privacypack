@@ -404,7 +404,8 @@
                 { "id": "cash_app", "name": "Cash App" },
                 { "id": "apple_pay", "name": "Apple Pay" },
                 { "id": "google_pay", "name": "Google Pay" },
-                { "id": "revolut", "name": "Revolut" }
+                { "id": "revolut", "name": "Revolut" },
+                { "id": "zelle", "name": "Zelle" }
             ],
             "private_alternatives": [
                 { "id": "cash", "name": "Cash" },
