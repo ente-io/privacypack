@@ -234,7 +234,8 @@
                 { "id": "accrescent", "name": "Accrescent" },
                 { "id": "f_droid", "name": "F-Droid" },
                 { "id": "aurora_store", "name": "Aurora Store" },
-                { "id": "obtainium", "name": "Obtainium" }
+                { "id": "obtainium", "name": "Obtainium" },
+                { "id": "essentials", "name": "Essentials Apps" }
             ]
         },
         {
