@@ -69,7 +69,8 @@
                 { "id": "chrome", "name": "Chrome" },
                 { "id": "safari", "name": "Safari" },
                 { "id": "edge", "name": "Edge" },
-                { "id": "opera", "name": "Opera" }
+                { "id": "opera", "name": "Opera" },
+                { "id": "opera_gx", "name": "Opera GX" }
             ],
             "private_alternatives": [
                 { "id": "zen_browser", "name": "Zen Browser" },
@@ -230,7 +231,6 @@
                 { "id": "app_store", "name": "App Store" }
             ],
             "private_alternatives": [
-                { "id": "app_store", "name": "App Store" },
                 { "id": "accrescent", "name": "Accrescent" },
                 { "id": "f_droid", "name": "F-Droid" },
                 { "id": "aurora_store", "name": "Aurora Store" },
@@ -286,7 +286,8 @@
                 { "id": "ik-euria", "name": "Euria" },
                 { "id": "brave_leo", "name": "Brave Leo" },
                 { "id": "mistralai_lechat", "name": "LeChat" },
-                { "id": "ensu", "name": "Ensu" }
+                { "id": "ensu", "name": "Ensu" },
+                { "id": "lemonade", "name": "Lemonade" }
             ]
         },
         {
@@ -352,7 +353,8 @@
                 { "id": "matrix", "name": "Matrix" },
                 { "id": "zulip", "name": "Zulip" },
                 { "id": "stoat", "name": "Stoat" },
-                { "id": "fluxer", "name": "Fluxer" }
+                { "id": "fluxer", "name": "Fluxer" },
+                { "id": "revolt", "name": "Revolt" }
             ]
         },
         {
@@ -370,7 +372,10 @@
                 { "id": "pixelfed", "name": "Pixelfed" },
                 { "id": "mastodon", "name": "Mastodon" },
                 { "id": "lemmy", "name": "Lemmy" },
-                { "id": "peertube", "name": "PeerTube" }
+                { "id": "peertube", "name": "PeerTube" },
+                { "id": "bluesky", "name": "Bluesky" },
+                { "id": "reddwarf", "name": "RedDwarf" },
+                { "id": "grain", "name": "Grain" }
             ]
         },
         {
@@ -386,7 +391,8 @@
                 { "id": "brave_talk", "name": "Brave Talk" },
                 { "id": "proton_meet", "name": "Proton Meet" },
                 { "id": "jitsi", "name": "Jitsi" },
-                { "id": "nextcloud_talk", "name": "Nextcloud Talk" }
+                { "id": "nextcloud_talk", "name": "Nextcloud Talk" },
+                { "id": "signal", "name": "Signal" }
             ]
         },
         {
@@ -397,12 +403,14 @@
                 { "id": "venmo", "name": "Venmo" },
                 { "id": "cash_app", "name": "Cash App" },
                 { "id": "apple_pay", "name": "Apple Pay" },
-                { "id": "google_pay", "name": "Google Pay" }
+                { "id": "google_pay", "name": "Google Pay" },
+                { "id": "revolut", "name": "Revolut" }
             ],
             "private_alternatives": [
                 { "id": "cash", "name": "Cash" },
                 { "id": "monero", "name": "Monero" },
-                { "id": "zcash", "name": "Zcash" }
+                { "id": "zcash", "name": "Zcash" },
+                { "id": "peer", "name": "Peer.xyz" }
             ]
         },
         {
@@ -412,12 +420,14 @@
                 { "id": "coinbase_wallet", "name": "Coinbase Wallet" },
                 { "id": "metamask", "name": "MetaMask" },
                 { "id": "phantom", "name": "Phantom" },
-                { "id": "trust_wallet", "name": "Trust Wallet" }
+                { "id": "trust_wallet", "name": "Trust Wallet" },
+                { "id": "rabby", "name": "Rabby" }
             ],
             "private_alternatives": [
                 { "id": "brave_wallet", "name": "Brave Wallet" },
                 { "id": "cake_wallet", "name": "Cake Wallet" },
-                { "id": "zodl", "name": "ZODL" }
+                { "id": "zodl", "name": "ZODL" },
+                { "id": "ambire", "name": "Ambire" }
             ]
         },
         {
@@ -443,11 +453,11 @@
             "order": 23,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
-                { "id": "macos", "name": "macOS" }
+                { "id": "macos", "name": "macOS" },
+                { "id": "chromeos", "name": "ChromeOS" }
             ],
             "private_alternatives": [
                 { "id": "arch_linux", "name": "Arch Linux" },
-                { "id": "macos", "name": "macOS" },
                 { "id": "linux_mint", "name": "Linux Mint" },
                 { "id": "qubes_os", "name": "Qubes OS" },
                 { "id": "fedora", "name": "Fedora" },
@@ -459,7 +469,9 @@
                 { "id": "nixos", "name": "NixOS" },
                 { "id": "tiger_os", "name": "Tiger OS" },
                 { "id": "opensuse", "name": "OpenSUSE" },
-                { "id": "zorin_os", "name": "Zorin OS" }
+                { "id": "zorin_os", "name": "Zorin OS" },
+                { "id": "freebsd", "name": "FreeBSD" },
+                { "id": "openbsd", "name": "OpenBSD" }
             ]
         },
         {
@@ -473,8 +485,7 @@
                 { "id": "graphene_os", "name": "GrapheneOS" },
                 { "id": "ios", "name": "iOS" },
                 { "id": "calyx_os", "name": "CalyxOS" },
-                { "id": "lineage_os", "name": "LineageOS" },
-                { "id": "e_os", "name": "/e/OS" }
+                { "id": "lineage_os", "name": "LineageOS" }
             ]
         },
         {
@@ -495,7 +506,8 @@
                 { "id": "newpipe", "name": "Newpipe" },
                 { "id": "grayjay", "name": "Grayjay" },
                 { "id": "stremio", "name": "Stremio" },
-                { "id": "libretube", "name": "Libretube" }
+                { "id": "libretube", "name": "Libretube" },
+                { "id": "cloudstream", "name": "Cloudstream" }
             ]
         },
         {
@@ -517,6 +529,91 @@
                 { "id": "OpenOffice", "name": "OpenOffice" },
                 { "id": "CryptPad", "name": "CryptPad" },
                 { "id": "fileverse", "name": "Fileverse dDocs/dSheets" }
+            ]
+        },
+        {
+            "name": "Mobile Carrier",
+            "order": 27,
+            "mainstream_apps": [
+                { "id": "att", "name": "AT&T" },
+                { "id": "verizon", "name": "Verizon" },
+                { "id": "t-mobile", "name": "T-Mobile" },
+                { "id": "spectrum_mobile", "name": "Spectrum Mobile" },
+                { "id": "google_fi", "name": "Google Fi" },
+                { "id": "mint_mobile", "name": "Mint Mobile" }
+            ],
+            "private_alternatives": [
+                { "id": "cape", "name": "Cape Cellular" }
+            ]
+        },
+        {
+            "name": "Code Editors",
+            "order": 28,
+            "mainstream_apps": [
+                { "id": "vscode", "name": "VSCode" },
+                { "id": "cursor", "name": "Cursor" },
+                { "id": "windsurf", "name": "Windsurf" },
+                { "id": "notepad_plus_plus", "name": "Notepad++" },
+                { "id": "sublime_text", "name": "Sublime Text" },
+                { "id": "jetbrains", "name": "JetBrains IDEs" }
+            ],
+            "private_alternatives": [
+              { "id": "vscodium", "name": "VSCodium" },
+              { "id": "zed", "name": "Zed" },
+              { "id": "gram", "name": "GRAM" },
+              { "id": "neovim", "name": "Neovim" },
+              { "id": "emacs", "name": "Emacs" },
+              { "id": "helix", "name": "Helix" }
+            ]
+        },
+        {
+            "name": "Software Forges",
+            "order": 29,
+            "mainstream_apps": [
+                { "id": "github", "name": "GitHub" },
+                { "id": "gitlab", "name": "GitLab" },
+                { "id": "azure_repos", "name": "Azure Repos" },
+                { "id": "bitbucket", "name": "Bitbucket" }
+            ],
+            "private_alternatives": [
+              { "id": "gitlab", "name": "GitLab (self hosted)" },
+              { "id": "gitea", "name": "Gitea" },
+              { "id": "forgejo", "name": "Forgejo" },
+              { "id": "codeberg", "name": "Codeberg" },
+              { "id": "tangled", "name": "Tangled" },
+              { "id": "radicle", "name": "Radicle" },
+              { "id": "srht", "name": "sourcehut" },
+              { "id": "gerrit", "name": "Gerrit" },
+              { "id": "cgit", "name": "cgit" },
+              { "id": "gogs", "name": "Gogs" },
+              { "id": "soft_serve", "name": "Soft Serve" }
+            ]
+        },
+        {
+            "name": "Location Sharing",
+            "order": 30,
+            "mainstream_apps": [
+                { "id": "life360", "name": "Life360" },
+                { "id": "find_my_friends", "name": "Find My" },
+                { "id": "google_maps", "name": "Google Maps" }
+            ],
+            "private_alternatives": [
+              { "id": "zood", "name": "Zood Location" },
+              { "id": "grid", "name": "GRID" }
+            ]
+        },
+        {
+            "name": "Find Networks",
+            "order": 31,
+            "mainstream_apps": [
+                { "id": "find_my", "name": "Find My" },
+                { "id": "find_hub", "name": "Find Hub" },
+                { "id": "samsung_smartthings", "name": "Samsung Find" },
+                { "id": "tile", "name": "Lfie360 Tile" }
+            ],
+            "private_alternatives": [
+              { "id": "utag", "name": "uTag" },
+              { "id": "fmd", "name": "FMD" }
             ]
         }
     ]
