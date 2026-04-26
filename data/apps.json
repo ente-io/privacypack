@@ -539,6 +539,22 @@
                 { "id": "1984_hosting", "name": "1984 Hosting" },
                 { "id": "orangewebsite", "name": "OrangeWebsite" }
             ]
+        },
+        {
+          "name": "Multimedia",
+          "order": 28,
+          "mainstream_apps": [
+                { "id": "google_podcasts", "name": "Google Podcasts" },
+                { "id": "youtube_music", "name": "YouTube Music" },
+                { "id": "spotify", "name": "Spotify" },
+                { "id": "google_media_player", "name": "Google Media Player" }
+              ],
+          "private_alternatives": [
+            { "id": "antennapod", "name": "AntennaPod" },
+            { "id": "vlc", "name": "VLC" },
+            { "id": "jellyfin", "name": "Jellyfin" },
+            { "id": "mpv", "name": "mpv" }
+          ]
         }
     ]
 }
