@@ -547,7 +547,7 @@
             ]
         },
         {
-            "name": "Code Editors",
+            "name": "Code Editor",
             "order": 28,
             "mainstream_apps": [
                 { "id": "vscode", "name": "VSCode" },
@@ -567,7 +567,7 @@
             ]
         },
         {
-            "name": "Software Forges",
+            "name": "Software Forge",
             "order": 29,
             "mainstream_apps": [
                 { "id": "github", "name": "GitHub" },
@@ -603,7 +603,7 @@
             ]
         },
         {
-            "name": "Find Networks",
+            "name": "Find Network",
             "order": 31,
             "mainstream_apps": [
                 { "id": "find_my", "name": "Find My" },
