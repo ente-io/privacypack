@@ -290,6 +290,7 @@
                 { "id": "brave_leo", "name": "Brave Leo" },
                 { "id": "mistralai_lechat", "name": "LeChat" },
                 { "id": "ensu", "name": "Ensu" }
+                { "id": "nanogpt", "name": "NanoGPT" }
             ]
         },
         {
