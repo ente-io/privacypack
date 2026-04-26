@@ -421,6 +421,7 @@
             "private_alternatives": [
                 { "id": "brave_wallet", "name": "Brave Wallet" },
                 { "id": "cake_wallet", "name": "Cake Wallet" },
+                { "id": "proton_wallet", "name": "Proton Wallet" },
                 { "id": "zodl", "name": "ZODL" }
             ]
         },
