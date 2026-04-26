@@ -163,7 +163,7 @@
             ]
         },
         {
-            "name": "Passwords",
+            "name": "Password Managers",
             "order": 8,
             "mainstream_apps": [
                 { "id": "google_passwords", "name": "Google Passwords" },
@@ -178,6 +178,7 @@
                 { "id": "1password", "name": "1Password" },
                 { "id": "proton_pass", "name": "Proton Pass" },
                 { "id": "keepass", "name": "KeePass" },
+                { "id": "keepassxc", "name": "KeePassXC" },
                 { "id": "keevault", "name": "Kee Vault" },
                 { "id": "aliasvault", "name": "AliasVault" },
                 { "id": "gopass", "name": "Gopass" },
