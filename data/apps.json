@@ -522,6 +522,19 @@
                 { "id": "CryptPad", "name": "CryptPad" },
                 { "id": "fileverse", "name": "Fileverse dDocs/dSheets" }
             ]
+        },
+        {
+            "name": "Domain Hosting",
+            "order": 27,
+            "mainstream_apps": [
+                { "id": "godaddy", "name": "GoDaddy" }
+            ],
+            "private_alternatives": [
+                { "id": "cloudflare", "name": "Cloudflare Registrar" },
+                { "id": "njalla", "name": "Njalla" },
+                { "id": "1984_hosting", "name": "1984 Hosting" },
+                { "id": "orangewebsite", "name": "OrangeWebsite" }
+            ]
         }
     ]
 }

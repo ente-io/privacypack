@@ -204,6 +204,9 @@ export default function App() {
                                                         width={0}
                                                         height={0}
                                                         sizes="100vw"
+                                                        priority={
+                                                            item.order === 1
+                                                        }
                                                         className="h-full w-full rounded-xl object-cover md:rounded-2xl"
                                                     />
                                                 </div>
