@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { PRIVACY_PACK_FONT_FAMILY } from "@/lib/utils";
 
 interface PrivacyPackResultProps {
     pack: Array<{
@@ -8,8 +9,10 @@ interface PrivacyPackResultProps {
         order: number;
         mainstream_app_name: string;
         mainstream_app_id: string;
-        private_alternative_name: string;
-        private_alternative_id: string;
+        private_alternatives: Array<{
+            id: string;
+            name: string;
+        }>;
     }>;
 }
 
@@ -24,6 +27,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                   cardClass: "h-[270px] w-[380px] pt-6",
                   logoClass: "h-[150px] w-[150px]",
                   textClass: "max-w-[150px] text-[28px]",
+                  multiTextClass: "max-w-[190px] text-[22px]",
                   arrowClass: "-mt-20",
                   arrowSize: 42,
               }
@@ -36,6 +40,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                     cardClass: "h-[190px] w-[290px] pt-6",
                     logoClass: "h-[120px] w-[120px]",
                     textClass: "max-w-[120px] text-[25px]",
+                    multiTextClass: "max-w-[150px] text-[18px]",
                     arrowClass: "-mt-12",
                     arrowSize: 32,
                 }
@@ -47,9 +52,14 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                     cardClass: "h-[150px] w-[240px] pt-4",
                     logoClass: "h-[84px] w-[84px]",
                     textClass: "max-w-[86px] text-[18px]",
+                    multiTextClass: "max-w-[96px] text-[13px]",
                     arrowClass: "-mt-11",
                     arrowSize: 26,
                 };
+
+    const getAlternativeLabel = (
+        alternatives: Array<{ id: string; name: string }>,
+    ) => alternatives.map((alternative) => alternative.name).join(" + ");
 
     return (
         <div
@@ -61,7 +71,7 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                 position: "relative",
                 boxSizing: "border-box",
                 overflow: "hidden",
-                fontFamily: "monospace",
+                fontFamily: PRIVACY_PACK_FONT_FAMILY,
             }}
             id="privacy-pack-result-to-capture"
         >
@@ -123,6 +133,9 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                 }}
             >
                 {pack.map((item) => {
+                    const alternatives = item.private_alternatives;
+                    const hasMultipleAlternatives = alternatives.length > 1;
+
                     return (
                         <div
                             key={item.category}
@@ -153,19 +166,43 @@ const PrivacyPackResult: React.FC<PrivacyPackResultProps> = ({ pack }) => {
                             </div>
                             <div className="flex h-full flex-col items-center transition outline-none">
                                 <div className={layout.logoClass}>
-                                    <Image
-                                        src={`/app-logos/${item.private_alternative_id}.jpg`}
-                                        alt={item.private_alternative_name}
-                                        width={0}
-                                        height={0}
-                                        sizes="100vw"
-                                        className="h-full w-full rounded-2xl object-cover"
-                                    />
+                                    {hasMultipleAlternatives ? (
+                                        <div className="grid h-full w-full grid-cols-2 place-items-center gap-2">
+                                            {alternatives.map((alternative) => (
+                                                <div
+                                                    key={alternative.id}
+                                                    className="aspect-square w-full overflow-hidden rounded-xl bg-white/5"
+                                                >
+                                                    <Image
+                                                        src={`/app-logos/${alternative.id}.jpg`}
+                                                        alt={alternative.name}
+                                                        width={0}
+                                                        height={0}
+                                                        sizes="120px"
+                                                        className="h-full w-full object-contain"
+                                                    />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    ) : (
+                                        <Image
+                                            src={`/app-logos/${alternatives[0].id}.jpg`}
+                                            alt={alternatives[0].name}
+                                            width={0}
+                                            height={0}
+                                            sizes="100vw"
+                                            className="h-full w-full rounded-2xl object-cover"
+                                        />
+                                    )}
                                 </div>
                                 <div
-                                    className={`${layout.textClass} mt-3 text-center leading-tight break-words text-[#aeaeae]`}
+                                    className={`${
+                                        hasMultipleAlternatives
+                                            ? layout.multiTextClass
+                                            : layout.textClass
+                                    } mt-3 text-center leading-tight break-words text-[#aeaeae]`}
                                 >
-                                    {item.private_alternative_name}
+                                    {getAlternativeLabel(alternatives)}
                                 </div>
                             </div>
                         </div>
