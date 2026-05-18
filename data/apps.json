@@ -446,7 +446,7 @@
                 { "id": "trust_wallet", "name": "Trust Wallet" }
             ],
 	    "private_alternatives": [
-	   	{ "id": "brave_wallet", "name": "Brave Wallet" },
+	   		{ "id": "brave_wallet", "name": "Brave Wallet" },
     		{ "id": "cake_wallet", "name": "Cake Wallet" },
     		{ "id": "phoenix_wallet", "name": "Phoenix Wallet" },
     		{ "id": "proton_wallet", "name": "Proton Wallet" },
