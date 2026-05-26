@@ -93,7 +93,7 @@
             ]
         },
         {
-            "name": "Messaging",
+            "name": "Instant Messaging",
             "order": 5,
             "mainstream_apps": [
                 { "id": "whatsapp", "name": "WhatsApp" },
@@ -379,32 +379,83 @@
                 { "id": "discourse", "name": "Discourse" },
                 { "id": "gamevox", "name": "GameVox" },
                 { "id": "stoat", "name": "Stoat" },
-                { "id": "fluxer", "name": "Fluxer" }
+                { "id": "fluxer", "name": "Fluxer" },
+				{ "id": "flotilla", "name": "Flotilla" }
             ]
         },
         {
-            "name": "Social Media",
+            "name": "Media Sharing",
             "order": 19,
             "mainstream_apps": [
-                { "id": "facebook", "name": "Facebook" },
                 { "id": "instagram", "name": "Instagram" },
+                { "id": "snapchat", "name": "Snapchat" },
+            ],
+            "private_alternatives": [
+                { "id": "be_real", "name": "Be Real" },
+                { "id": "pixelfed", "name": "Pixelfed" },
+                { "id": "monnett", "name": "Monnett" },
+                { "id": "vsco", "name": "VSCO" },
+                { "id": "vero", "name": "Vero" },
+            ]
+        },
+		{
+            "name": "Social Connections",
+            "order": 20,
+            "mainstream_apps": [
+                { "id": "facebook", "name": "Facebook" },
+                { "id": "linkedin", "name": "LinkedIn" },
+                { "id": "vk", "name": "VKontakte" },
+				{ "id": "maimai", "name": "Maimai" },
+            ],
+            "private_alternatives": [
+                { "id": "xing", "name": "Xing" },
+                { "id": "angellist", "name": "Angellist" },
+				{ "id": "minds", "name": "Minds" },
+                { "id": "contra", "name": "Contra" }
+            ]
+        },
+		{
+            "name": "Threads and Topics",
+            "order": 21,
+            "mainstream_apps": [
                 { "id": "threads", "name": "Threads" },
-                { "id": "x", "name": "𝕏" },
-                { "id": "reddit", "name": "Reddit" },
+                { "id": "reddit", "name": "Reddit" }
+            ],
+            "private_alternatives": [
+                { "id": "lemmy", "name": "Lemmy" },
+                { "id": "pictoverse", "name": "Pictoverse" }
+            ]
+        },
+		{
+            "name": "Video Platforms",
+            "order": 22,
+            "mainstream_apps": [
                 { "id": "youtube", "name": "YouTube" }
             ],
             "private_alternatives": [
-                { "id": "minds", "name": "Minds" },
-                { "id": "pixelfed", "name": "Pixelfed" },
-                { "id": "mastodon", "name": "Mastodon" },
-                { "id": "nostr", "name": "Nostr" },
-                { "id": "lemmy", "name": "Lemmy" },
+                { "id": "odysee", "name": "Odysee" },
+                { "id": "d_tube", "name": "d.tube" },
+                { "id": "nndouga", "name": "NicoDouga" },
+				{ "id": "dailymotion", "name": "Dailymotion" },
                 { "id": "peertube", "name": "PeerTube" }
+            ]
+        },
+		{
+            "name": "Short Messages",
+            "order": 23,
+            "mainstream_apps": [
+                { "id": "x", "name": "X" }
+            ],
+            "private_alternatives": [
+                { "id": "blsky", "name": "Bluesky" },
+                { "id": "mastodon", "name": "Mastodon" },
+                { "id": "eurosky", "name": "Eurosky" },
+				{ "id": "nostr", "name": "Nostr" }
             ]
         },
         {
             "name": "Video Conferencing",
-            "order": 20,
+            "order": 24,
             "mainstream_apps": [
                 { "id": "zoom", "name": "Zoom" },
                 { "id": "google_meet", "name": "Google Meet" },
@@ -420,7 +471,7 @@
         },
         {
             "name": "Payments",
-            "order": 21,
+            "order": 25,
             "mainstream_apps": [
                 { "id": "paypal", "name": "PayPal" },
                 { "id": "venmo", "name": "Venmo" },
@@ -438,7 +489,7 @@
         },
         {
             "name": "Crypto Wallets",
-            "order": 22,
+            "order": 26,
             "mainstream_apps": [
                 { "id": "coinbase_wallet", "name": "Coinbase Wallet" },
                 { "id": "metamask", "name": "MetaMask" },
@@ -454,7 +505,7 @@
         },
         {
             "name": "DNS",
-            "order": 23,
+            "order": 27,
             "mainstream_apps": [
                 { "id": "isp_dns", "name": "ISP DNS" },
                 { "id": "google_search", "name": "Google DNS" },
@@ -472,7 +523,7 @@
         },
         {
             "name": "Computer OS",
-            "order": 24,
+            "order": 28,
             "mainstream_apps": [
                 { "id": "windows", "name": "Windows" },
                 { "id": "macos", "name": "macOS" }
@@ -496,7 +547,7 @@
         },
         {
             "name": "Phone OS",
-            "order": 25,
+            "order": 29,
             "mainstream_apps": [
                 { "id": "android", "name": "Android" },
                 { "id": "ios", "name": "iOS" }
@@ -511,7 +562,7 @@
         },
         {
             "name": "Entertainment",
-            "order": 26,
+            "order": 30,
             "mainstream_apps": [
                 { "id": "plex", "name": "Plex" },
                 { "id": "netflix", "name": "Netflix" },
@@ -532,7 +583,7 @@
         },
         {
             "name": "Office Suite",
-            "order": 27,
+            "order": 31,
             "mainstream_apps": [
                 { "id": "Microsoft_365", "name": "Microsoft 365" },
                 { "id": "Google_Workspace", "name": "Google Workspace" },
@@ -554,7 +605,7 @@
         },
         {
             "name": "Domain Hosting",
-            "order": 28,
+            "order": 32,
             "mainstream_apps": [
                 { "id": "godaddy", "name": "GoDaddy" }
             ],
@@ -563,6 +614,18 @@
                 { "id": "njalla", "name": "Njalla" },
                 { "id": "1984_hosting", "name": "1984 Hosting" },
                 { "id": "orangewebsite", "name": "OrangeWebsite" }
+            ]
+        },
+		{
+            "name": "Code Collaboration",
+            "order": 33,
+            "mainstream_apps": [
+                { "id": "github", "name": "Github" }
+            ],
+            "private_alternatives": [
+                { "id": "gitea", "name": "Gitea" },
+                { "id": "gitlab", "name": "Gitlab" },
+                { "id": "codebeg", "name": "Codeberg" }
             ]
         }
     ]
