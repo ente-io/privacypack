@@ -149,7 +149,8 @@
                 { "id": "google_drive", "name": "Google Drive" },
                 { "id": "onedrive", "name": "OneDrive" },
                 { "id": "dropbox", "name": "Dropbox" },
-                { "id": "icloud", "name": "iCloud" }
+                { "id": "icloud", "name": "iCloud" },
+				{ "id": "samsung_cloud", "name": "Samsung Cloud" }
             ],
             "private_alternatives": [
                 { "id": "mailbox", "name": "mailbox.org" },
