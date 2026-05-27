@@ -241,7 +241,8 @@
                 { "id": "google_contacts", "name": "Google Contacts" },
 				{ "id": "samsung_contacts", "name": "Samsung Contacts" },
 				{ "id": "apple_contacts", "name": "Apple Contacts" },
-				{ "id": "xiaomi_contacts", "name": "Xiaomi Contacts" }
+				{ "id": "xiaomi_contacts", "name": "Xiaomi Contacts" },
+				{ "id": "huawei_contacts", "name": "Huawei Contacts" }
             ],
             "private_alternatives": [
                 { "id": "fossify_contacts", "name": "Fossify Contacts" },
