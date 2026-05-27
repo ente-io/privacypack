@@ -124,7 +124,8 @@
                 { "id": "google_keep", "name": "Google Keep" },
                 { "id": "apple_notes", "name": "Apple Notes" },
                 { "id": "evernote", "name": "Evernote" },
-                { "id": "notion", "name": "Notion" }
+                { "id": "notion", "name": "Notion" },
+				{ "id": "Samsung Notes", "name": "Samsung Notes" }
             ],
             "private_alternatives": [
                 { "id": "standard_notes", "name": "Standard Notes" },
