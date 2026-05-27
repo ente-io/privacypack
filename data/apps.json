@@ -221,7 +221,8 @@
             "mainstream_apps": [
                 { "id": "google_calendar", "name": "Google Calendar" },
                 { "id": "outlook_calendar", "name": "Outlook Calendar" },
-                { "id": "apple_calendar", "name": "Apple Calendar" }
+                { "id": "apple_calendar", "name": "Apple Calendar" },
+				{ "id": "samsung_calendar", "name": "Samsung Calendar" }
             ],
             "private_alternatives": [
                 { "id": "apple_calendar", "name": "Apple Calendar" },
