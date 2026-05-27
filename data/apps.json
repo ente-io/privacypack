@@ -258,7 +258,8 @@
             "order": 12,
             "mainstream_apps": [
                 { "id": "play_store", "name": "Play Store" },
-                { "id": "app_store", "name": "App Store" }
+                { "id": "app_store", "name": "App Store" },
+				{ "id": "huawei_appgallery", "name": "Huawei AppGallery" }
             ],
             "private_alternatives": [
                 { "id": "app_store", "name": "App Store" },
