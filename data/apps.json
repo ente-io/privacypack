@@ -238,7 +238,10 @@
             "name": "Contacts",
             "order": 11,
             "mainstream_apps": [
-                { "id": "google_contacts", "name": "Google Contacts" }
+                { "id": "google_contacts", "name": "Google Contacts" },
+				{ "id": "samsung_contacts", "name": "Samsung Contacts" },
+				{ "id": "apple_contacts", "name": "Apple Contacts" },
+				{ "id": "xiaomi_contacts", "name": "Xiaomi Contacts" }
             ],
             "private_alternatives": [
                 { "id": "fossify_contacts", "name": "Fossify Contacts" },
