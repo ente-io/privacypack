@@ -124,7 +124,8 @@
                 { "id": "google_keep", "name": "Google Keep" },
                 { "id": "apple_notes", "name": "Apple Notes" },
                 { "id": "evernote", "name": "Evernote" },
-                { "id": "notion", "name": "Notion" }
+                { "id": "notion", "name": "Notion" },
+				{ "id": "Samsung Notes", "name": "Samsung Notes" }
             ],
             "private_alternatives": [
                 { "id": "standard_notes", "name": "Standard Notes" },
@@ -149,7 +150,8 @@
                 { "id": "google_drive", "name": "Google Drive" },
                 { "id": "onedrive", "name": "OneDrive" },
                 { "id": "dropbox", "name": "Dropbox" },
-                { "id": "icloud", "name": "iCloud" }
+                { "id": "icloud", "name": "iCloud" },
+				{ "id": "samsung_cloud", "name": "Samsung Cloud" }
             ],
             "private_alternatives": [
                 { "id": "mailbox", "name": "mailbox.org" },
@@ -221,7 +223,8 @@
             "mainstream_apps": [
                 { "id": "google_calendar", "name": "Google Calendar" },
                 { "id": "outlook_calendar", "name": "Outlook Calendar" },
-                { "id": "apple_calendar", "name": "Apple Calendar" }
+                { "id": "apple_calendar", "name": "Apple Calendar" },
+				{ "id": "samsung_calendar", "name": "Samsung Calendar" }
             ],
             "private_alternatives": [
                 { "id": "apple_calendar", "name": "Apple Calendar" },
@@ -238,7 +241,11 @@
             "name": "Contacts",
             "order": 11,
             "mainstream_apps": [
-                { "id": "google_contacts", "name": "Google Contacts" }
+                { "id": "google_contacts", "name": "Google Contacts" },
+				{ "id": "samsung_contacts", "name": "Samsung Contacts" },
+				{ "id": "apple_contacts", "name": "Apple Contacts" },
+				{ "id": "xiaomi_contacts", "name": "Xiaomi Contacts" },
+				{ "id": "huawei_contacts", "name": "Huawei Contacts" }
             ],
             "private_alternatives": [
                 { "id": "fossify_contacts", "name": "Fossify Contacts" },
@@ -251,7 +258,8 @@
             "order": 12,
             "mainstream_apps": [
                 { "id": "play_store", "name": "Play Store" },
-                { "id": "app_store", "name": "App Store" }
+                { "id": "app_store", "name": "App Store" },
+				{ "id": "huawei_appgallery", "name": "Huawei AppGallery" }
             ],
             "private_alternatives": [
                 { "id": "app_store", "name": "App Store" },
