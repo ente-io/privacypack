@@ -101,7 +101,8 @@
                 { "id": "telegram", "name": "Telegram" },
                 { "id": "imessage", "name": "iMessage" },
                 { "id": "google_messages", "name": "Google Messages" },
-                { "id": "google_chat", "name": "Google Chat" }
+                { "id": "google_chat", "name": "Google Chat" },
+                { "id": "viber", "name": "Viber" }
             ],
             "private_alternatives": [
                 { "id": "signal", "name": "Signal" },
