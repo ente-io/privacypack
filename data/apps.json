@@ -564,6 +564,24 @@
                 { "id": "1984_hosting", "name": "1984 Hosting" },
                 { "id": "orangewebsite", "name": "OrangeWebsite" }
             ]
+        },
+        {
+            "name": "Backup",
+            "order": 29,
+            "mainstream_apps": [
+                { "id": "no_backup", "name": "No Backup" },
+                { "id": "onedrive", "name": "OneDrive" },
+                { "id": "icloud", "name": "iCloud" },
+                { "id": "google_drive", "name": "Google Drive" },
+                { "id": "dropbox", "name": "Dropbox" }
+            ],
+            "private_alternatives": [
+                { "id": "blinkdisk", "name": "BlinkDisk" },
+                { "id": "restic", "name": "Restic" },
+                { "id": "kopia", "name": "Kopia" },
+                { "id": "duplicati", "name": "Duplicati" },
+                { "id": "duplicacy", "name": "Duplicacy" }
+            ]
         }
     ]
 }
