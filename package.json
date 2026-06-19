@@ -41,5 +41,9 @@
 	},
 	"overrides": {
 		"postcss": "8.5.10"
+	},
+	"allowScripts": {
+		"esbuild@0.25.4": true,
+		"esbuild@0.27.3": true
 	}
 }

@@ -564,6 +564,18 @@
                 { "id": "1984_hosting", "name": "1984 Hosting" },
                 { "id": "orangewebsite", "name": "OrangeWebsite" }
             ]
+        },
+        {
+            "name": "Dialer",
+            "order": 29,
+            "mainstream_apps": [
+                { "id": "google_dialer", "name": "Google Dialer" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify_phone", "name": "Fossify Phone" },
+                { "id": "nova_dial", "name": "Nova Dial" },
+                { "id": "rivo_phone", "name": "Rivo Phone" }
+            ]
         }
     ]
 }
