@@ -42,7 +42,8 @@
                 { "id": "filen", "name": "Filen" },
                 { "id": "photoprism", "name": "PhotoPrism" },
                 { "id": "fossify_gallery", "name": "Fossify Gallery" },
-                { "id": "murena_workspace", "name": "Murena Gallery" }
+                { "id": "murena_workspace", "name": "Murena Gallery" },
+                { "id": "drime", "name": "Drime" }
             ]
         },
         {
@@ -139,7 +140,8 @@
                 { "id": "fileverse", "name": "DDocs.new" },
                 { "id": "joplin", "name": "Joplin" },
                 { "id": "fossify_notes", "name": "Fossify Notes" },
-                { "id": "murena_workspace", "name": "Murena Notes" }
+                { "id": "murena_workspace", "name": "Murena Notes" },
+                { "id": "drime", "name": "Drime" }
             ]
         },
         {
@@ -166,7 +168,8 @@
                 { "id": "ente_locker", "name": "Ente Locker" },
                 { "id": "pcloud", "name": "pCloud" },
                 { "id": "syncthing", "name": "Syncthing" },
-                { "id": "murena_workspace", "name": "Murena Workspace" }
+                { "id": "murena_workspace", "name": "Murena Workspace" },
+                { "id": "drime", "name": "Drime" }
             ]
         },
         {
