@@ -7,7 +7,8 @@
                 { "id": "gmail", "name": "Gmail" },
                 { "id": "outlook", "name": "Outlook" },
                 { "id": "yahoo_mail", "name": "Yahoo Mail" },
-                { "id": "icloud_mail", "name": "iCloud Mail" }
+                { "id": "icloud_mail", "name": "iCloud Mail" },
+		{ "id": "strato", "name": "Strato E-Mail"}
             ],
             "private_alternatives": [
                 { "id": "mailbox", "name": "mailbox.org" },
@@ -19,7 +20,8 @@
                 { "id": "startmail", "name": "StartMail" },
                 { "id": "runbox", "name": "Runbox" },
                 { "id": "disroot_webmail", "name": "Disroot webmail" },
-                { "id": "murena_workspace", "name": "Murena Email" }
+                { "id": "murena_workspace", "name": "Murena Email" },
+		{ "id": "strato", "name": "Strato E-Mail"}
             ]
         },
         {
@@ -149,7 +151,8 @@
                 { "id": "google_drive", "name": "Google Drive" },
                 { "id": "onedrive", "name": "OneDrive" },
                 { "id": "dropbox", "name": "Dropbox" },
-                { "id": "icloud", "name": "iCloud" }
+                { "id": "icloud", "name": "iCloud" },
+		{ "id": "strato", "name": "Strato HiDrive"}
             ],
             "private_alternatives": [
                 { "id": "mailbox", "name": "mailbox.org" },
@@ -166,7 +169,8 @@
                 { "id": "ente_locker", "name": "Ente Locker" },
                 { "id": "pcloud", "name": "pCloud" },
                 { "id": "syncthing", "name": "Syncthing" },
-                { "id": "murena_workspace", "name": "Murena Workspace" }
+                { "id": "murena_workspace", "name": "Murena Workspace" },
+		{ "id": "strato", "name": "Strato HiDrive"}
             ]
         },
         {
@@ -556,13 +560,15 @@
             "name": "Domain Hosting",
             "order": 28,
             "mainstream_apps": [
-                { "id": "godaddy", "name": "GoDaddy" }
+                { "id": "godaddy", "name": "GoDaddy" },
+		{ "id": "strato", "name": "Strato Domain"}
             ],
             "private_alternatives": [
                 { "id": "cloudflare", "name": "Cloudflare Registrar" },
                 { "id": "njalla", "name": "Njalla" },
                 { "id": "1984_hosting", "name": "1984 Hosting" },
-                { "id": "orangewebsite", "name": "OrangeWebsite" }
+                { "id": "orangewebsite", "name": "OrangeWebsite" },
+		{ "id": "strato", "name": "Strato Domain"}
             ]
         }
     ]
