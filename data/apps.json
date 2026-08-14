@@ -10,6 +10,7 @@
                 { "id": "icloud_mail", "name": "iCloud Mail" }
             ],
             "private_alternatives": [
+                { "id": "fastmail", "name": "Fastmail" },
                 { "id": "mailbox", "name": "mailbox.org" },
                 { "id": "proton_mail", "name": "Proton Mail" },
                 { "id": "forwardemail_net", "name": "Forward Email" },
