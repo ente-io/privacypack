@@ -564,6 +564,17 @@
                 { "id": "1984_hosting", "name": "1984 Hosting" },
                 { "id": "orangewebsite", "name": "OrangeWebsite" }
             ]
+        },
+        {
+            "name": "File Sharing",
+            "order": 29,
+            "mainstream_apps": [
+                { "id": "airdrop", "name": "AirDrop" }
+            ],
+            "private_alternatives": [
+                { "id": "LocalSend", "name": "LocalSend" },
+                { "id": "PairDrop", "name": "PairDrop" }
+            ]
         }
     ]
 }
