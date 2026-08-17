@@ -345,7 +345,9 @@
                 { "id": "organic_maps", "name": "Organic Maps" },
                 { "id": "kagi", "name": "Kagi Maps" },
                 { "id": "magic_earth", "name": "Magic Earth" },
-                { "id": "osmand", "name": "OsmAnd" }
+                { "id": "osmand", "name": "OsmAnd" },
+                { "id": "HereWeGo", "name": "HereWego" }
+
             ]
         },
         {
@@ -563,6 +565,18 @@
                 { "id": "njalla", "name": "Njalla" },
                 { "id": "1984_hosting", "name": "1984 Hosting" },
                 { "id": "orangewebsite", "name": "OrangeWebsite" }
+            ]
+        }, 
+
+        {
+            "name": "Mobile Keyboards",
+            "order": 29,
+            "mainstream_apps": [
+                { "id": "G_board", "name": "Gboard" }
+            ],
+            "private_alternatives": [
+                { "id": "fossify-keyboard", "name": "fossify keyboard" },
+                { "id": "heliboard", "name": "Heliboard" }
             ]
         }
     ]
