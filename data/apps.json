@@ -576,6 +576,7 @@
             ],
             "private_alternatives": [
                 { "id": "fossify-keyboard", "name": "fossify keyboard" },
+                
                 { "id": "heliboard", "name": "Heliboard" }
             ]
         }
