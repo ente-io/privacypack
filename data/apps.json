@@ -507,6 +507,7 @@
                 { "id": "calyx_os", "name": "CalyxOS" },
                 { "id": "lineage_os", "name": "LineageOS" },
                 { "id": "e_os", "name": "/e/OS" }
+                { "id": "sailfish_os", "name": "Sailfish OS" }
             ]
         },
         {
